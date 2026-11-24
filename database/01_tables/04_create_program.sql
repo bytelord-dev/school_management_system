@@ -1,0 +1,5 @@
+CREATE TABLE PROGRAM (
+    program_id INT AUTO_INCREMENT PRIMARY KEY,
+    program_code VARCHAR(20) NOT NULL UNIQUE,
+    program_name VARCHAR(100) NOT NULL
+) ENGINE=InnoDB;

@@ -8,7 +8,6 @@
 
 **Document Version:** 1.0 — Initial Draft
 
----
 
 # 1. INTRODUCTION
 

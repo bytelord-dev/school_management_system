@@ -1,0 +1,7 @@
+
+INSERT INTO ACADEMIC_YEAR
+(year_name, start_date, end_date, year_status)
+VALUES
+('2024/2025', '2024-09-01', '2025-08-31', 'COMPLETED'),
+('2025/2026', '2025-09-01', '2026-08-31', 'COMPLETED'),
+('2026/2027', '2026-09-01', '2027-08-31', 'ACTIVE');
