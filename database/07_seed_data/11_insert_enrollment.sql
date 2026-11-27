@@ -1,0 +1,4121 @@
+-- CORRECTED ENROLLMENT SEED DATA: IAI UNIVERSITY DATABASE
+-- Uses existing STUDENT IDs 1-1680, CLASS IDs 1-46 and ACADEMIC_YEAR IDs 1-3.
+-- AY 2024/2025 Level 3: 80% graduate / 20% repeat (approximately; withdrawals separate).
+-- AY 2025/2026 Level 3: 75% graduate / 25% repeat (approximately; withdrawals separate).
+-- AY 2026/2027 remains ACTIVE; no final results are assigned.
+-- Graduated and withdrawn students do not automatically reappear in later academic years.
+-- Repeating students retain their std_id and remain in the same Level 3 class.
+-- One accidental duplicate enrollment for student 788 in class 40 (AY 2024/2025) was removed.
+
+-- IMPORTANT: Run this file only when ENROLLMENT is empty. It does not delete existing data.
+
+-- ====================================================================
+-- ACADEMIC YEAR 2024/2025 (academic_year_id = 1)
+-- ====================================================================
+
+-- Class ID 1: BA1A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(1, 1, 1, '2024-09-15', 'PROMOTED'),
+(2, 1, 1, '2024-09-15', 'PROMOTED'),
+(3, 1, 1, '2024-09-15', 'PROMOTED'),
+(4, 1, 1, '2024-09-15', 'PROMOTED'),
+(5, 1, 1, '2024-09-15', 'PROMOTED'),
+(6, 1, 1, '2024-09-15', 'PROMOTED'),
+(7, 1, 1, '2024-09-15', 'PROMOTED'),
+(8, 1, 1, '2024-09-15', 'PROMOTED'),
+(9, 1, 1, '2024-09-15', 'PROMOTED'),
+(10, 1, 1, '2024-09-15', 'PROMOTED'),
+(11, 1, 1, '2024-09-15', 'PROMOTED'),
+(12, 1, 1, '2024-09-15', 'PROMOTED'),
+(13, 1, 1, '2024-09-15', 'PROMOTED'),
+(14, 1, 1, '2024-09-15', 'PROMOTED'),
+(15, 1, 1, '2024-09-15', 'PROMOTED'),
+(16, 1, 1, '2024-09-15', 'PROMOTED'),
+(17, 1, 1, '2024-09-15', 'PROMOTED'),
+(18, 1, 1, '2024-09-15', 'PROMOTED'),
+(19, 1, 1, '2024-09-15', 'REPEATED'),
+(20, 1, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 2: BA1B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(21, 2, 1, '2024-09-15', 'PROMOTED'),
+(22, 2, 1, '2024-09-15', 'PROMOTED'),
+(23, 2, 1, '2024-09-15', 'PROMOTED'),
+(24, 2, 1, '2024-09-15', 'PROMOTED'),
+(25, 2, 1, '2024-09-15', 'PROMOTED'),
+(26, 2, 1, '2024-09-15', 'PROMOTED'),
+(27, 2, 1, '2024-09-15', 'PROMOTED'),
+(28, 2, 1, '2024-09-15', 'PROMOTED'),
+(29, 2, 1, '2024-09-15', 'PROMOTED'),
+(30, 2, 1, '2024-09-15', 'PROMOTED'),
+(31, 2, 1, '2024-09-15', 'PROMOTED'),
+(32, 2, 1, '2024-09-15', 'PROMOTED'),
+(33, 2, 1, '2024-09-15', 'PROMOTED'),
+(34, 2, 1, '2024-09-15', 'PROMOTED'),
+(35, 2, 1, '2024-09-15', 'PROMOTED'),
+(36, 2, 1, '2024-09-15', 'PROMOTED'),
+(37, 2, 1, '2024-09-15', 'PROMOTED'),
+(38, 2, 1, '2024-09-15', 'PROMOTED'),
+(39, 2, 1, '2024-09-15', 'REPEATED'),
+(40, 2, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 3: BA1C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(41, 3, 1, '2024-09-15', 'PROMOTED'),
+(42, 3, 1, '2024-09-15', 'PROMOTED'),
+(43, 3, 1, '2024-09-15', 'PROMOTED'),
+(44, 3, 1, '2024-09-15', 'PROMOTED'),
+(45, 3, 1, '2024-09-15', 'PROMOTED'),
+(46, 3, 1, '2024-09-15', 'PROMOTED'),
+(47, 3, 1, '2024-09-15', 'PROMOTED'),
+(48, 3, 1, '2024-09-15', 'PROMOTED'),
+(49, 3, 1, '2024-09-15', 'PROMOTED'),
+(50, 3, 1, '2024-09-15', 'PROMOTED'),
+(51, 3, 1, '2024-09-15', 'PROMOTED'),
+(52, 3, 1, '2024-09-15', 'PROMOTED'),
+(53, 3, 1, '2024-09-15', 'PROMOTED'),
+(54, 3, 1, '2024-09-15', 'PROMOTED'),
+(55, 3, 1, '2024-09-15', 'PROMOTED'),
+(56, 3, 1, '2024-09-15', 'PROMOTED'),
+(57, 3, 1, '2024-09-15', 'PROMOTED'),
+(58, 3, 1, '2024-09-15', 'PROMOTED'),
+(59, 3, 1, '2024-09-15', 'REPEATED'),
+(60, 3, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 4: BA2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(61, 4, 1, '2024-09-15', 'PROMOTED'),
+(62, 4, 1, '2024-09-15', 'PROMOTED'),
+(63, 4, 1, '2024-09-15', 'PROMOTED'),
+(64, 4, 1, '2024-09-15', 'PROMOTED'),
+(65, 4, 1, '2024-09-15', 'PROMOTED'),
+(66, 4, 1, '2024-09-15', 'PROMOTED'),
+(67, 4, 1, '2024-09-15', 'PROMOTED'),
+(68, 4, 1, '2024-09-15', 'PROMOTED'),
+(69, 4, 1, '2024-09-15', 'PROMOTED'),
+(70, 4, 1, '2024-09-15', 'PROMOTED'),
+(71, 4, 1, '2024-09-15', 'PROMOTED'),
+(72, 4, 1, '2024-09-15', 'PROMOTED'),
+(73, 4, 1, '2024-09-15', 'PROMOTED'),
+(74, 4, 1, '2024-09-15', 'PROMOTED'),
+(75, 4, 1, '2024-09-15', 'PROMOTED'),
+(76, 4, 1, '2024-09-15', 'PROMOTED'),
+(77, 4, 1, '2024-09-15', 'PROMOTED'),
+(78, 4, 1, '2024-09-15', 'PROMOTED'),
+(79, 4, 1, '2024-09-15', 'REPEATED'),
+(80, 4, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 5: BA2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(81, 5, 1, '2024-09-15', 'PROMOTED'),
+(82, 5, 1, '2024-09-15', 'PROMOTED'),
+(83, 5, 1, '2024-09-15', 'PROMOTED'),
+(84, 5, 1, '2024-09-15', 'PROMOTED'),
+(85, 5, 1, '2024-09-15', 'PROMOTED'),
+(86, 5, 1, '2024-09-15', 'PROMOTED'),
+(87, 5, 1, '2024-09-15', 'PROMOTED'),
+(88, 5, 1, '2024-09-15', 'PROMOTED'),
+(89, 5, 1, '2024-09-15', 'PROMOTED'),
+(90, 5, 1, '2024-09-15', 'PROMOTED'),
+(91, 5, 1, '2024-09-15', 'PROMOTED'),
+(92, 5, 1, '2024-09-15', 'PROMOTED'),
+(93, 5, 1, '2024-09-15', 'PROMOTED'),
+(94, 5, 1, '2024-09-15', 'PROMOTED'),
+(95, 5, 1, '2024-09-15', 'PROMOTED'),
+(96, 5, 1, '2024-09-15', 'PROMOTED'),
+(97, 5, 1, '2024-09-15', 'PROMOTED'),
+(98, 5, 1, '2024-09-15', 'PROMOTED'),
+(99, 5, 1, '2024-09-15', 'REPEATED'),
+(100, 5, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 6: BA2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(101, 6, 1, '2024-09-15', 'PROMOTED'),
+(102, 6, 1, '2024-09-15', 'PROMOTED'),
+(103, 6, 1, '2024-09-15', 'PROMOTED'),
+(104, 6, 1, '2024-09-15', 'PROMOTED'),
+(105, 6, 1, '2024-09-15', 'PROMOTED'),
+(106, 6, 1, '2024-09-15', 'PROMOTED'),
+(107, 6, 1, '2024-09-15', 'PROMOTED'),
+(108, 6, 1, '2024-09-15', 'PROMOTED'),
+(109, 6, 1, '2024-09-15', 'PROMOTED'),
+(110, 6, 1, '2024-09-15', 'PROMOTED'),
+(111, 6, 1, '2024-09-15', 'PROMOTED'),
+(112, 6, 1, '2024-09-15', 'PROMOTED'),
+(113, 6, 1, '2024-09-15', 'PROMOTED'),
+(114, 6, 1, '2024-09-15', 'PROMOTED'),
+(115, 6, 1, '2024-09-15', 'PROMOTED'),
+(116, 6, 1, '2024-09-15', 'PROMOTED'),
+(117, 6, 1, '2024-09-15', 'PROMOTED'),
+(118, 6, 1, '2024-09-15', 'PROMOTED'),
+(119, 6, 1, '2024-09-15', 'REPEATED'),
+(120, 6, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 7: SE3A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(121, 7, 1, '2024-09-15', 'GRADUATED'),
+(122, 7, 1, '2024-09-15', 'GRADUATED'),
+(123, 7, 1, '2024-09-15', 'GRADUATED'),
+(124, 7, 1, '2024-09-15', 'GRADUATED'),
+(125, 7, 1, '2024-09-15', 'GRADUATED'),
+(126, 7, 1, '2024-09-15', 'GRADUATED'),
+(127, 7, 1, '2024-09-15', 'GRADUATED'),
+(128, 7, 1, '2024-09-15', 'GRADUATED'),
+(129, 7, 1, '2024-09-15', 'GRADUATED'),
+(130, 7, 1, '2024-09-15', 'GRADUATED'),
+(131, 7, 1, '2024-09-15', 'GRADUATED'),
+(132, 7, 1, '2024-09-15', 'GRADUATED'),
+(133, 7, 1, '2024-09-15', 'GRADUATED'),
+(134, 7, 1, '2024-09-15', 'GRADUATED'),
+(135, 7, 1, '2024-09-15', 'REPEATED'),
+(136, 7, 1, '2024-09-15', 'REPEATED'),
+(137, 7, 1, '2024-09-15', 'REPEATED'),
+(138, 7, 1, '2024-09-15', 'REPEATED'),
+(139, 7, 1, '2024-09-15', 'WITHDRAWN'),
+(140, 7, 1, '2024-09-15', 'WITHDRAWN');
+
+-- Class ID 8: SE3B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(141, 8, 1, '2024-09-15', 'GRADUATED'),
+(142, 8, 1, '2024-09-15', 'GRADUATED'),
+(143, 8, 1, '2024-09-15', 'GRADUATED'),
+(144, 8, 1, '2024-09-15', 'GRADUATED'),
+(145, 8, 1, '2024-09-15', 'GRADUATED'),
+(146, 8, 1, '2024-09-15', 'GRADUATED'),
+(147, 8, 1, '2024-09-15', 'GRADUATED'),
+(148, 8, 1, '2024-09-15', 'GRADUATED'),
+(149, 8, 1, '2024-09-15', 'GRADUATED'),
+(150, 8, 1, '2024-09-15', 'GRADUATED'),
+(151, 8, 1, '2024-09-15', 'GRADUATED'),
+(152, 8, 1, '2024-09-15', 'GRADUATED'),
+(153, 8, 1, '2024-09-15', 'GRADUATED'),
+(154, 8, 1, '2024-09-15', 'GRADUATED'),
+(155, 8, 1, '2024-09-15', 'REPEATED'),
+(156, 8, 1, '2024-09-15', 'REPEATED'),
+(157, 8, 1, '2024-09-15', 'REPEATED'),
+(158, 8, 1, '2024-09-15', 'REPEATED'),
+(159, 8, 1, '2024-09-15', 'WITHDRAWN'),
+(160, 8, 1, '2024-09-15', 'WITHDRAWN');
+
+-- Class ID 9: SR L1A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(161, 9, 1, '2024-09-15', 'PROMOTED'),
+(162, 9, 1, '2024-09-15', 'PROMOTED'),
+(163, 9, 1, '2024-09-15', 'PROMOTED'),
+(164, 9, 1, '2024-09-15', 'PROMOTED'),
+(165, 9, 1, '2024-09-15', 'PROMOTED'),
+(166, 9, 1, '2024-09-15', 'PROMOTED'),
+(167, 9, 1, '2024-09-15', 'PROMOTED'),
+(168, 9, 1, '2024-09-15', 'PROMOTED'),
+(169, 9, 1, '2024-09-15', 'PROMOTED'),
+(170, 9, 1, '2024-09-15', 'PROMOTED'),
+(171, 9, 1, '2024-09-15', 'PROMOTED'),
+(172, 9, 1, '2024-09-15', 'PROMOTED'),
+(173, 9, 1, '2024-09-15', 'PROMOTED'),
+(174, 9, 1, '2024-09-15', 'PROMOTED'),
+(175, 9, 1, '2024-09-15', 'PROMOTED'),
+(176, 9, 1, '2024-09-15', 'PROMOTED'),
+(177, 9, 1, '2024-09-15', 'PROMOTED'),
+(178, 9, 1, '2024-09-15', 'PROMOTED'),
+(179, 9, 1, '2024-09-15', 'REPEATED'),
+(180, 9, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 10: SR L1B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(181, 10, 1, '2024-09-15', 'PROMOTED'),
+(182, 10, 1, '2024-09-15', 'PROMOTED'),
+(183, 10, 1, '2024-09-15', 'PROMOTED'),
+(184, 10, 1, '2024-09-15', 'PROMOTED'),
+(185, 10, 1, '2024-09-15', 'PROMOTED'),
+(186, 10, 1, '2024-09-15', 'PROMOTED'),
+(187, 10, 1, '2024-09-15', 'PROMOTED'),
+(188, 10, 1, '2024-09-15', 'PROMOTED'),
+(189, 10, 1, '2024-09-15', 'PROMOTED'),
+(190, 10, 1, '2024-09-15', 'PROMOTED'),
+(191, 10, 1, '2024-09-15', 'PROMOTED'),
+(192, 10, 1, '2024-09-15', 'PROMOTED'),
+(193, 10, 1, '2024-09-15', 'PROMOTED'),
+(194, 10, 1, '2024-09-15', 'PROMOTED'),
+(195, 10, 1, '2024-09-15', 'PROMOTED'),
+(196, 10, 1, '2024-09-15', 'PROMOTED'),
+(197, 10, 1, '2024-09-15', 'PROMOTED'),
+(198, 10, 1, '2024-09-15', 'PROMOTED'),
+(199, 10, 1, '2024-09-15', 'REPEATED'),
+(200, 10, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 11: SR L1C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(201, 11, 1, '2024-09-15', 'PROMOTED'),
+(202, 11, 1, '2024-09-15', 'PROMOTED'),
+(203, 11, 1, '2024-09-15', 'PROMOTED'),
+(204, 11, 1, '2024-09-15', 'PROMOTED'),
+(205, 11, 1, '2024-09-15', 'PROMOTED'),
+(206, 11, 1, '2024-09-15', 'PROMOTED'),
+(207, 11, 1, '2024-09-15', 'PROMOTED'),
+(208, 11, 1, '2024-09-15', 'PROMOTED'),
+(209, 11, 1, '2024-09-15', 'PROMOTED'),
+(210, 11, 1, '2024-09-15', 'PROMOTED'),
+(211, 11, 1, '2024-09-15', 'PROMOTED'),
+(212, 11, 1, '2024-09-15', 'PROMOTED'),
+(213, 11, 1, '2024-09-15', 'PROMOTED'),
+(214, 11, 1, '2024-09-15', 'PROMOTED'),
+(215, 11, 1, '2024-09-15', 'PROMOTED'),
+(216, 11, 1, '2024-09-15', 'PROMOTED'),
+(217, 11, 1, '2024-09-15', 'PROMOTED'),
+(218, 11, 1, '2024-09-15', 'PROMOTED'),
+(219, 11, 1, '2024-09-15', 'REPEATED'),
+(220, 11, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 12: SR L1D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(221, 12, 1, '2024-09-15', 'PROMOTED'),
+(222, 12, 1, '2024-09-15', 'PROMOTED'),
+(223, 12, 1, '2024-09-15', 'PROMOTED'),
+(224, 12, 1, '2024-09-15', 'PROMOTED'),
+(225, 12, 1, '2024-09-15', 'PROMOTED'),
+(226, 12, 1, '2024-09-15', 'PROMOTED'),
+(227, 12, 1, '2024-09-15', 'PROMOTED'),
+(228, 12, 1, '2024-09-15', 'PROMOTED'),
+(229, 12, 1, '2024-09-15', 'PROMOTED'),
+(230, 12, 1, '2024-09-15', 'PROMOTED'),
+(231, 12, 1, '2024-09-15', 'PROMOTED'),
+(232, 12, 1, '2024-09-15', 'PROMOTED'),
+(233, 12, 1, '2024-09-15', 'PROMOTED'),
+(234, 12, 1, '2024-09-15', 'PROMOTED'),
+(235, 12, 1, '2024-09-15', 'PROMOTED'),
+(236, 12, 1, '2024-09-15', 'PROMOTED'),
+(237, 12, 1, '2024-09-15', 'PROMOTED'),
+(238, 12, 1, '2024-09-15', 'PROMOTED'),
+(239, 12, 1, '2024-09-15', 'REPEATED'),
+(240, 12, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 13: SR L1E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(241, 13, 1, '2024-09-15', 'PROMOTED'),
+(242, 13, 1, '2024-09-15', 'PROMOTED'),
+(243, 13, 1, '2024-09-15', 'PROMOTED'),
+(244, 13, 1, '2024-09-15', 'PROMOTED'),
+(245, 13, 1, '2024-09-15', 'PROMOTED'),
+(246, 13, 1, '2024-09-15', 'PROMOTED'),
+(247, 13, 1, '2024-09-15', 'PROMOTED'),
+(248, 13, 1, '2024-09-15', 'PROMOTED'),
+(249, 13, 1, '2024-09-15', 'PROMOTED'),
+(250, 13, 1, '2024-09-15', 'PROMOTED'),
+(251, 13, 1, '2024-09-15', 'PROMOTED'),
+(252, 13, 1, '2024-09-15', 'PROMOTED'),
+(253, 13, 1, '2024-09-15', 'PROMOTED'),
+(254, 13, 1, '2024-09-15', 'PROMOTED'),
+(255, 13, 1, '2024-09-15', 'PROMOTED'),
+(256, 13, 1, '2024-09-15', 'PROMOTED'),
+(257, 13, 1, '2024-09-15', 'PROMOTED'),
+(258, 13, 1, '2024-09-15', 'PROMOTED'),
+(259, 13, 1, '2024-09-15', 'REPEATED'),
+(260, 13, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 14: SR L1F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(261, 14, 1, '2024-09-15', 'PROMOTED'),
+(262, 14, 1, '2024-09-15', 'PROMOTED'),
+(263, 14, 1, '2024-09-15', 'PROMOTED'),
+(264, 14, 1, '2024-09-15', 'PROMOTED'),
+(265, 14, 1, '2024-09-15', 'PROMOTED'),
+(266, 14, 1, '2024-09-15', 'PROMOTED'),
+(267, 14, 1, '2024-09-15', 'PROMOTED'),
+(268, 14, 1, '2024-09-15', 'PROMOTED'),
+(269, 14, 1, '2024-09-15', 'PROMOTED'),
+(270, 14, 1, '2024-09-15', 'PROMOTED'),
+(271, 14, 1, '2024-09-15', 'PROMOTED'),
+(272, 14, 1, '2024-09-15', 'PROMOTED'),
+(273, 14, 1, '2024-09-15', 'PROMOTED'),
+(274, 14, 1, '2024-09-15', 'PROMOTED'),
+(275, 14, 1, '2024-09-15', 'PROMOTED'),
+(276, 14, 1, '2024-09-15', 'PROMOTED'),
+(277, 14, 1, '2024-09-15', 'PROMOTED'),
+(278, 14, 1, '2024-09-15', 'PROMOTED'),
+(279, 14, 1, '2024-09-15', 'REPEATED'),
+(280, 14, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 15: SR L1G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(281, 15, 1, '2024-09-15', 'PROMOTED'),
+(282, 15, 1, '2024-09-15', 'PROMOTED'),
+(283, 15, 1, '2024-09-15', 'PROMOTED'),
+(284, 15, 1, '2024-09-15', 'PROMOTED'),
+(285, 15, 1, '2024-09-15', 'PROMOTED'),
+(286, 15, 1, '2024-09-15', 'PROMOTED'),
+(287, 15, 1, '2024-09-15', 'PROMOTED'),
+(288, 15, 1, '2024-09-15', 'PROMOTED'),
+(289, 15, 1, '2024-09-15', 'PROMOTED'),
+(290, 15, 1, '2024-09-15', 'PROMOTED'),
+(291, 15, 1, '2024-09-15', 'PROMOTED'),
+(292, 15, 1, '2024-09-15', 'PROMOTED'),
+(293, 15, 1, '2024-09-15', 'PROMOTED'),
+(294, 15, 1, '2024-09-15', 'PROMOTED'),
+(295, 15, 1, '2024-09-15', 'PROMOTED'),
+(296, 15, 1, '2024-09-15', 'PROMOTED'),
+(297, 15, 1, '2024-09-15', 'PROMOTED'),
+(298, 15, 1, '2024-09-15', 'PROMOTED'),
+(299, 15, 1, '2024-09-15', 'REPEATED'),
+(300, 15, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 16: SR L1H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(301, 16, 1, '2024-09-15', 'PROMOTED'),
+(302, 16, 1, '2024-09-15', 'PROMOTED'),
+(303, 16, 1, '2024-09-15', 'PROMOTED'),
+(304, 16, 1, '2024-09-15', 'PROMOTED'),
+(305, 16, 1, '2024-09-15', 'PROMOTED'),
+(306, 16, 1, '2024-09-15', 'PROMOTED'),
+(307, 16, 1, '2024-09-15', 'PROMOTED'),
+(308, 16, 1, '2024-09-15', 'PROMOTED'),
+(309, 16, 1, '2024-09-15', 'PROMOTED'),
+(310, 16, 1, '2024-09-15', 'PROMOTED'),
+(311, 16, 1, '2024-09-15', 'PROMOTED'),
+(312, 16, 1, '2024-09-15', 'PROMOTED'),
+(313, 16, 1, '2024-09-15', 'PROMOTED'),
+(314, 16, 1, '2024-09-15', 'PROMOTED'),
+(315, 16, 1, '2024-09-15', 'PROMOTED'),
+(316, 16, 1, '2024-09-15', 'PROMOTED'),
+(317, 16, 1, '2024-09-15', 'PROMOTED'),
+(318, 16, 1, '2024-09-15', 'PROMOTED'),
+(319, 16, 1, '2024-09-15', 'REPEATED'),
+(320, 16, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 17: SR L2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(321, 17, 1, '2024-09-15', 'PROMOTED'),
+(322, 17, 1, '2024-09-15', 'PROMOTED'),
+(323, 17, 1, '2024-09-15', 'PROMOTED'),
+(324, 17, 1, '2024-09-15', 'PROMOTED'),
+(325, 17, 1, '2024-09-15', 'PROMOTED'),
+(326, 17, 1, '2024-09-15', 'PROMOTED'),
+(327, 17, 1, '2024-09-15', 'PROMOTED'),
+(328, 17, 1, '2024-09-15', 'PROMOTED'),
+(329, 17, 1, '2024-09-15', 'PROMOTED'),
+(330, 17, 1, '2024-09-15', 'PROMOTED'),
+(331, 17, 1, '2024-09-15', 'PROMOTED'),
+(332, 17, 1, '2024-09-15', 'PROMOTED'),
+(333, 17, 1, '2024-09-15', 'PROMOTED'),
+(334, 17, 1, '2024-09-15', 'PROMOTED'),
+(335, 17, 1, '2024-09-15', 'PROMOTED'),
+(336, 17, 1, '2024-09-15', 'PROMOTED'),
+(337, 17, 1, '2024-09-15', 'PROMOTED'),
+(338, 17, 1, '2024-09-15', 'PROMOTED'),
+(339, 17, 1, '2024-09-15', 'REPEATED'),
+(340, 17, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 18: SR L2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(341, 18, 1, '2024-09-15', 'PROMOTED'),
+(342, 18, 1, '2024-09-15', 'PROMOTED'),
+(343, 18, 1, '2024-09-15', 'PROMOTED'),
+(344, 18, 1, '2024-09-15', 'PROMOTED'),
+(345, 18, 1, '2024-09-15', 'PROMOTED'),
+(346, 18, 1, '2024-09-15', 'PROMOTED'),
+(347, 18, 1, '2024-09-15', 'PROMOTED'),
+(348, 18, 1, '2024-09-15', 'PROMOTED'),
+(349, 18, 1, '2024-09-15', 'PROMOTED'),
+(350, 18, 1, '2024-09-15', 'PROMOTED'),
+(351, 18, 1, '2024-09-15', 'PROMOTED'),
+(352, 18, 1, '2024-09-15', 'PROMOTED'),
+(353, 18, 1, '2024-09-15', 'PROMOTED'),
+(354, 18, 1, '2024-09-15', 'PROMOTED'),
+(355, 18, 1, '2024-09-15', 'PROMOTED'),
+(356, 18, 1, '2024-09-15', 'PROMOTED'),
+(357, 18, 1, '2024-09-15', 'PROMOTED'),
+(358, 18, 1, '2024-09-15', 'PROMOTED'),
+(359, 18, 1, '2024-09-15', 'REPEATED'),
+(360, 18, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 19: SR L2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(361, 19, 1, '2024-09-15', 'PROMOTED'),
+(362, 19, 1, '2024-09-15', 'PROMOTED'),
+(363, 19, 1, '2024-09-15', 'PROMOTED'),
+(364, 19, 1, '2024-09-15', 'PROMOTED'),
+(365, 19, 1, '2024-09-15', 'PROMOTED'),
+(366, 19, 1, '2024-09-15', 'PROMOTED'),
+(367, 19, 1, '2024-09-15', 'PROMOTED'),
+(368, 19, 1, '2024-09-15', 'PROMOTED'),
+(369, 19, 1, '2024-09-15', 'PROMOTED'),
+(370, 19, 1, '2024-09-15', 'PROMOTED'),
+(371, 19, 1, '2024-09-15', 'PROMOTED'),
+(372, 19, 1, '2024-09-15', 'PROMOTED'),
+(373, 19, 1, '2024-09-15', 'PROMOTED'),
+(374, 19, 1, '2024-09-15', 'PROMOTED'),
+(375, 19, 1, '2024-09-15', 'PROMOTED'),
+(376, 19, 1, '2024-09-15', 'PROMOTED'),
+(377, 19, 1, '2024-09-15', 'PROMOTED'),
+(378, 19, 1, '2024-09-15', 'PROMOTED'),
+(379, 19, 1, '2024-09-15', 'REPEATED'),
+(380, 19, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 20: SR L2D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(381, 20, 1, '2024-09-15', 'PROMOTED'),
+(382, 20, 1, '2024-09-15', 'PROMOTED'),
+(383, 20, 1, '2024-09-15', 'PROMOTED'),
+(384, 20, 1, '2024-09-15', 'PROMOTED'),
+(385, 20, 1, '2024-09-15', 'PROMOTED'),
+(386, 20, 1, '2024-09-15', 'PROMOTED'),
+(387, 20, 1, '2024-09-15', 'PROMOTED'),
+(388, 20, 1, '2024-09-15', 'PROMOTED'),
+(389, 20, 1, '2024-09-15', 'PROMOTED'),
+(390, 20, 1, '2024-09-15', 'PROMOTED'),
+(391, 20, 1, '2024-09-15', 'PROMOTED'),
+(392, 20, 1, '2024-09-15', 'PROMOTED'),
+(393, 20, 1, '2024-09-15', 'PROMOTED'),
+(394, 20, 1, '2024-09-15', 'PROMOTED'),
+(395, 20, 1, '2024-09-15', 'PROMOTED'),
+(396, 20, 1, '2024-09-15', 'PROMOTED'),
+(397, 20, 1, '2024-09-15', 'PROMOTED'),
+(398, 20, 1, '2024-09-15', 'PROMOTED'),
+(399, 20, 1, '2024-09-15', 'REPEATED'),
+(400, 20, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 21: SR L2E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(401, 21, 1, '2024-09-15', 'PROMOTED'),
+(402, 21, 1, '2024-09-15', 'PROMOTED'),
+(403, 21, 1, '2024-09-15', 'PROMOTED'),
+(404, 21, 1, '2024-09-15', 'PROMOTED'),
+(405, 21, 1, '2024-09-15', 'PROMOTED'),
+(406, 21, 1, '2024-09-15', 'PROMOTED'),
+(407, 21, 1, '2024-09-15', 'PROMOTED'),
+(408, 21, 1, '2024-09-15', 'PROMOTED'),
+(409, 21, 1, '2024-09-15', 'PROMOTED'),
+(410, 21, 1, '2024-09-15', 'PROMOTED'),
+(411, 21, 1, '2024-09-15', 'PROMOTED'),
+(412, 21, 1, '2024-09-15', 'PROMOTED'),
+(413, 21, 1, '2024-09-15', 'PROMOTED'),
+(414, 21, 1, '2024-09-15', 'PROMOTED'),
+(415, 21, 1, '2024-09-15', 'PROMOTED'),
+(416, 21, 1, '2024-09-15', 'PROMOTED'),
+(417, 21, 1, '2024-09-15', 'PROMOTED'),
+(418, 21, 1, '2024-09-15', 'PROMOTED'),
+(419, 21, 1, '2024-09-15', 'REPEATED'),
+(420, 21, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 22: SR L2F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(421, 22, 1, '2024-09-15', 'PROMOTED'),
+(422, 22, 1, '2024-09-15', 'PROMOTED'),
+(423, 22, 1, '2024-09-15', 'PROMOTED'),
+(424, 22, 1, '2024-09-15', 'PROMOTED'),
+(425, 22, 1, '2024-09-15', 'PROMOTED'),
+(426, 22, 1, '2024-09-15', 'PROMOTED'),
+(427, 22, 1, '2024-09-15', 'PROMOTED'),
+(428, 22, 1, '2024-09-15', 'PROMOTED'),
+(429, 22, 1, '2024-09-15', 'PROMOTED'),
+(430, 22, 1, '2024-09-15', 'PROMOTED'),
+(431, 22, 1, '2024-09-15', 'PROMOTED'),
+(432, 22, 1, '2024-09-15', 'PROMOTED'),
+(433, 22, 1, '2024-09-15', 'PROMOTED'),
+(434, 22, 1, '2024-09-15', 'PROMOTED'),
+(435, 22, 1, '2024-09-15', 'PROMOTED'),
+(436, 22, 1, '2024-09-15', 'PROMOTED'),
+(437, 22, 1, '2024-09-15', 'PROMOTED'),
+(438, 22, 1, '2024-09-15', 'PROMOTED'),
+(439, 22, 1, '2024-09-15', 'REPEATED'),
+(440, 22, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 23: SR L2G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(441, 23, 1, '2024-09-15', 'PROMOTED'),
+(442, 23, 1, '2024-09-15', 'PROMOTED'),
+(443, 23, 1, '2024-09-15', 'PROMOTED'),
+(444, 23, 1, '2024-09-15', 'PROMOTED'),
+(445, 23, 1, '2024-09-15', 'PROMOTED'),
+(446, 23, 1, '2024-09-15', 'PROMOTED'),
+(447, 23, 1, '2024-09-15', 'PROMOTED'),
+(448, 23, 1, '2024-09-15', 'PROMOTED'),
+(449, 23, 1, '2024-09-15', 'PROMOTED'),
+(450, 23, 1, '2024-09-15', 'PROMOTED'),
+(451, 23, 1, '2024-09-15', 'PROMOTED'),
+(452, 23, 1, '2024-09-15', 'PROMOTED'),
+(453, 23, 1, '2024-09-15', 'PROMOTED'),
+(454, 23, 1, '2024-09-15', 'PROMOTED'),
+(455, 23, 1, '2024-09-15', 'PROMOTED'),
+(456, 23, 1, '2024-09-15', 'PROMOTED'),
+(457, 23, 1, '2024-09-15', 'PROMOTED'),
+(458, 23, 1, '2024-09-15', 'PROMOTED'),
+(459, 23, 1, '2024-09-15', 'REPEATED'),
+(460, 23, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 24: SR L2H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(461, 24, 1, '2024-09-15', 'PROMOTED'),
+(462, 24, 1, '2024-09-15', 'PROMOTED'),
+(463, 24, 1, '2024-09-15', 'PROMOTED'),
+(464, 24, 1, '2024-09-15', 'PROMOTED'),
+(465, 24, 1, '2024-09-15', 'PROMOTED'),
+(466, 24, 1, '2024-09-15', 'PROMOTED'),
+(467, 24, 1, '2024-09-15', 'PROMOTED'),
+(468, 24, 1, '2024-09-15', 'PROMOTED'),
+(469, 24, 1, '2024-09-15', 'PROMOTED'),
+(470, 24, 1, '2024-09-15', 'PROMOTED'),
+(471, 24, 1, '2024-09-15', 'PROMOTED'),
+(472, 24, 1, '2024-09-15', 'PROMOTED'),
+(473, 24, 1, '2024-09-15', 'PROMOTED'),
+(474, 24, 1, '2024-09-15', 'PROMOTED'),
+(475, 24, 1, '2024-09-15', 'PROMOTED'),
+(476, 24, 1, '2024-09-15', 'PROMOTED'),
+(477, 24, 1, '2024-09-15', 'PROMOTED'),
+(478, 24, 1, '2024-09-15', 'PROMOTED'),
+(479, 24, 1, '2024-09-15', 'REPEATED'),
+(480, 24, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 25: SR3A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(481, 25, 1, '2024-09-15', 'GRADUATED'),
+(482, 25, 1, '2024-09-15', 'GRADUATED'),
+(483, 25, 1, '2024-09-15', 'GRADUATED'),
+(484, 25, 1, '2024-09-15', 'GRADUATED'),
+(485, 25, 1, '2024-09-15', 'GRADUATED'),
+(486, 25, 1, '2024-09-15', 'GRADUATED'),
+(487, 25, 1, '2024-09-15', 'GRADUATED'),
+(488, 25, 1, '2024-09-15', 'GRADUATED'),
+(489, 25, 1, '2024-09-15', 'GRADUATED'),
+(490, 25, 1, '2024-09-15', 'GRADUATED'),
+(491, 25, 1, '2024-09-15', 'GRADUATED'),
+(492, 25, 1, '2024-09-15', 'GRADUATED'),
+(493, 25, 1, '2024-09-15', 'GRADUATED'),
+(494, 25, 1, '2024-09-15', 'GRADUATED'),
+(495, 25, 1, '2024-09-15', 'REPEATED'),
+(496, 25, 1, '2024-09-15', 'REPEATED'),
+(497, 25, 1, '2024-09-15', 'REPEATED'),
+(498, 25, 1, '2024-09-15', 'REPEATED'),
+(499, 25, 1, '2024-09-15', 'WITHDRAWN'),
+(500, 25, 1, '2024-09-15', 'WITHDRAWN');
+
+-- Class ID 26: SR3B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(501, 26, 1, '2024-09-15', 'GRADUATED'),
+(502, 26, 1, '2024-09-15', 'GRADUATED'),
+(503, 26, 1, '2024-09-15', 'GRADUATED'),
+(504, 26, 1, '2024-09-15', 'GRADUATED'),
+(505, 26, 1, '2024-09-15', 'GRADUATED'),
+(506, 26, 1, '2024-09-15', 'GRADUATED'),
+(507, 26, 1, '2024-09-15', 'GRADUATED'),
+(508, 26, 1, '2024-09-15', 'GRADUATED'),
+(509, 26, 1, '2024-09-15', 'GRADUATED'),
+(510, 26, 1, '2024-09-15', 'GRADUATED'),
+(511, 26, 1, '2024-09-15', 'GRADUATED'),
+(512, 26, 1, '2024-09-15', 'GRADUATED'),
+(513, 26, 1, '2024-09-15', 'GRADUATED'),
+(514, 26, 1, '2024-09-15', 'GRADUATED'),
+(515, 26, 1, '2024-09-15', 'REPEATED'),
+(516, 26, 1, '2024-09-15', 'REPEATED'),
+(517, 26, 1, '2024-09-15', 'REPEATED'),
+(518, 26, 1, '2024-09-15', 'REPEATED'),
+(519, 26, 1, '2024-09-15', 'WITHDRAWN'),
+(520, 26, 1, '2024-09-15', 'WITHDRAWN');
+
+-- Class ID 27: SR3C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(521, 27, 1, '2024-09-15', 'GRADUATED'),
+(522, 27, 1, '2024-09-15', 'GRADUATED'),
+(523, 27, 1, '2024-09-15', 'GRADUATED'),
+(524, 27, 1, '2024-09-15', 'GRADUATED'),
+(525, 27, 1, '2024-09-15', 'GRADUATED'),
+(526, 27, 1, '2024-09-15', 'GRADUATED'),
+(527, 27, 1, '2024-09-15', 'GRADUATED'),
+(528, 27, 1, '2024-09-15', 'GRADUATED'),
+(529, 27, 1, '2024-09-15', 'GRADUATED'),
+(530, 27, 1, '2024-09-15', 'GRADUATED'),
+(531, 27, 1, '2024-09-15', 'GRADUATED'),
+(532, 27, 1, '2024-09-15', 'GRADUATED'),
+(533, 27, 1, '2024-09-15', 'GRADUATED'),
+(534, 27, 1, '2024-09-15', 'GRADUATED'),
+(535, 27, 1, '2024-09-15', 'REPEATED'),
+(536, 27, 1, '2024-09-15', 'REPEATED'),
+(537, 27, 1, '2024-09-15', 'REPEATED'),
+(538, 27, 1, '2024-09-15', 'REPEATED'),
+(539, 27, 1, '2024-09-15', 'WITHDRAWN'),
+(540, 27, 1, '2024-09-15', 'WITHDRAWN');
+
+-- Class ID 28: GL L1A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(541, 28, 1, '2024-09-15', 'PROMOTED'),
+(542, 28, 1, '2024-09-15', 'PROMOTED'),
+(543, 28, 1, '2024-09-15', 'PROMOTED'),
+(544, 28, 1, '2024-09-15', 'PROMOTED'),
+(545, 28, 1, '2024-09-15', 'PROMOTED'),
+(546, 28, 1, '2024-09-15', 'PROMOTED'),
+(547, 28, 1, '2024-09-15', 'PROMOTED'),
+(548, 28, 1, '2024-09-15', 'PROMOTED'),
+(549, 28, 1, '2024-09-15', 'PROMOTED'),
+(550, 28, 1, '2024-09-15', 'PROMOTED'),
+(551, 28, 1, '2024-09-15', 'PROMOTED'),
+(552, 28, 1, '2024-09-15', 'PROMOTED'),
+(553, 28, 1, '2024-09-15', 'PROMOTED'),
+(554, 28, 1, '2024-09-15', 'PROMOTED'),
+(555, 28, 1, '2024-09-15', 'PROMOTED'),
+(556, 28, 1, '2024-09-15', 'PROMOTED'),
+(557, 28, 1, '2024-09-15', 'PROMOTED'),
+(558, 28, 1, '2024-09-15', 'PROMOTED'),
+(559, 28, 1, '2024-09-15', 'REPEATED'),
+(560, 28, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 29: GL L1B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(561, 29, 1, '2024-09-15', 'PROMOTED'),
+(562, 29, 1, '2024-09-15', 'PROMOTED'),
+(563, 29, 1, '2024-09-15', 'PROMOTED'),
+(564, 29, 1, '2024-09-15', 'PROMOTED'),
+(565, 29, 1, '2024-09-15', 'PROMOTED'),
+(566, 29, 1, '2024-09-15', 'PROMOTED'),
+(567, 29, 1, '2024-09-15', 'PROMOTED'),
+(568, 29, 1, '2024-09-15', 'PROMOTED'),
+(569, 29, 1, '2024-09-15', 'PROMOTED'),
+(570, 29, 1, '2024-09-15', 'PROMOTED'),
+(571, 29, 1, '2024-09-15', 'PROMOTED'),
+(572, 29, 1, '2024-09-15', 'PROMOTED'),
+(573, 29, 1, '2024-09-15', 'PROMOTED'),
+(574, 29, 1, '2024-09-15', 'PROMOTED'),
+(575, 29, 1, '2024-09-15', 'PROMOTED'),
+(576, 29, 1, '2024-09-15', 'PROMOTED'),
+(577, 29, 1, '2024-09-15', 'PROMOTED'),
+(578, 29, 1, '2024-09-15', 'PROMOTED'),
+(579, 29, 1, '2024-09-15', 'REPEATED'),
+(580, 29, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 30: GL L1C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(581, 30, 1, '2024-09-15', 'PROMOTED'),
+(582, 30, 1, '2024-09-15', 'PROMOTED'),
+(583, 30, 1, '2024-09-15', 'PROMOTED'),
+(584, 30, 1, '2024-09-15', 'PROMOTED'),
+(585, 30, 1, '2024-09-15', 'PROMOTED'),
+(586, 30, 1, '2024-09-15', 'PROMOTED'),
+(587, 30, 1, '2024-09-15', 'PROMOTED'),
+(588, 30, 1, '2024-09-15', 'PROMOTED'),
+(589, 30, 1, '2024-09-15', 'PROMOTED'),
+(590, 30, 1, '2024-09-15', 'PROMOTED'),
+(591, 30, 1, '2024-09-15', 'PROMOTED'),
+(592, 30, 1, '2024-09-15', 'PROMOTED'),
+(593, 30, 1, '2024-09-15', 'PROMOTED'),
+(594, 30, 1, '2024-09-15', 'PROMOTED'),
+(595, 30, 1, '2024-09-15', 'PROMOTED'),
+(596, 30, 1, '2024-09-15', 'PROMOTED'),
+(597, 30, 1, '2024-09-15', 'PROMOTED'),
+(598, 30, 1, '2024-09-15', 'PROMOTED'),
+(599, 30, 1, '2024-09-15', 'REPEATED'),
+(600, 30, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 31: GL L1D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(601, 31, 1, '2024-09-15', 'PROMOTED'),
+(602, 31, 1, '2024-09-15', 'PROMOTED'),
+(603, 31, 1, '2024-09-15', 'PROMOTED'),
+(604, 31, 1, '2024-09-15', 'PROMOTED'),
+(605, 31, 1, '2024-09-15', 'PROMOTED'),
+(606, 31, 1, '2024-09-15', 'PROMOTED'),
+(607, 31, 1, '2024-09-15', 'PROMOTED'),
+(608, 31, 1, '2024-09-15', 'PROMOTED'),
+(609, 31, 1, '2024-09-15', 'PROMOTED'),
+(610, 31, 1, '2024-09-15', 'PROMOTED'),
+(611, 31, 1, '2024-09-15', 'PROMOTED'),
+(612, 31, 1, '2024-09-15', 'PROMOTED'),
+(613, 31, 1, '2024-09-15', 'PROMOTED'),
+(614, 31, 1, '2024-09-15', 'PROMOTED'),
+(615, 31, 1, '2024-09-15', 'PROMOTED'),
+(616, 31, 1, '2024-09-15', 'PROMOTED'),
+(617, 31, 1, '2024-09-15', 'PROMOTED'),
+(618, 31, 1, '2024-09-15', 'PROMOTED'),
+(619, 31, 1, '2024-09-15', 'REPEATED'),
+(620, 31, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 32: GL L1E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(621, 32, 1, '2024-09-15', 'PROMOTED'),
+(622, 32, 1, '2024-09-15', 'PROMOTED'),
+(623, 32, 1, '2024-09-15', 'PROMOTED'),
+(624, 32, 1, '2024-09-15', 'PROMOTED'),
+(625, 32, 1, '2024-09-15', 'PROMOTED'),
+(626, 32, 1, '2024-09-15', 'PROMOTED'),
+(627, 32, 1, '2024-09-15', 'PROMOTED'),
+(628, 32, 1, '2024-09-15', 'PROMOTED'),
+(629, 32, 1, '2024-09-15', 'PROMOTED'),
+(630, 32, 1, '2024-09-15', 'PROMOTED'),
+(631, 32, 1, '2024-09-15', 'PROMOTED'),
+(632, 32, 1, '2024-09-15', 'PROMOTED'),
+(633, 32, 1, '2024-09-15', 'PROMOTED'),
+(634, 32, 1, '2024-09-15', 'PROMOTED'),
+(635, 32, 1, '2024-09-15', 'PROMOTED'),
+(636, 32, 1, '2024-09-15', 'PROMOTED'),
+(637, 32, 1, '2024-09-15', 'PROMOTED'),
+(638, 32, 1, '2024-09-15', 'PROMOTED'),
+(639, 32, 1, '2024-09-15', 'REPEATED'),
+(640, 32, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 33: GL L1F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(641, 33, 1, '2024-09-15', 'PROMOTED'),
+(642, 33, 1, '2024-09-15', 'PROMOTED'),
+(643, 33, 1, '2024-09-15', 'PROMOTED'),
+(644, 33, 1, '2024-09-15', 'PROMOTED'),
+(645, 33, 1, '2024-09-15', 'PROMOTED'),
+(646, 33, 1, '2024-09-15', 'PROMOTED'),
+(647, 33, 1, '2024-09-15', 'PROMOTED'),
+(648, 33, 1, '2024-09-15', 'PROMOTED'),
+(649, 33, 1, '2024-09-15', 'PROMOTED'),
+(650, 33, 1, '2024-09-15', 'PROMOTED'),
+(651, 33, 1, '2024-09-15', 'PROMOTED'),
+(652, 33, 1, '2024-09-15', 'PROMOTED'),
+(653, 33, 1, '2024-09-15', 'PROMOTED'),
+(654, 33, 1, '2024-09-15', 'PROMOTED'),
+(655, 33, 1, '2024-09-15', 'PROMOTED'),
+(656, 33, 1, '2024-09-15', 'PROMOTED'),
+(657, 33, 1, '2024-09-15', 'PROMOTED'),
+(658, 33, 1, '2024-09-15', 'PROMOTED'),
+(659, 33, 1, '2024-09-15', 'REPEATED'),
+(660, 33, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 34: GL L1G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(661, 34, 1, '2024-09-15', 'PROMOTED'),
+(662, 34, 1, '2024-09-15', 'PROMOTED'),
+(663, 34, 1, '2024-09-15', 'PROMOTED'),
+(664, 34, 1, '2024-09-15', 'PROMOTED'),
+(665, 34, 1, '2024-09-15', 'PROMOTED'),
+(666, 34, 1, '2024-09-15', 'PROMOTED'),
+(667, 34, 1, '2024-09-15', 'PROMOTED'),
+(668, 34, 1, '2024-09-15', 'PROMOTED'),
+(669, 34, 1, '2024-09-15', 'PROMOTED'),
+(670, 34, 1, '2024-09-15', 'PROMOTED'),
+(671, 34, 1, '2024-09-15', 'PROMOTED'),
+(672, 34, 1, '2024-09-15', 'PROMOTED'),
+(673, 34, 1, '2024-09-15', 'PROMOTED'),
+(674, 34, 1, '2024-09-15', 'PROMOTED'),
+(675, 34, 1, '2024-09-15', 'PROMOTED'),
+(676, 34, 1, '2024-09-15', 'PROMOTED'),
+(677, 34, 1, '2024-09-15', 'PROMOTED'),
+(678, 34, 1, '2024-09-15', 'PROMOTED'),
+(679, 34, 1, '2024-09-15', 'REPEATED'),
+(680, 34, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 35: GL L1H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(681, 35, 1, '2024-09-15', 'PROMOTED'),
+(682, 35, 1, '2024-09-15', 'PROMOTED'),
+(683, 35, 1, '2024-09-15', 'PROMOTED'),
+(684, 35, 1, '2024-09-15', 'PROMOTED'),
+(685, 35, 1, '2024-09-15', 'PROMOTED'),
+(686, 35, 1, '2024-09-15', 'PROMOTED'),
+(687, 35, 1, '2024-09-15', 'PROMOTED'),
+(688, 35, 1, '2024-09-15', 'PROMOTED'),
+(689, 35, 1, '2024-09-15', 'PROMOTED'),
+(690, 35, 1, '2024-09-15', 'PROMOTED'),
+(691, 35, 1, '2024-09-15', 'PROMOTED'),
+(692, 35, 1, '2024-09-15', 'PROMOTED'),
+(693, 35, 1, '2024-09-15', 'PROMOTED'),
+(694, 35, 1, '2024-09-15', 'PROMOTED'),
+(695, 35, 1, '2024-09-15', 'PROMOTED'),
+(696, 35, 1, '2024-09-15', 'PROMOTED'),
+(697, 35, 1, '2024-09-15', 'PROMOTED'),
+(698, 35, 1, '2024-09-15', 'PROMOTED'),
+(699, 35, 1, '2024-09-15', 'REPEATED'),
+(700, 35, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 36: GL L2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(701, 36, 1, '2024-09-15', 'PROMOTED'),
+(702, 36, 1, '2024-09-15', 'PROMOTED'),
+(703, 36, 1, '2024-09-15', 'PROMOTED'),
+(704, 36, 1, '2024-09-15', 'PROMOTED'),
+(705, 36, 1, '2024-09-15', 'PROMOTED'),
+(706, 36, 1, '2024-09-15', 'PROMOTED'),
+(707, 36, 1, '2024-09-15', 'PROMOTED'),
+(708, 36, 1, '2024-09-15', 'PROMOTED'),
+(709, 36, 1, '2024-09-15', 'PROMOTED'),
+(710, 36, 1, '2024-09-15', 'PROMOTED'),
+(711, 36, 1, '2024-09-15', 'PROMOTED'),
+(712, 36, 1, '2024-09-15', 'PROMOTED'),
+(713, 36, 1, '2024-09-15', 'PROMOTED'),
+(714, 36, 1, '2024-09-15', 'PROMOTED'),
+(715, 36, 1, '2024-09-15', 'PROMOTED'),
+(716, 36, 1, '2024-09-15', 'PROMOTED'),
+(717, 36, 1, '2024-09-15', 'PROMOTED'),
+(718, 36, 1, '2024-09-15', 'PROMOTED'),
+(719, 36, 1, '2024-09-15', 'REPEATED'),
+(720, 36, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 37: GL L2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(721, 37, 1, '2024-09-15', 'PROMOTED'),
+(722, 37, 1, '2024-09-15', 'PROMOTED'),
+(723, 37, 1, '2024-09-15', 'PROMOTED'),
+(724, 37, 1, '2024-09-15', 'PROMOTED'),
+(725, 37, 1, '2024-09-15', 'PROMOTED'),
+(726, 37, 1, '2024-09-15', 'PROMOTED'),
+(727, 37, 1, '2024-09-15', 'PROMOTED'),
+(728, 37, 1, '2024-09-15', 'PROMOTED'),
+(729, 37, 1, '2024-09-15', 'PROMOTED'),
+(730, 37, 1, '2024-09-15', 'PROMOTED'),
+(731, 37, 1, '2024-09-15', 'PROMOTED'),
+(732, 37, 1, '2024-09-15', 'PROMOTED'),
+(733, 37, 1, '2024-09-15', 'PROMOTED'),
+(734, 37, 1, '2024-09-15', 'PROMOTED'),
+(735, 37, 1, '2024-09-15', 'PROMOTED'),
+(736, 37, 1, '2024-09-15', 'PROMOTED'),
+(737, 37, 1, '2024-09-15', 'PROMOTED'),
+(738, 37, 1, '2024-09-15', 'PROMOTED'),
+(739, 37, 1, '2024-09-15', 'REPEATED'),
+(740, 37, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 38: GL L2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(741, 38, 1, '2024-09-15', 'PROMOTED'),
+(742, 38, 1, '2024-09-15', 'PROMOTED'),
+(743, 38, 1, '2024-09-15', 'PROMOTED'),
+(744, 38, 1, '2024-09-15', 'PROMOTED'),
+(745, 38, 1, '2024-09-15', 'PROMOTED'),
+(746, 38, 1, '2024-09-15', 'PROMOTED'),
+(747, 38, 1, '2024-09-15', 'PROMOTED'),
+(748, 38, 1, '2024-09-15', 'PROMOTED'),
+(749, 38, 1, '2024-09-15', 'PROMOTED'),
+(750, 38, 1, '2024-09-15', 'PROMOTED'),
+(751, 38, 1, '2024-09-15', 'PROMOTED'),
+(752, 38, 1, '2024-09-15', 'PROMOTED'),
+(753, 38, 1, '2024-09-15', 'PROMOTED'),
+(754, 38, 1, '2024-09-15', 'PROMOTED'),
+(755, 38, 1, '2024-09-15', 'PROMOTED'),
+(756, 38, 1, '2024-09-15', 'PROMOTED'),
+(757, 38, 1, '2024-09-15', 'PROMOTED'),
+(758, 38, 1, '2024-09-15', 'PROMOTED'),
+(759, 38, 1, '2024-09-15', 'REPEATED'),
+(760, 38, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 39: GL L2D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(761, 39, 1, '2024-09-15', 'PROMOTED'),
+(762, 39, 1, '2024-09-15', 'PROMOTED'),
+(763, 39, 1, '2024-09-15', 'PROMOTED'),
+(764, 39, 1, '2024-09-15', 'PROMOTED'),
+(765, 39, 1, '2024-09-15', 'PROMOTED'),
+(766, 39, 1, '2024-09-15', 'PROMOTED'),
+(767, 39, 1, '2024-09-15', 'PROMOTED'),
+(768, 39, 1, '2024-09-15', 'PROMOTED'),
+(769, 39, 1, '2024-09-15', 'PROMOTED'),
+(770, 39, 1, '2024-09-15', 'PROMOTED'),
+(771, 39, 1, '2024-09-15', 'PROMOTED'),
+(772, 39, 1, '2024-09-15', 'PROMOTED'),
+(773, 39, 1, '2024-09-15', 'PROMOTED'),
+(774, 39, 1, '2024-09-15', 'PROMOTED'),
+(775, 39, 1, '2024-09-15', 'PROMOTED'),
+(776, 39, 1, '2024-09-15', 'PROMOTED'),
+(777, 39, 1, '2024-09-15', 'PROMOTED'),
+(778, 39, 1, '2024-09-15', 'PROMOTED'),
+(779, 39, 1, '2024-09-15', 'REPEATED'),
+(780, 39, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 40: GL L2E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(781, 40, 1, '2024-09-15', 'PROMOTED'),
+(782, 40, 1, '2024-09-15', 'PROMOTED'),
+(783, 40, 1, '2024-09-15', 'PROMOTED'),
+(784, 40, 1, '2024-09-15', 'PROMOTED'),
+(785, 40, 1, '2024-09-15', 'PROMOTED'),
+(786, 40, 1, '2024-09-15', 'PROMOTED'),
+(787, 40, 1, '2024-09-15', 'PROMOTED'),
+(788, 40, 1, '2024-09-15', 'PROMOTED'),
+(789, 40, 1, '2024-09-15', 'PROMOTED'),
+(790, 40, 1, '2024-09-15', 'PROMOTED'),
+(791, 40, 1, '2024-09-15', 'PROMOTED'),
+(792, 40, 1, '2024-09-15', 'PROMOTED'),
+(793, 40, 1, '2024-09-15', 'PROMOTED'),
+(794, 40, 1, '2024-09-15', 'PROMOTED'),
+(795, 40, 1, '2024-09-15', 'PROMOTED'),
+(796, 40, 1, '2024-09-15', 'PROMOTED'),
+(797, 40, 1, '2024-09-15', 'PROMOTED'),
+(798, 40, 1, '2024-09-15', 'PROMOTED'),
+(799, 40, 1, '2024-09-15', 'REPEATED'),
+(800, 40, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 41: GL L2F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(801, 41, 1, '2024-09-15', 'PROMOTED'),
+(802, 41, 1, '2024-09-15', 'PROMOTED'),
+(803, 41, 1, '2024-09-15', 'PROMOTED'),
+(804, 41, 1, '2024-09-15', 'PROMOTED'),
+(805, 41, 1, '2024-09-15', 'PROMOTED'),
+(806, 41, 1, '2024-09-15', 'PROMOTED'),
+(807, 41, 1, '2024-09-15', 'PROMOTED'),
+(808, 41, 1, '2024-09-15', 'PROMOTED'),
+(809, 41, 1, '2024-09-15', 'PROMOTED'),
+(810, 41, 1, '2024-09-15', 'PROMOTED'),
+(811, 41, 1, '2024-09-15', 'PROMOTED'),
+(812, 41, 1, '2024-09-15', 'PROMOTED'),
+(813, 41, 1, '2024-09-15', 'PROMOTED'),
+(814, 41, 1, '2024-09-15', 'PROMOTED'),
+(815, 41, 1, '2024-09-15', 'PROMOTED'),
+(816, 41, 1, '2024-09-15', 'PROMOTED'),
+(817, 41, 1, '2024-09-15', 'PROMOTED'),
+(818, 41, 1, '2024-09-15', 'PROMOTED'),
+(819, 41, 1, '2024-09-15', 'REPEATED'),
+(820, 41, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 42: GL L2G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(821, 42, 1, '2024-09-15', 'PROMOTED'),
+(822, 42, 1, '2024-09-15', 'PROMOTED'),
+(823, 42, 1, '2024-09-15', 'PROMOTED'),
+(824, 42, 1, '2024-09-15', 'PROMOTED'),
+(825, 42, 1, '2024-09-15', 'PROMOTED'),
+(826, 42, 1, '2024-09-15', 'PROMOTED'),
+(827, 42, 1, '2024-09-15', 'PROMOTED'),
+(828, 42, 1, '2024-09-15', 'PROMOTED'),
+(829, 42, 1, '2024-09-15', 'PROMOTED'),
+(830, 42, 1, '2024-09-15', 'PROMOTED'),
+(831, 42, 1, '2024-09-15', 'PROMOTED'),
+(832, 42, 1, '2024-09-15', 'PROMOTED'),
+(833, 42, 1, '2024-09-15', 'PROMOTED'),
+(834, 42, 1, '2024-09-15', 'PROMOTED'),
+(835, 42, 1, '2024-09-15', 'PROMOTED'),
+(836, 42, 1, '2024-09-15', 'PROMOTED'),
+(837, 42, 1, '2024-09-15', 'PROMOTED'),
+(838, 42, 1, '2024-09-15', 'PROMOTED'),
+(839, 42, 1, '2024-09-15', 'REPEATED'),
+(840, 42, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 43: GL L2H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(841, 43, 1, '2024-09-15', 'PROMOTED'),
+(842, 43, 1, '2024-09-15', 'PROMOTED'),
+(843, 43, 1, '2024-09-15', 'PROMOTED'),
+(844, 43, 1, '2024-09-15', 'PROMOTED'),
+(845, 43, 1, '2024-09-15', 'PROMOTED'),
+(846, 43, 1, '2024-09-15', 'PROMOTED'),
+(847, 43, 1, '2024-09-15', 'PROMOTED'),
+(848, 43, 1, '2024-09-15', 'PROMOTED'),
+(849, 43, 1, '2024-09-15', 'PROMOTED'),
+(850, 43, 1, '2024-09-15', 'PROMOTED'),
+(851, 43, 1, '2024-09-15', 'PROMOTED'),
+(852, 43, 1, '2024-09-15', 'PROMOTED'),
+(853, 43, 1, '2024-09-15', 'PROMOTED'),
+(854, 43, 1, '2024-09-15', 'PROMOTED'),
+(855, 43, 1, '2024-09-15', 'PROMOTED'),
+(856, 43, 1, '2024-09-15', 'PROMOTED'),
+(857, 43, 1, '2024-09-15', 'PROMOTED'),
+(858, 43, 1, '2024-09-15', 'PROMOTED'),
+(859, 43, 1, '2024-09-15', 'REPEATED'),
+(860, 43, 1, '2024-09-15', 'REPEATED');
+
+-- Class ID 44: GL3A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(861, 44, 1, '2024-09-15', 'GRADUATED'),
+(862, 44, 1, '2024-09-15', 'GRADUATED'),
+(863, 44, 1, '2024-09-15', 'GRADUATED'),
+(864, 44, 1, '2024-09-15', 'GRADUATED'),
+(865, 44, 1, '2024-09-15', 'GRADUATED'),
+(866, 44, 1, '2024-09-15', 'GRADUATED'),
+(867, 44, 1, '2024-09-15', 'GRADUATED'),
+(868, 44, 1, '2024-09-15', 'GRADUATED'),
+(869, 44, 1, '2024-09-15', 'GRADUATED'),
+(870, 44, 1, '2024-09-15', 'GRADUATED'),
+(871, 44, 1, '2024-09-15', 'GRADUATED'),
+(872, 44, 1, '2024-09-15', 'GRADUATED'),
+(873, 44, 1, '2024-09-15', 'GRADUATED'),
+(874, 44, 1, '2024-09-15', 'GRADUATED'),
+(875, 44, 1, '2024-09-15', 'GRADUATED'),
+(876, 44, 1, '2024-09-15', 'REPEATED'),
+(877, 44, 1, '2024-09-15', 'REPEATED'),
+(878, 44, 1, '2024-09-15', 'REPEATED'),
+(879, 44, 1, '2024-09-15', 'WITHDRAWN'),
+(880, 44, 1, '2024-09-15', 'WITHDRAWN');
+
+-- Class ID 45: GL3B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(881, 45, 1, '2024-09-15', 'GRADUATED'),
+(882, 45, 1, '2024-09-15', 'GRADUATED'),
+(883, 45, 1, '2024-09-15', 'GRADUATED'),
+(884, 45, 1, '2024-09-15', 'GRADUATED'),
+(885, 45, 1, '2024-09-15', 'GRADUATED'),
+(886, 45, 1, '2024-09-15', 'GRADUATED'),
+(887, 45, 1, '2024-09-15', 'GRADUATED'),
+(888, 45, 1, '2024-09-15', 'GRADUATED'),
+(889, 45, 1, '2024-09-15', 'GRADUATED'),
+(890, 45, 1, '2024-09-15', 'GRADUATED'),
+(891, 45, 1, '2024-09-15', 'GRADUATED'),
+(892, 45, 1, '2024-09-15', 'GRADUATED'),
+(893, 45, 1, '2024-09-15', 'GRADUATED'),
+(894, 45, 1, '2024-09-15', 'GRADUATED'),
+(895, 45, 1, '2024-09-15', 'GRADUATED'),
+(896, 45, 1, '2024-09-15', 'REPEATED'),
+(897, 45, 1, '2024-09-15', 'REPEATED'),
+(898, 45, 1, '2024-09-15', 'REPEATED'),
+(899, 45, 1, '2024-09-15', 'WITHDRAWN'),
+(900, 45, 1, '2024-09-15', 'WITHDRAWN');
+
+-- Class ID 46: GL3C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(901, 46, 1, '2024-09-15', 'GRADUATED'),
+(902, 46, 1, '2024-09-15', 'GRADUATED'),
+(903, 46, 1, '2024-09-15', 'GRADUATED'),
+(904, 46, 1, '2024-09-15', 'GRADUATED'),
+(905, 46, 1, '2024-09-15', 'GRADUATED'),
+(906, 46, 1, '2024-09-15', 'GRADUATED'),
+(907, 46, 1, '2024-09-15', 'GRADUATED'),
+(908, 46, 1, '2024-09-15', 'GRADUATED'),
+(909, 46, 1, '2024-09-15', 'GRADUATED'),
+(910, 46, 1, '2024-09-15', 'GRADUATED'),
+(911, 46, 1, '2024-09-15', 'GRADUATED'),
+(912, 46, 1, '2024-09-15', 'GRADUATED'),
+(913, 46, 1, '2024-09-15', 'GRADUATED'),
+(914, 46, 1, '2024-09-15', 'GRADUATED'),
+(915, 46, 1, '2024-09-15', 'GRADUATED'),
+(916, 46, 1, '2024-09-15', 'REPEATED'),
+(917, 46, 1, '2024-09-15', 'REPEATED'),
+(918, 46, 1, '2024-09-15', 'REPEATED'),
+(919, 46, 1, '2024-09-15', 'WITHDRAWN'),
+(920, 46, 1, '2024-09-15', 'WITHDRAWN');
+
+-- ====================================================================
+-- ACADEMIC YEAR 2025/2026 (academic_year_id = 2)
+-- ====================================================================
+
+-- Class ID 1: BA1A (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(19, 1, 2, '2025-09-15', 'REPEATED'),
+(20, 1, 2, '2025-09-15', 'REPEATED'),
+(921, 1, 2, '2025-09-15', 'PROMOTED'),
+(922, 1, 2, '2025-09-15', 'PROMOTED'),
+(923, 1, 2, '2025-09-15', 'PROMOTED'),
+(924, 1, 2, '2025-09-15', 'PROMOTED'),
+(925, 1, 2, '2025-09-15', 'PROMOTED'),
+(926, 1, 2, '2025-09-15', 'PROMOTED'),
+(927, 1, 2, '2025-09-15', 'PROMOTED'),
+(928, 1, 2, '2025-09-15', 'PROMOTED'),
+(929, 1, 2, '2025-09-15', 'PROMOTED'),
+(930, 1, 2, '2025-09-15', 'PROMOTED'),
+(931, 1, 2, '2025-09-15', 'PROMOTED'),
+(932, 1, 2, '2025-09-15', 'PROMOTED'),
+(933, 1, 2, '2025-09-15', 'PROMOTED'),
+(934, 1, 2, '2025-09-15', 'PROMOTED'),
+(935, 1, 2, '2025-09-15', 'PROMOTED'),
+(936, 1, 2, '2025-09-15', 'PROMOTED'),
+(937, 1, 2, '2025-09-15', 'PROMOTED'),
+(938, 1, 2, '2025-09-15', 'PROMOTED'),
+(939, 1, 2, '2025-09-15', 'REPEATED'),
+(940, 1, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 2: BA1B (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(39, 2, 2, '2025-09-15', 'REPEATED'),
+(40, 2, 2, '2025-09-15', 'REPEATED'),
+(941, 2, 2, '2025-09-15', 'PROMOTED'),
+(942, 2, 2, '2025-09-15', 'PROMOTED'),
+(943, 2, 2, '2025-09-15', 'PROMOTED'),
+(944, 2, 2, '2025-09-15', 'PROMOTED'),
+(945, 2, 2, '2025-09-15', 'PROMOTED'),
+(946, 2, 2, '2025-09-15', 'PROMOTED'),
+(947, 2, 2, '2025-09-15', 'PROMOTED'),
+(948, 2, 2, '2025-09-15', 'PROMOTED'),
+(949, 2, 2, '2025-09-15', 'PROMOTED'),
+(950, 2, 2, '2025-09-15', 'PROMOTED'),
+(951, 2, 2, '2025-09-15', 'PROMOTED'),
+(952, 2, 2, '2025-09-15', 'PROMOTED'),
+(953, 2, 2, '2025-09-15', 'PROMOTED'),
+(954, 2, 2, '2025-09-15', 'PROMOTED'),
+(955, 2, 2, '2025-09-15', 'PROMOTED'),
+(956, 2, 2, '2025-09-15', 'PROMOTED'),
+(957, 2, 2, '2025-09-15', 'PROMOTED'),
+(958, 2, 2, '2025-09-15', 'PROMOTED'),
+(959, 2, 2, '2025-09-15', 'REPEATED'),
+(960, 2, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 3: BA1C (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(59, 3, 2, '2025-09-15', 'REPEATED'),
+(60, 3, 2, '2025-09-15', 'REPEATED'),
+(961, 3, 2, '2025-09-15', 'PROMOTED'),
+(962, 3, 2, '2025-09-15', 'PROMOTED'),
+(963, 3, 2, '2025-09-15', 'PROMOTED'),
+(964, 3, 2, '2025-09-15', 'PROMOTED'),
+(965, 3, 2, '2025-09-15', 'PROMOTED'),
+(966, 3, 2, '2025-09-15', 'PROMOTED'),
+(967, 3, 2, '2025-09-15', 'PROMOTED'),
+(968, 3, 2, '2025-09-15', 'PROMOTED'),
+(969, 3, 2, '2025-09-15', 'PROMOTED'),
+(970, 3, 2, '2025-09-15', 'PROMOTED'),
+(971, 3, 2, '2025-09-15', 'PROMOTED'),
+(972, 3, 2, '2025-09-15', 'PROMOTED'),
+(973, 3, 2, '2025-09-15', 'PROMOTED'),
+(974, 3, 2, '2025-09-15', 'PROMOTED'),
+(975, 3, 2, '2025-09-15', 'PROMOTED'),
+(976, 3, 2, '2025-09-15', 'PROMOTED'),
+(977, 3, 2, '2025-09-15', 'PROMOTED'),
+(978, 3, 2, '2025-09-15', 'PROMOTED'),
+(979, 3, 2, '2025-09-15', 'REPEATED'),
+(980, 3, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 4: BA2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(1, 4, 2, '2025-09-15', 'PROMOTED'),
+(2, 4, 2, '2025-09-15', 'PROMOTED'),
+(3, 4, 2, '2025-09-15', 'PROMOTED'),
+(4, 4, 2, '2025-09-15', 'PROMOTED'),
+(5, 4, 2, '2025-09-15', 'PROMOTED'),
+(6, 4, 2, '2025-09-15', 'PROMOTED'),
+(7, 4, 2, '2025-09-15', 'PROMOTED'),
+(8, 4, 2, '2025-09-15', 'PROMOTED'),
+(9, 4, 2, '2025-09-15', 'PROMOTED'),
+(10, 4, 2, '2025-09-15', 'PROMOTED'),
+(11, 4, 2, '2025-09-15', 'PROMOTED'),
+(12, 4, 2, '2025-09-15', 'PROMOTED'),
+(13, 4, 2, '2025-09-15', 'PROMOTED'),
+(14, 4, 2, '2025-09-15', 'PROMOTED'),
+(15, 4, 2, '2025-09-15', 'PROMOTED'),
+(16, 4, 2, '2025-09-15', 'PROMOTED'),
+(17, 4, 2, '2025-09-15', 'PROMOTED'),
+(18, 4, 2, '2025-09-15', 'PROMOTED'),
+(79, 4, 2, '2025-09-15', 'REPEATED'),
+(80, 4, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 5: BA2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(21, 5, 2, '2025-09-15', 'PROMOTED'),
+(22, 5, 2, '2025-09-15', 'PROMOTED'),
+(23, 5, 2, '2025-09-15', 'PROMOTED'),
+(24, 5, 2, '2025-09-15', 'PROMOTED'),
+(25, 5, 2, '2025-09-15', 'PROMOTED'),
+(26, 5, 2, '2025-09-15', 'PROMOTED'),
+(27, 5, 2, '2025-09-15', 'PROMOTED'),
+(28, 5, 2, '2025-09-15', 'PROMOTED'),
+(29, 5, 2, '2025-09-15', 'PROMOTED'),
+(30, 5, 2, '2025-09-15', 'PROMOTED'),
+(31, 5, 2, '2025-09-15', 'PROMOTED'),
+(32, 5, 2, '2025-09-15', 'PROMOTED'),
+(33, 5, 2, '2025-09-15', 'PROMOTED'),
+(34, 5, 2, '2025-09-15', 'PROMOTED'),
+(35, 5, 2, '2025-09-15', 'PROMOTED'),
+(36, 5, 2, '2025-09-15', 'PROMOTED'),
+(37, 5, 2, '2025-09-15', 'PROMOTED'),
+(38, 5, 2, '2025-09-15', 'PROMOTED'),
+(99, 5, 2, '2025-09-15', 'REPEATED'),
+(100, 5, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 6: BA2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(41, 6, 2, '2025-09-15', 'PROMOTED'),
+(42, 6, 2, '2025-09-15', 'PROMOTED'),
+(43, 6, 2, '2025-09-15', 'PROMOTED'),
+(44, 6, 2, '2025-09-15', 'PROMOTED'),
+(45, 6, 2, '2025-09-15', 'PROMOTED'),
+(46, 6, 2, '2025-09-15', 'PROMOTED'),
+(47, 6, 2, '2025-09-15', 'PROMOTED'),
+(48, 6, 2, '2025-09-15', 'PROMOTED'),
+(49, 6, 2, '2025-09-15', 'PROMOTED'),
+(50, 6, 2, '2025-09-15', 'PROMOTED'),
+(51, 6, 2, '2025-09-15', 'PROMOTED'),
+(52, 6, 2, '2025-09-15', 'PROMOTED'),
+(53, 6, 2, '2025-09-15', 'PROMOTED'),
+(54, 6, 2, '2025-09-15', 'PROMOTED'),
+(55, 6, 2, '2025-09-15', 'PROMOTED'),
+(56, 6, 2, '2025-09-15', 'PROMOTED'),
+(57, 6, 2, '2025-09-15', 'PROMOTED'),
+(58, 6, 2, '2025-09-15', 'PROMOTED'),
+(119, 6, 2, '2025-09-15', 'REPEATED'),
+(120, 6, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 7: SE3A (31 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(61, 7, 2, '2025-09-15', 'GRADUATED'),
+(62, 7, 2, '2025-09-15', 'GRADUATED'),
+(63, 7, 2, '2025-09-15', 'REPEATED'),
+(64, 7, 2, '2025-09-15', 'GRADUATED'),
+(65, 7, 2, '2025-09-15', 'GRADUATED'),
+(66, 7, 2, '2025-09-15', 'GRADUATED'),
+(67, 7, 2, '2025-09-15', 'REPEATED'),
+(68, 7, 2, '2025-09-15', 'GRADUATED'),
+(69, 7, 2, '2025-09-15', 'GRADUATED'),
+(70, 7, 2, '2025-09-15', 'GRADUATED'),
+(71, 7, 2, '2025-09-15', 'REPEATED'),
+(72, 7, 2, '2025-09-15', 'GRADUATED'),
+(73, 7, 2, '2025-09-15', 'GRADUATED'),
+(74, 7, 2, '2025-09-15', 'GRADUATED'),
+(75, 7, 2, '2025-09-15', 'REPEATED'),
+(76, 7, 2, '2025-09-15', 'GRADUATED'),
+(77, 7, 2, '2025-09-15', 'GRADUATED'),
+(78, 7, 2, '2025-09-15', 'GRADUATED'),
+(81, 7, 2, '2025-09-15', 'REPEATED'),
+(82, 7, 2, '2025-09-15', 'GRADUATED'),
+(83, 7, 2, '2025-09-15', 'GRADUATED'),
+(84, 7, 2, '2025-09-15', 'GRADUATED'),
+(85, 7, 2, '2025-09-15', 'REPEATED'),
+(86, 7, 2, '2025-09-15', 'GRADUATED'),
+(87, 7, 2, '2025-09-15', 'GRADUATED'),
+(88, 7, 2, '2025-09-15', 'WITHDRAWN'),
+(89, 7, 2, '2025-09-15', 'WITHDRAWN'),
+(135, 7, 2, '2025-09-15', 'GRADUATED'),
+(136, 7, 2, '2025-09-15', 'REPEATED'),
+(137, 7, 2, '2025-09-15', 'GRADUATED'),
+(138, 7, 2, '2025-09-15', 'GRADUATED');
+
+-- Class ID 8: SE3B (31 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(90, 8, 2, '2025-09-15', 'GRADUATED'),
+(91, 8, 2, '2025-09-15', 'GRADUATED'),
+(92, 8, 2, '2025-09-15', 'REPEATED'),
+(93, 8, 2, '2025-09-15', 'GRADUATED'),
+(94, 8, 2, '2025-09-15', 'GRADUATED'),
+(95, 8, 2, '2025-09-15', 'GRADUATED'),
+(96, 8, 2, '2025-09-15', 'REPEATED'),
+(97, 8, 2, '2025-09-15', 'GRADUATED'),
+(98, 8, 2, '2025-09-15', 'GRADUATED'),
+(101, 8, 2, '2025-09-15', 'GRADUATED'),
+(102, 8, 2, '2025-09-15', 'REPEATED'),
+(103, 8, 2, '2025-09-15', 'GRADUATED'),
+(104, 8, 2, '2025-09-15', 'GRADUATED'),
+(105, 8, 2, '2025-09-15', 'GRADUATED'),
+(106, 8, 2, '2025-09-15', 'REPEATED'),
+(107, 8, 2, '2025-09-15', 'GRADUATED'),
+(108, 8, 2, '2025-09-15', 'GRADUATED'),
+(109, 8, 2, '2025-09-15', 'GRADUATED'),
+(110, 8, 2, '2025-09-15', 'REPEATED'),
+(111, 8, 2, '2025-09-15', 'GRADUATED'),
+(112, 8, 2, '2025-09-15', 'GRADUATED'),
+(113, 8, 2, '2025-09-15', 'GRADUATED'),
+(114, 8, 2, '2025-09-15', 'REPEATED'),
+(115, 8, 2, '2025-09-15', 'GRADUATED'),
+(116, 8, 2, '2025-09-15', 'GRADUATED'),
+(117, 8, 2, '2025-09-15', 'WITHDRAWN'),
+(118, 8, 2, '2025-09-15', 'WITHDRAWN'),
+(155, 8, 2, '2025-09-15', 'GRADUATED'),
+(156, 8, 2, '2025-09-15', 'REPEATED'),
+(157, 8, 2, '2025-09-15', 'GRADUATED'),
+(158, 8, 2, '2025-09-15', 'GRADUATED');
+
+-- Class ID 9: SR L1A (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(179, 9, 2, '2025-09-15', 'REPEATED'),
+(180, 9, 2, '2025-09-15', 'REPEATED'),
+(981, 9, 2, '2025-09-15', 'PROMOTED'),
+(982, 9, 2, '2025-09-15', 'PROMOTED'),
+(983, 9, 2, '2025-09-15', 'PROMOTED'),
+(984, 9, 2, '2025-09-15', 'PROMOTED'),
+(985, 9, 2, '2025-09-15', 'PROMOTED'),
+(986, 9, 2, '2025-09-15', 'PROMOTED'),
+(987, 9, 2, '2025-09-15', 'PROMOTED'),
+(988, 9, 2, '2025-09-15', 'PROMOTED'),
+(989, 9, 2, '2025-09-15', 'PROMOTED'),
+(990, 9, 2, '2025-09-15', 'PROMOTED'),
+(991, 9, 2, '2025-09-15', 'PROMOTED'),
+(992, 9, 2, '2025-09-15', 'PROMOTED'),
+(993, 9, 2, '2025-09-15', 'PROMOTED'),
+(994, 9, 2, '2025-09-15', 'PROMOTED'),
+(995, 9, 2, '2025-09-15', 'PROMOTED'),
+(996, 9, 2, '2025-09-15', 'PROMOTED'),
+(997, 9, 2, '2025-09-15', 'PROMOTED'),
+(998, 9, 2, '2025-09-15', 'PROMOTED'),
+(999, 9, 2, '2025-09-15', 'REPEATED'),
+(1000, 9, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 10: SR L1B (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(199, 10, 2, '2025-09-15', 'REPEATED'),
+(200, 10, 2, '2025-09-15', 'REPEATED'),
+(1001, 10, 2, '2025-09-15', 'PROMOTED'),
+(1002, 10, 2, '2025-09-15', 'PROMOTED'),
+(1003, 10, 2, '2025-09-15', 'PROMOTED'),
+(1004, 10, 2, '2025-09-15', 'PROMOTED'),
+(1005, 10, 2, '2025-09-15', 'PROMOTED'),
+(1006, 10, 2, '2025-09-15', 'PROMOTED'),
+(1007, 10, 2, '2025-09-15', 'PROMOTED'),
+(1008, 10, 2, '2025-09-15', 'PROMOTED'),
+(1009, 10, 2, '2025-09-15', 'PROMOTED'),
+(1010, 10, 2, '2025-09-15', 'PROMOTED'),
+(1011, 10, 2, '2025-09-15', 'PROMOTED'),
+(1012, 10, 2, '2025-09-15', 'PROMOTED'),
+(1013, 10, 2, '2025-09-15', 'PROMOTED'),
+(1014, 10, 2, '2025-09-15', 'PROMOTED'),
+(1015, 10, 2, '2025-09-15', 'PROMOTED'),
+(1016, 10, 2, '2025-09-15', 'PROMOTED'),
+(1017, 10, 2, '2025-09-15', 'PROMOTED'),
+(1018, 10, 2, '2025-09-15', 'PROMOTED'),
+(1019, 10, 2, '2025-09-15', 'REPEATED'),
+(1020, 10, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 11: SR L1C (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(219, 11, 2, '2025-09-15', 'REPEATED'),
+(220, 11, 2, '2025-09-15', 'REPEATED'),
+(1021, 11, 2, '2025-09-15', 'PROMOTED'),
+(1022, 11, 2, '2025-09-15', 'PROMOTED'),
+(1023, 11, 2, '2025-09-15', 'PROMOTED'),
+(1024, 11, 2, '2025-09-15', 'PROMOTED'),
+(1025, 11, 2, '2025-09-15', 'PROMOTED'),
+(1026, 11, 2, '2025-09-15', 'PROMOTED'),
+(1027, 11, 2, '2025-09-15', 'PROMOTED'),
+(1028, 11, 2, '2025-09-15', 'PROMOTED'),
+(1029, 11, 2, '2025-09-15', 'PROMOTED'),
+(1030, 11, 2, '2025-09-15', 'PROMOTED'),
+(1031, 11, 2, '2025-09-15', 'PROMOTED'),
+(1032, 11, 2, '2025-09-15', 'PROMOTED'),
+(1033, 11, 2, '2025-09-15', 'PROMOTED'),
+(1034, 11, 2, '2025-09-15', 'PROMOTED'),
+(1035, 11, 2, '2025-09-15', 'PROMOTED'),
+(1036, 11, 2, '2025-09-15', 'PROMOTED'),
+(1037, 11, 2, '2025-09-15', 'PROMOTED'),
+(1038, 11, 2, '2025-09-15', 'PROMOTED'),
+(1039, 11, 2, '2025-09-15', 'REPEATED'),
+(1040, 11, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 12: SR L1D (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(239, 12, 2, '2025-09-15', 'REPEATED'),
+(240, 12, 2, '2025-09-15', 'REPEATED'),
+(1041, 12, 2, '2025-09-15', 'PROMOTED'),
+(1042, 12, 2, '2025-09-15', 'PROMOTED'),
+(1043, 12, 2, '2025-09-15', 'PROMOTED'),
+(1044, 12, 2, '2025-09-15', 'PROMOTED'),
+(1045, 12, 2, '2025-09-15', 'PROMOTED'),
+(1046, 12, 2, '2025-09-15', 'PROMOTED'),
+(1047, 12, 2, '2025-09-15', 'PROMOTED'),
+(1048, 12, 2, '2025-09-15', 'PROMOTED'),
+(1049, 12, 2, '2025-09-15', 'PROMOTED'),
+(1050, 12, 2, '2025-09-15', 'PROMOTED'),
+(1051, 12, 2, '2025-09-15', 'PROMOTED'),
+(1052, 12, 2, '2025-09-15', 'PROMOTED'),
+(1053, 12, 2, '2025-09-15', 'PROMOTED'),
+(1054, 12, 2, '2025-09-15', 'PROMOTED'),
+(1055, 12, 2, '2025-09-15', 'PROMOTED'),
+(1056, 12, 2, '2025-09-15', 'PROMOTED'),
+(1057, 12, 2, '2025-09-15', 'PROMOTED'),
+(1058, 12, 2, '2025-09-15', 'PROMOTED'),
+(1059, 12, 2, '2025-09-15', 'REPEATED'),
+(1060, 12, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 13: SR L1E (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(259, 13, 2, '2025-09-15', 'REPEATED'),
+(260, 13, 2, '2025-09-15', 'REPEATED'),
+(1061, 13, 2, '2025-09-15', 'PROMOTED'),
+(1062, 13, 2, '2025-09-15', 'PROMOTED'),
+(1063, 13, 2, '2025-09-15', 'PROMOTED'),
+(1064, 13, 2, '2025-09-15', 'PROMOTED'),
+(1065, 13, 2, '2025-09-15', 'PROMOTED'),
+(1066, 13, 2, '2025-09-15', 'PROMOTED'),
+(1067, 13, 2, '2025-09-15', 'PROMOTED'),
+(1068, 13, 2, '2025-09-15', 'PROMOTED'),
+(1069, 13, 2, '2025-09-15', 'PROMOTED'),
+(1070, 13, 2, '2025-09-15', 'PROMOTED'),
+(1071, 13, 2, '2025-09-15', 'PROMOTED'),
+(1072, 13, 2, '2025-09-15', 'PROMOTED'),
+(1073, 13, 2, '2025-09-15', 'PROMOTED'),
+(1074, 13, 2, '2025-09-15', 'PROMOTED'),
+(1075, 13, 2, '2025-09-15', 'PROMOTED'),
+(1076, 13, 2, '2025-09-15', 'PROMOTED'),
+(1077, 13, 2, '2025-09-15', 'PROMOTED'),
+(1078, 13, 2, '2025-09-15', 'PROMOTED'),
+(1079, 13, 2, '2025-09-15', 'REPEATED'),
+(1080, 13, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 14: SR L1F (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(279, 14, 2, '2025-09-15', 'REPEATED'),
+(280, 14, 2, '2025-09-15', 'REPEATED'),
+(1081, 14, 2, '2025-09-15', 'PROMOTED'),
+(1082, 14, 2, '2025-09-15', 'PROMOTED'),
+(1083, 14, 2, '2025-09-15', 'PROMOTED'),
+(1084, 14, 2, '2025-09-15', 'PROMOTED'),
+(1085, 14, 2, '2025-09-15', 'PROMOTED'),
+(1086, 14, 2, '2025-09-15', 'PROMOTED'),
+(1087, 14, 2, '2025-09-15', 'PROMOTED'),
+(1088, 14, 2, '2025-09-15', 'PROMOTED'),
+(1089, 14, 2, '2025-09-15', 'PROMOTED'),
+(1090, 14, 2, '2025-09-15', 'PROMOTED'),
+(1091, 14, 2, '2025-09-15', 'PROMOTED'),
+(1092, 14, 2, '2025-09-15', 'PROMOTED'),
+(1093, 14, 2, '2025-09-15', 'PROMOTED'),
+(1094, 14, 2, '2025-09-15', 'PROMOTED'),
+(1095, 14, 2, '2025-09-15', 'PROMOTED'),
+(1096, 14, 2, '2025-09-15', 'PROMOTED'),
+(1097, 14, 2, '2025-09-15', 'PROMOTED'),
+(1098, 14, 2, '2025-09-15', 'PROMOTED'),
+(1099, 14, 2, '2025-09-15', 'REPEATED'),
+(1100, 14, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 15: SR L1G (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(299, 15, 2, '2025-09-15', 'REPEATED'),
+(300, 15, 2, '2025-09-15', 'REPEATED'),
+(1101, 15, 2, '2025-09-15', 'PROMOTED'),
+(1102, 15, 2, '2025-09-15', 'PROMOTED'),
+(1103, 15, 2, '2025-09-15', 'PROMOTED'),
+(1104, 15, 2, '2025-09-15', 'PROMOTED'),
+(1105, 15, 2, '2025-09-15', 'PROMOTED'),
+(1106, 15, 2, '2025-09-15', 'PROMOTED'),
+(1107, 15, 2, '2025-09-15', 'PROMOTED'),
+(1108, 15, 2, '2025-09-15', 'PROMOTED'),
+(1109, 15, 2, '2025-09-15', 'PROMOTED'),
+(1110, 15, 2, '2025-09-15', 'PROMOTED'),
+(1111, 15, 2, '2025-09-15', 'PROMOTED'),
+(1112, 15, 2, '2025-09-15', 'PROMOTED'),
+(1113, 15, 2, '2025-09-15', 'PROMOTED'),
+(1114, 15, 2, '2025-09-15', 'PROMOTED'),
+(1115, 15, 2, '2025-09-15', 'PROMOTED'),
+(1116, 15, 2, '2025-09-15', 'PROMOTED'),
+(1117, 15, 2, '2025-09-15', 'PROMOTED'),
+(1118, 15, 2, '2025-09-15', 'PROMOTED'),
+(1119, 15, 2, '2025-09-15', 'REPEATED'),
+(1120, 15, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 16: SR L1H (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(319, 16, 2, '2025-09-15', 'REPEATED'),
+(320, 16, 2, '2025-09-15', 'REPEATED'),
+(1121, 16, 2, '2025-09-15', 'PROMOTED'),
+(1122, 16, 2, '2025-09-15', 'PROMOTED'),
+(1123, 16, 2, '2025-09-15', 'PROMOTED'),
+(1124, 16, 2, '2025-09-15', 'PROMOTED'),
+(1125, 16, 2, '2025-09-15', 'PROMOTED'),
+(1126, 16, 2, '2025-09-15', 'PROMOTED'),
+(1127, 16, 2, '2025-09-15', 'PROMOTED'),
+(1128, 16, 2, '2025-09-15', 'PROMOTED'),
+(1129, 16, 2, '2025-09-15', 'PROMOTED'),
+(1130, 16, 2, '2025-09-15', 'PROMOTED'),
+(1131, 16, 2, '2025-09-15', 'PROMOTED'),
+(1132, 16, 2, '2025-09-15', 'PROMOTED'),
+(1133, 16, 2, '2025-09-15', 'PROMOTED'),
+(1134, 16, 2, '2025-09-15', 'PROMOTED'),
+(1135, 16, 2, '2025-09-15', 'PROMOTED'),
+(1136, 16, 2, '2025-09-15', 'PROMOTED'),
+(1137, 16, 2, '2025-09-15', 'PROMOTED'),
+(1138, 16, 2, '2025-09-15', 'PROMOTED'),
+(1139, 16, 2, '2025-09-15', 'REPEATED'),
+(1140, 16, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 17: SR L2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(161, 17, 2, '2025-09-15', 'PROMOTED'),
+(162, 17, 2, '2025-09-15', 'PROMOTED'),
+(163, 17, 2, '2025-09-15', 'PROMOTED'),
+(164, 17, 2, '2025-09-15', 'PROMOTED'),
+(165, 17, 2, '2025-09-15', 'PROMOTED'),
+(166, 17, 2, '2025-09-15', 'PROMOTED'),
+(167, 17, 2, '2025-09-15', 'PROMOTED'),
+(168, 17, 2, '2025-09-15', 'PROMOTED'),
+(169, 17, 2, '2025-09-15', 'PROMOTED'),
+(170, 17, 2, '2025-09-15', 'PROMOTED'),
+(171, 17, 2, '2025-09-15', 'PROMOTED'),
+(172, 17, 2, '2025-09-15', 'PROMOTED'),
+(173, 17, 2, '2025-09-15', 'PROMOTED'),
+(174, 17, 2, '2025-09-15', 'PROMOTED'),
+(175, 17, 2, '2025-09-15', 'PROMOTED'),
+(176, 17, 2, '2025-09-15', 'PROMOTED'),
+(177, 17, 2, '2025-09-15', 'PROMOTED'),
+(178, 17, 2, '2025-09-15', 'PROMOTED'),
+(339, 17, 2, '2025-09-15', 'REPEATED'),
+(340, 17, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 18: SR L2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(181, 18, 2, '2025-09-15', 'PROMOTED'),
+(182, 18, 2, '2025-09-15', 'PROMOTED'),
+(183, 18, 2, '2025-09-15', 'PROMOTED'),
+(184, 18, 2, '2025-09-15', 'PROMOTED'),
+(185, 18, 2, '2025-09-15', 'PROMOTED'),
+(186, 18, 2, '2025-09-15', 'PROMOTED'),
+(187, 18, 2, '2025-09-15', 'PROMOTED'),
+(188, 18, 2, '2025-09-15', 'PROMOTED'),
+(189, 18, 2, '2025-09-15', 'PROMOTED'),
+(190, 18, 2, '2025-09-15', 'PROMOTED'),
+(191, 18, 2, '2025-09-15', 'PROMOTED'),
+(192, 18, 2, '2025-09-15', 'PROMOTED'),
+(193, 18, 2, '2025-09-15', 'PROMOTED'),
+(194, 18, 2, '2025-09-15', 'PROMOTED'),
+(195, 18, 2, '2025-09-15', 'PROMOTED'),
+(196, 18, 2, '2025-09-15', 'PROMOTED'),
+(197, 18, 2, '2025-09-15', 'PROMOTED'),
+(198, 18, 2, '2025-09-15', 'PROMOTED'),
+(359, 18, 2, '2025-09-15', 'REPEATED'),
+(360, 18, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 19: SR L2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(201, 19, 2, '2025-09-15', 'PROMOTED'),
+(202, 19, 2, '2025-09-15', 'PROMOTED'),
+(203, 19, 2, '2025-09-15', 'PROMOTED'),
+(204, 19, 2, '2025-09-15', 'PROMOTED'),
+(205, 19, 2, '2025-09-15', 'PROMOTED'),
+(206, 19, 2, '2025-09-15', 'PROMOTED'),
+(207, 19, 2, '2025-09-15', 'PROMOTED'),
+(208, 19, 2, '2025-09-15', 'PROMOTED'),
+(209, 19, 2, '2025-09-15', 'PROMOTED'),
+(210, 19, 2, '2025-09-15', 'PROMOTED'),
+(211, 19, 2, '2025-09-15', 'PROMOTED'),
+(212, 19, 2, '2025-09-15', 'PROMOTED'),
+(213, 19, 2, '2025-09-15', 'PROMOTED'),
+(214, 19, 2, '2025-09-15', 'PROMOTED'),
+(215, 19, 2, '2025-09-15', 'PROMOTED'),
+(216, 19, 2, '2025-09-15', 'PROMOTED'),
+(217, 19, 2, '2025-09-15', 'PROMOTED'),
+(218, 19, 2, '2025-09-15', 'PROMOTED'),
+(379, 19, 2, '2025-09-15', 'REPEATED'),
+(380, 19, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 20: SR L2D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(221, 20, 2, '2025-09-15', 'PROMOTED'),
+(222, 20, 2, '2025-09-15', 'PROMOTED'),
+(223, 20, 2, '2025-09-15', 'PROMOTED'),
+(224, 20, 2, '2025-09-15', 'PROMOTED'),
+(225, 20, 2, '2025-09-15', 'PROMOTED'),
+(226, 20, 2, '2025-09-15', 'PROMOTED'),
+(227, 20, 2, '2025-09-15', 'PROMOTED'),
+(228, 20, 2, '2025-09-15', 'PROMOTED'),
+(229, 20, 2, '2025-09-15', 'PROMOTED'),
+(230, 20, 2, '2025-09-15', 'PROMOTED'),
+(231, 20, 2, '2025-09-15', 'PROMOTED'),
+(232, 20, 2, '2025-09-15', 'PROMOTED'),
+(233, 20, 2, '2025-09-15', 'PROMOTED'),
+(234, 20, 2, '2025-09-15', 'PROMOTED'),
+(235, 20, 2, '2025-09-15', 'PROMOTED'),
+(236, 20, 2, '2025-09-15', 'PROMOTED'),
+(237, 20, 2, '2025-09-15', 'PROMOTED'),
+(238, 20, 2, '2025-09-15', 'PROMOTED'),
+(399, 20, 2, '2025-09-15', 'REPEATED'),
+(400, 20, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 21: SR L2E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(241, 21, 2, '2025-09-15', 'PROMOTED'),
+(242, 21, 2, '2025-09-15', 'PROMOTED'),
+(243, 21, 2, '2025-09-15', 'PROMOTED'),
+(244, 21, 2, '2025-09-15', 'PROMOTED'),
+(245, 21, 2, '2025-09-15', 'PROMOTED'),
+(246, 21, 2, '2025-09-15', 'PROMOTED'),
+(247, 21, 2, '2025-09-15', 'PROMOTED'),
+(248, 21, 2, '2025-09-15', 'PROMOTED'),
+(249, 21, 2, '2025-09-15', 'PROMOTED'),
+(250, 21, 2, '2025-09-15', 'PROMOTED'),
+(251, 21, 2, '2025-09-15', 'PROMOTED'),
+(252, 21, 2, '2025-09-15', 'PROMOTED'),
+(253, 21, 2, '2025-09-15', 'PROMOTED'),
+(254, 21, 2, '2025-09-15', 'PROMOTED'),
+(255, 21, 2, '2025-09-15', 'PROMOTED'),
+(256, 21, 2, '2025-09-15', 'PROMOTED'),
+(257, 21, 2, '2025-09-15', 'PROMOTED'),
+(258, 21, 2, '2025-09-15', 'PROMOTED'),
+(419, 21, 2, '2025-09-15', 'REPEATED'),
+(420, 21, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 22: SR L2F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(261, 22, 2, '2025-09-15', 'PROMOTED'),
+(262, 22, 2, '2025-09-15', 'PROMOTED'),
+(263, 22, 2, '2025-09-15', 'PROMOTED'),
+(264, 22, 2, '2025-09-15', 'PROMOTED'),
+(265, 22, 2, '2025-09-15', 'PROMOTED'),
+(266, 22, 2, '2025-09-15', 'PROMOTED'),
+(267, 22, 2, '2025-09-15', 'PROMOTED'),
+(268, 22, 2, '2025-09-15', 'PROMOTED'),
+(269, 22, 2, '2025-09-15', 'PROMOTED'),
+(270, 22, 2, '2025-09-15', 'PROMOTED'),
+(271, 22, 2, '2025-09-15', 'PROMOTED'),
+(272, 22, 2, '2025-09-15', 'PROMOTED'),
+(273, 22, 2, '2025-09-15', 'PROMOTED'),
+(274, 22, 2, '2025-09-15', 'PROMOTED'),
+(275, 22, 2, '2025-09-15', 'PROMOTED'),
+(276, 22, 2, '2025-09-15', 'PROMOTED'),
+(277, 22, 2, '2025-09-15', 'PROMOTED'),
+(278, 22, 2, '2025-09-15', 'PROMOTED'),
+(439, 22, 2, '2025-09-15', 'REPEATED'),
+(440, 22, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 23: SR L2G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(281, 23, 2, '2025-09-15', 'PROMOTED'),
+(282, 23, 2, '2025-09-15', 'PROMOTED'),
+(283, 23, 2, '2025-09-15', 'PROMOTED'),
+(284, 23, 2, '2025-09-15', 'PROMOTED'),
+(285, 23, 2, '2025-09-15', 'PROMOTED'),
+(286, 23, 2, '2025-09-15', 'PROMOTED'),
+(287, 23, 2, '2025-09-15', 'PROMOTED'),
+(288, 23, 2, '2025-09-15', 'PROMOTED'),
+(289, 23, 2, '2025-09-15', 'PROMOTED'),
+(290, 23, 2, '2025-09-15', 'PROMOTED'),
+(291, 23, 2, '2025-09-15', 'PROMOTED'),
+(292, 23, 2, '2025-09-15', 'PROMOTED'),
+(293, 23, 2, '2025-09-15', 'PROMOTED'),
+(294, 23, 2, '2025-09-15', 'PROMOTED'),
+(295, 23, 2, '2025-09-15', 'PROMOTED'),
+(296, 23, 2, '2025-09-15', 'PROMOTED'),
+(297, 23, 2, '2025-09-15', 'PROMOTED'),
+(298, 23, 2, '2025-09-15', 'PROMOTED'),
+(459, 23, 2, '2025-09-15', 'REPEATED'),
+(460, 23, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 24: SR L2H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(301, 24, 2, '2025-09-15', 'PROMOTED'),
+(302, 24, 2, '2025-09-15', 'PROMOTED'),
+(303, 24, 2, '2025-09-15', 'PROMOTED'),
+(304, 24, 2, '2025-09-15', 'PROMOTED'),
+(305, 24, 2, '2025-09-15', 'PROMOTED'),
+(306, 24, 2, '2025-09-15', 'PROMOTED'),
+(307, 24, 2, '2025-09-15', 'PROMOTED'),
+(308, 24, 2, '2025-09-15', 'PROMOTED'),
+(309, 24, 2, '2025-09-15', 'PROMOTED'),
+(310, 24, 2, '2025-09-15', 'PROMOTED'),
+(311, 24, 2, '2025-09-15', 'PROMOTED'),
+(312, 24, 2, '2025-09-15', 'PROMOTED'),
+(313, 24, 2, '2025-09-15', 'PROMOTED'),
+(314, 24, 2, '2025-09-15', 'PROMOTED'),
+(315, 24, 2, '2025-09-15', 'PROMOTED'),
+(316, 24, 2, '2025-09-15', 'PROMOTED'),
+(317, 24, 2, '2025-09-15', 'PROMOTED'),
+(318, 24, 2, '2025-09-15', 'PROMOTED'),
+(479, 24, 2, '2025-09-15', 'REPEATED'),
+(480, 24, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 25: SR3A (52 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(321, 25, 2, '2025-09-15', 'GRADUATED'),
+(322, 25, 2, '2025-09-15', 'REPEATED'),
+(323, 25, 2, '2025-09-15', 'GRADUATED'),
+(324, 25, 2, '2025-09-15', 'GRADUATED'),
+(325, 25, 2, '2025-09-15', 'GRADUATED'),
+(326, 25, 2, '2025-09-15', 'REPEATED'),
+(327, 25, 2, '2025-09-15', 'GRADUATED'),
+(328, 25, 2, '2025-09-15', 'GRADUATED'),
+(329, 25, 2, '2025-09-15', 'GRADUATED'),
+(330, 25, 2, '2025-09-15', 'REPEATED'),
+(331, 25, 2, '2025-09-15', 'GRADUATED'),
+(332, 25, 2, '2025-09-15', 'GRADUATED'),
+(333, 25, 2, '2025-09-15', 'GRADUATED'),
+(334, 25, 2, '2025-09-15', 'REPEATED'),
+(335, 25, 2, '2025-09-15', 'GRADUATED'),
+(336, 25, 2, '2025-09-15', 'GRADUATED'),
+(337, 25, 2, '2025-09-15', 'GRADUATED'),
+(338, 25, 2, '2025-09-15', 'REPEATED'),
+(341, 25, 2, '2025-09-15', 'GRADUATED'),
+(342, 25, 2, '2025-09-15', 'GRADUATED'),
+(343, 25, 2, '2025-09-15', 'GRADUATED'),
+(344, 25, 2, '2025-09-15', 'REPEATED'),
+(345, 25, 2, '2025-09-15', 'GRADUATED'),
+(346, 25, 2, '2025-09-15', 'GRADUATED'),
+(347, 25, 2, '2025-09-15', 'GRADUATED'),
+(348, 25, 2, '2025-09-15', 'REPEATED'),
+(349, 25, 2, '2025-09-15', 'GRADUATED'),
+(350, 25, 2, '2025-09-15', 'GRADUATED'),
+(351, 25, 2, '2025-09-15', 'REPEATED'),
+(352, 25, 2, '2025-09-15', 'GRADUATED'),
+(353, 25, 2, '2025-09-15', 'GRADUATED'),
+(354, 25, 2, '2025-09-15', 'GRADUATED'),
+(355, 25, 2, '2025-09-15', 'REPEATED'),
+(356, 25, 2, '2025-09-15', 'GRADUATED'),
+(357, 25, 2, '2025-09-15', 'GRADUATED'),
+(358, 25, 2, '2025-09-15', 'GRADUATED'),
+(361, 25, 2, '2025-09-15', 'REPEATED'),
+(362, 25, 2, '2025-09-15', 'GRADUATED'),
+(363, 25, 2, '2025-09-15', 'GRADUATED'),
+(364, 25, 2, '2025-09-15', 'GRADUATED'),
+(365, 25, 2, '2025-09-15', 'REPEATED'),
+(366, 25, 2, '2025-09-15', 'GRADUATED'),
+(367, 25, 2, '2025-09-15', 'GRADUATED'),
+(368, 25, 2, '2025-09-15', 'GRADUATED'),
+(369, 25, 2, '2025-09-15', 'REPEATED'),
+(370, 25, 2, '2025-09-15', 'GRADUATED'),
+(371, 25, 2, '2025-09-15', 'WITHDRAWN'),
+(372, 25, 2, '2025-09-15', 'WITHDRAWN'),
+(495, 25, 2, '2025-09-15', 'GRADUATED'),
+(496, 25, 2, '2025-09-15', 'GRADUATED'),
+(497, 25, 2, '2025-09-15', 'REPEATED'),
+(498, 25, 2, '2025-09-15', 'GRADUATED');
+
+-- Class ID 26: SR3B (52 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(373, 26, 2, '2025-09-15', 'GRADUATED'),
+(374, 26, 2, '2025-09-15', 'REPEATED'),
+(375, 26, 2, '2025-09-15', 'GRADUATED'),
+(376, 26, 2, '2025-09-15', 'GRADUATED'),
+(377, 26, 2, '2025-09-15', 'GRADUATED'),
+(378, 26, 2, '2025-09-15', 'REPEATED'),
+(381, 26, 2, '2025-09-15', 'GRADUATED'),
+(382, 26, 2, '2025-09-15', 'GRADUATED'),
+(383, 26, 2, '2025-09-15', 'GRADUATED'),
+(384, 26, 2, '2025-09-15', 'REPEATED'),
+(385, 26, 2, '2025-09-15', 'GRADUATED'),
+(386, 26, 2, '2025-09-15', 'GRADUATED'),
+(387, 26, 2, '2025-09-15', 'GRADUATED'),
+(388, 26, 2, '2025-09-15', 'REPEATED'),
+(389, 26, 2, '2025-09-15', 'GRADUATED'),
+(390, 26, 2, '2025-09-15', 'GRADUATED'),
+(391, 26, 2, '2025-09-15', 'GRADUATED'),
+(392, 26, 2, '2025-09-15', 'REPEATED'),
+(393, 26, 2, '2025-09-15', 'GRADUATED'),
+(394, 26, 2, '2025-09-15', 'GRADUATED'),
+(395, 26, 2, '2025-09-15', 'GRADUATED'),
+(396, 26, 2, '2025-09-15', 'REPEATED'),
+(397, 26, 2, '2025-09-15', 'GRADUATED'),
+(398, 26, 2, '2025-09-15', 'GRADUATED'),
+(401, 26, 2, '2025-09-15', 'GRADUATED'),
+(402, 26, 2, '2025-09-15', 'REPEATED'),
+(403, 26, 2, '2025-09-15', 'GRADUATED'),
+(404, 26, 2, '2025-09-15', 'GRADUATED'),
+(405, 26, 2, '2025-09-15', 'REPEATED'),
+(406, 26, 2, '2025-09-15', 'GRADUATED'),
+(407, 26, 2, '2025-09-15', 'GRADUATED'),
+(408, 26, 2, '2025-09-15', 'GRADUATED'),
+(409, 26, 2, '2025-09-15', 'REPEATED'),
+(410, 26, 2, '2025-09-15', 'GRADUATED'),
+(411, 26, 2, '2025-09-15', 'GRADUATED'),
+(412, 26, 2, '2025-09-15', 'GRADUATED'),
+(413, 26, 2, '2025-09-15', 'REPEATED'),
+(414, 26, 2, '2025-09-15', 'GRADUATED'),
+(415, 26, 2, '2025-09-15', 'GRADUATED'),
+(416, 26, 2, '2025-09-15', 'GRADUATED'),
+(417, 26, 2, '2025-09-15', 'REPEATED'),
+(418, 26, 2, '2025-09-15', 'GRADUATED'),
+(421, 26, 2, '2025-09-15', 'GRADUATED'),
+(422, 26, 2, '2025-09-15', 'GRADUATED'),
+(423, 26, 2, '2025-09-15', 'REPEATED'),
+(424, 26, 2, '2025-09-15', 'GRADUATED'),
+(425, 26, 2, '2025-09-15', 'WITHDRAWN'),
+(426, 26, 2, '2025-09-15', 'WITHDRAWN'),
+(515, 26, 2, '2025-09-15', 'GRADUATED'),
+(516, 26, 2, '2025-09-15', 'GRADUATED'),
+(517, 26, 2, '2025-09-15', 'REPEATED'),
+(518, 26, 2, '2025-09-15', 'GRADUATED');
+
+-- Class ID 27: SR3C (52 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(427, 27, 2, '2025-09-15', 'GRADUATED'),
+(428, 27, 2, '2025-09-15', 'REPEATED'),
+(429, 27, 2, '2025-09-15', 'GRADUATED'),
+(430, 27, 2, '2025-09-15', 'GRADUATED'),
+(431, 27, 2, '2025-09-15', 'GRADUATED'),
+(432, 27, 2, '2025-09-15', 'REPEATED'),
+(433, 27, 2, '2025-09-15', 'GRADUATED'),
+(434, 27, 2, '2025-09-15', 'GRADUATED'),
+(435, 27, 2, '2025-09-15', 'GRADUATED'),
+(436, 27, 2, '2025-09-15', 'REPEATED'),
+(437, 27, 2, '2025-09-15', 'GRADUATED'),
+(438, 27, 2, '2025-09-15', 'GRADUATED'),
+(441, 27, 2, '2025-09-15', 'GRADUATED'),
+(442, 27, 2, '2025-09-15', 'REPEATED'),
+(443, 27, 2, '2025-09-15', 'GRADUATED'),
+(444, 27, 2, '2025-09-15', 'GRADUATED'),
+(445, 27, 2, '2025-09-15', 'GRADUATED'),
+(446, 27, 2, '2025-09-15', 'REPEATED'),
+(447, 27, 2, '2025-09-15', 'GRADUATED'),
+(448, 27, 2, '2025-09-15', 'GRADUATED'),
+(449, 27, 2, '2025-09-15', 'GRADUATED'),
+(450, 27, 2, '2025-09-15', 'REPEATED'),
+(451, 27, 2, '2025-09-15', 'GRADUATED'),
+(452, 27, 2, '2025-09-15', 'GRADUATED'),
+(453, 27, 2, '2025-09-15', 'GRADUATED'),
+(454, 27, 2, '2025-09-15', 'REPEATED'),
+(455, 27, 2, '2025-09-15', 'GRADUATED'),
+(456, 27, 2, '2025-09-15', 'GRADUATED'),
+(457, 27, 2, '2025-09-15', 'REPEATED'),
+(458, 27, 2, '2025-09-15', 'GRADUATED'),
+(461, 27, 2, '2025-09-15', 'GRADUATED'),
+(462, 27, 2, '2025-09-15', 'GRADUATED'),
+(463, 27, 2, '2025-09-15', 'REPEATED'),
+(464, 27, 2, '2025-09-15', 'GRADUATED'),
+(465, 27, 2, '2025-09-15', 'GRADUATED'),
+(466, 27, 2, '2025-09-15', 'GRADUATED'),
+(467, 27, 2, '2025-09-15', 'REPEATED'),
+(468, 27, 2, '2025-09-15', 'GRADUATED'),
+(469, 27, 2, '2025-09-15', 'GRADUATED'),
+(470, 27, 2, '2025-09-15', 'GRADUATED'),
+(471, 27, 2, '2025-09-15', 'REPEATED'),
+(472, 27, 2, '2025-09-15', 'GRADUATED'),
+(473, 27, 2, '2025-09-15', 'GRADUATED'),
+(474, 27, 2, '2025-09-15', 'GRADUATED'),
+(475, 27, 2, '2025-09-15', 'REPEATED'),
+(476, 27, 2, '2025-09-15', 'GRADUATED'),
+(477, 27, 2, '2025-09-15', 'WITHDRAWN'),
+(478, 27, 2, '2025-09-15', 'WITHDRAWN'),
+(535, 27, 2, '2025-09-15', 'GRADUATED'),
+(536, 27, 2, '2025-09-15', 'GRADUATED'),
+(537, 27, 2, '2025-09-15', 'REPEATED'),
+(538, 27, 2, '2025-09-15', 'GRADUATED');
+
+-- Class ID 28: GL L1A (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(559, 28, 2, '2025-09-15', 'REPEATED'),
+(560, 28, 2, '2025-09-15', 'REPEATED'),
+(1141, 28, 2, '2025-09-15', 'PROMOTED'),
+(1142, 28, 2, '2025-09-15', 'PROMOTED'),
+(1143, 28, 2, '2025-09-15', 'PROMOTED'),
+(1144, 28, 2, '2025-09-15', 'PROMOTED'),
+(1145, 28, 2, '2025-09-15', 'PROMOTED'),
+(1146, 28, 2, '2025-09-15', 'PROMOTED'),
+(1147, 28, 2, '2025-09-15', 'PROMOTED'),
+(1148, 28, 2, '2025-09-15', 'PROMOTED'),
+(1149, 28, 2, '2025-09-15', 'PROMOTED'),
+(1150, 28, 2, '2025-09-15', 'PROMOTED'),
+(1151, 28, 2, '2025-09-15', 'PROMOTED'),
+(1152, 28, 2, '2025-09-15', 'PROMOTED'),
+(1153, 28, 2, '2025-09-15', 'PROMOTED'),
+(1154, 28, 2, '2025-09-15', 'PROMOTED'),
+(1155, 28, 2, '2025-09-15', 'PROMOTED'),
+(1156, 28, 2, '2025-09-15', 'PROMOTED'),
+(1157, 28, 2, '2025-09-15', 'PROMOTED'),
+(1158, 28, 2, '2025-09-15', 'PROMOTED'),
+(1159, 28, 2, '2025-09-15', 'REPEATED'),
+(1160, 28, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 29: GL L1B (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(579, 29, 2, '2025-09-15', 'REPEATED'),
+(580, 29, 2, '2025-09-15', 'REPEATED'),
+(1161, 29, 2, '2025-09-15', 'PROMOTED'),
+(1162, 29, 2, '2025-09-15', 'PROMOTED'),
+(1163, 29, 2, '2025-09-15', 'PROMOTED'),
+(1164, 29, 2, '2025-09-15', 'PROMOTED'),
+(1165, 29, 2, '2025-09-15', 'PROMOTED'),
+(1166, 29, 2, '2025-09-15', 'PROMOTED'),
+(1167, 29, 2, '2025-09-15', 'PROMOTED'),
+(1168, 29, 2, '2025-09-15', 'PROMOTED'),
+(1169, 29, 2, '2025-09-15', 'PROMOTED'),
+(1170, 29, 2, '2025-09-15', 'PROMOTED'),
+(1171, 29, 2, '2025-09-15', 'PROMOTED'),
+(1172, 29, 2, '2025-09-15', 'PROMOTED'),
+(1173, 29, 2, '2025-09-15', 'PROMOTED'),
+(1174, 29, 2, '2025-09-15', 'PROMOTED'),
+(1175, 29, 2, '2025-09-15', 'PROMOTED'),
+(1176, 29, 2, '2025-09-15', 'PROMOTED'),
+(1177, 29, 2, '2025-09-15', 'PROMOTED'),
+(1178, 29, 2, '2025-09-15', 'PROMOTED'),
+(1179, 29, 2, '2025-09-15', 'REPEATED'),
+(1180, 29, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 30: GL L1C (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(599, 30, 2, '2025-09-15', 'REPEATED'),
+(600, 30, 2, '2025-09-15', 'REPEATED'),
+(1181, 30, 2, '2025-09-15', 'PROMOTED'),
+(1182, 30, 2, '2025-09-15', 'PROMOTED'),
+(1183, 30, 2, '2025-09-15', 'PROMOTED'),
+(1184, 30, 2, '2025-09-15', 'PROMOTED'),
+(1185, 30, 2, '2025-09-15', 'PROMOTED'),
+(1186, 30, 2, '2025-09-15', 'PROMOTED'),
+(1187, 30, 2, '2025-09-15', 'PROMOTED'),
+(1188, 30, 2, '2025-09-15', 'PROMOTED'),
+(1189, 30, 2, '2025-09-15', 'PROMOTED'),
+(1190, 30, 2, '2025-09-15', 'PROMOTED'),
+(1191, 30, 2, '2025-09-15', 'PROMOTED'),
+(1192, 30, 2, '2025-09-15', 'PROMOTED'),
+(1193, 30, 2, '2025-09-15', 'PROMOTED'),
+(1194, 30, 2, '2025-09-15', 'PROMOTED'),
+(1195, 30, 2, '2025-09-15', 'PROMOTED'),
+(1196, 30, 2, '2025-09-15', 'PROMOTED'),
+(1197, 30, 2, '2025-09-15', 'PROMOTED'),
+(1198, 30, 2, '2025-09-15', 'PROMOTED'),
+(1199, 30, 2, '2025-09-15', 'REPEATED'),
+(1200, 30, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 31: GL L1D (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(619, 31, 2, '2025-09-15', 'REPEATED'),
+(620, 31, 2, '2025-09-15', 'REPEATED'),
+(1201, 31, 2, '2025-09-15', 'PROMOTED'),
+(1202, 31, 2, '2025-09-15', 'PROMOTED'),
+(1203, 31, 2, '2025-09-15', 'PROMOTED'),
+(1204, 31, 2, '2025-09-15', 'PROMOTED'),
+(1205, 31, 2, '2025-09-15', 'PROMOTED'),
+(1206, 31, 2, '2025-09-15', 'PROMOTED'),
+(1207, 31, 2, '2025-09-15', 'PROMOTED'),
+(1208, 31, 2, '2025-09-15', 'PROMOTED'),
+(1209, 31, 2, '2025-09-15', 'PROMOTED'),
+(1210, 31, 2, '2025-09-15', 'PROMOTED'),
+(1211, 31, 2, '2025-09-15', 'PROMOTED'),
+(1212, 31, 2, '2025-09-15', 'PROMOTED'),
+(1213, 31, 2, '2025-09-15', 'PROMOTED'),
+(1214, 31, 2, '2025-09-15', 'PROMOTED'),
+(1215, 31, 2, '2025-09-15', 'PROMOTED'),
+(1216, 31, 2, '2025-09-15', 'PROMOTED'),
+(1217, 31, 2, '2025-09-15', 'PROMOTED'),
+(1218, 31, 2, '2025-09-15', 'PROMOTED'),
+(1219, 31, 2, '2025-09-15', 'REPEATED'),
+(1220, 31, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 32: GL L1E (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(639, 32, 2, '2025-09-15', 'REPEATED'),
+(640, 32, 2, '2025-09-15', 'REPEATED'),
+(1221, 32, 2, '2025-09-15', 'PROMOTED'),
+(1222, 32, 2, '2025-09-15', 'PROMOTED'),
+(1223, 32, 2, '2025-09-15', 'PROMOTED'),
+(1224, 32, 2, '2025-09-15', 'PROMOTED'),
+(1225, 32, 2, '2025-09-15', 'PROMOTED'),
+(1226, 32, 2, '2025-09-15', 'PROMOTED'),
+(1227, 32, 2, '2025-09-15', 'PROMOTED'),
+(1228, 32, 2, '2025-09-15', 'PROMOTED'),
+(1229, 32, 2, '2025-09-15', 'PROMOTED'),
+(1230, 32, 2, '2025-09-15', 'PROMOTED'),
+(1231, 32, 2, '2025-09-15', 'PROMOTED'),
+(1232, 32, 2, '2025-09-15', 'PROMOTED'),
+(1233, 32, 2, '2025-09-15', 'PROMOTED'),
+(1234, 32, 2, '2025-09-15', 'PROMOTED'),
+(1235, 32, 2, '2025-09-15', 'PROMOTED'),
+(1236, 32, 2, '2025-09-15', 'PROMOTED'),
+(1237, 32, 2, '2025-09-15', 'PROMOTED'),
+(1238, 32, 2, '2025-09-15', 'PROMOTED'),
+(1239, 32, 2, '2025-09-15', 'REPEATED'),
+(1240, 32, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 33: GL L1F (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(659, 33, 2, '2025-09-15', 'REPEATED'),
+(660, 33, 2, '2025-09-15', 'REPEATED'),
+(1241, 33, 2, '2025-09-15', 'PROMOTED'),
+(1242, 33, 2, '2025-09-15', 'PROMOTED'),
+(1243, 33, 2, '2025-09-15', 'PROMOTED'),
+(1244, 33, 2, '2025-09-15', 'PROMOTED'),
+(1245, 33, 2, '2025-09-15', 'PROMOTED'),
+(1246, 33, 2, '2025-09-15', 'PROMOTED'),
+(1247, 33, 2, '2025-09-15', 'PROMOTED'),
+(1248, 33, 2, '2025-09-15', 'PROMOTED'),
+(1249, 33, 2, '2025-09-15', 'PROMOTED'),
+(1250, 33, 2, '2025-09-15', 'PROMOTED'),
+(1251, 33, 2, '2025-09-15', 'PROMOTED'),
+(1252, 33, 2, '2025-09-15', 'PROMOTED'),
+(1253, 33, 2, '2025-09-15', 'PROMOTED'),
+(1254, 33, 2, '2025-09-15', 'PROMOTED'),
+(1255, 33, 2, '2025-09-15', 'PROMOTED'),
+(1256, 33, 2, '2025-09-15', 'PROMOTED'),
+(1257, 33, 2, '2025-09-15', 'PROMOTED'),
+(1258, 33, 2, '2025-09-15', 'PROMOTED'),
+(1259, 33, 2, '2025-09-15', 'REPEATED'),
+(1260, 33, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 34: GL L1G (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(679, 34, 2, '2025-09-15', 'REPEATED'),
+(680, 34, 2, '2025-09-15', 'REPEATED'),
+(1261, 34, 2, '2025-09-15', 'PROMOTED'),
+(1262, 34, 2, '2025-09-15', 'PROMOTED'),
+(1263, 34, 2, '2025-09-15', 'PROMOTED'),
+(1264, 34, 2, '2025-09-15', 'PROMOTED'),
+(1265, 34, 2, '2025-09-15', 'PROMOTED'),
+(1266, 34, 2, '2025-09-15', 'PROMOTED'),
+(1267, 34, 2, '2025-09-15', 'PROMOTED'),
+(1268, 34, 2, '2025-09-15', 'PROMOTED'),
+(1269, 34, 2, '2025-09-15', 'PROMOTED'),
+(1270, 34, 2, '2025-09-15', 'PROMOTED'),
+(1271, 34, 2, '2025-09-15', 'PROMOTED'),
+(1272, 34, 2, '2025-09-15', 'PROMOTED'),
+(1273, 34, 2, '2025-09-15', 'PROMOTED'),
+(1274, 34, 2, '2025-09-15', 'PROMOTED'),
+(1275, 34, 2, '2025-09-15', 'PROMOTED'),
+(1276, 34, 2, '2025-09-15', 'PROMOTED'),
+(1277, 34, 2, '2025-09-15', 'PROMOTED'),
+(1278, 34, 2, '2025-09-15', 'PROMOTED'),
+(1279, 34, 2, '2025-09-15', 'REPEATED'),
+(1280, 34, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 35: GL L1H (22 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(699, 35, 2, '2025-09-15', 'REPEATED'),
+(700, 35, 2, '2025-09-15', 'REPEATED'),
+(1281, 35, 2, '2025-09-15', 'PROMOTED'),
+(1282, 35, 2, '2025-09-15', 'PROMOTED'),
+(1283, 35, 2, '2025-09-15', 'PROMOTED'),
+(1284, 35, 2, '2025-09-15', 'PROMOTED'),
+(1285, 35, 2, '2025-09-15', 'PROMOTED'),
+(1286, 35, 2, '2025-09-15', 'PROMOTED'),
+(1287, 35, 2, '2025-09-15', 'PROMOTED'),
+(1288, 35, 2, '2025-09-15', 'PROMOTED'),
+(1289, 35, 2, '2025-09-15', 'PROMOTED'),
+(1290, 35, 2, '2025-09-15', 'PROMOTED'),
+(1291, 35, 2, '2025-09-15', 'PROMOTED'),
+(1292, 35, 2, '2025-09-15', 'PROMOTED'),
+(1293, 35, 2, '2025-09-15', 'PROMOTED'),
+(1294, 35, 2, '2025-09-15', 'PROMOTED'),
+(1295, 35, 2, '2025-09-15', 'PROMOTED'),
+(1296, 35, 2, '2025-09-15', 'PROMOTED'),
+(1297, 35, 2, '2025-09-15', 'PROMOTED'),
+(1298, 35, 2, '2025-09-15', 'PROMOTED'),
+(1299, 35, 2, '2025-09-15', 'REPEATED'),
+(1300, 35, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 36: GL L2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(541, 36, 2, '2025-09-15', 'PROMOTED'),
+(542, 36, 2, '2025-09-15', 'PROMOTED'),
+(543, 36, 2, '2025-09-15', 'PROMOTED'),
+(544, 36, 2, '2025-09-15', 'PROMOTED'),
+(545, 36, 2, '2025-09-15', 'PROMOTED'),
+(546, 36, 2, '2025-09-15', 'PROMOTED'),
+(547, 36, 2, '2025-09-15', 'PROMOTED'),
+(548, 36, 2, '2025-09-15', 'PROMOTED'),
+(549, 36, 2, '2025-09-15', 'PROMOTED'),
+(550, 36, 2, '2025-09-15', 'PROMOTED'),
+(551, 36, 2, '2025-09-15', 'PROMOTED'),
+(552, 36, 2, '2025-09-15', 'PROMOTED'),
+(553, 36, 2, '2025-09-15', 'PROMOTED'),
+(554, 36, 2, '2025-09-15', 'PROMOTED'),
+(555, 36, 2, '2025-09-15', 'PROMOTED'),
+(556, 36, 2, '2025-09-15', 'PROMOTED'),
+(557, 36, 2, '2025-09-15', 'PROMOTED'),
+(558, 36, 2, '2025-09-15', 'PROMOTED'),
+(719, 36, 2, '2025-09-15', 'REPEATED'),
+(720, 36, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 37: GL L2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(561, 37, 2, '2025-09-15', 'PROMOTED'),
+(562, 37, 2, '2025-09-15', 'PROMOTED'),
+(563, 37, 2, '2025-09-15', 'PROMOTED'),
+(564, 37, 2, '2025-09-15', 'PROMOTED'),
+(565, 37, 2, '2025-09-15', 'PROMOTED'),
+(566, 37, 2, '2025-09-15', 'PROMOTED'),
+(567, 37, 2, '2025-09-15', 'PROMOTED'),
+(568, 37, 2, '2025-09-15', 'PROMOTED'),
+(569, 37, 2, '2025-09-15', 'PROMOTED'),
+(570, 37, 2, '2025-09-15', 'PROMOTED'),
+(571, 37, 2, '2025-09-15', 'PROMOTED'),
+(572, 37, 2, '2025-09-15', 'PROMOTED'),
+(573, 37, 2, '2025-09-15', 'PROMOTED'),
+(574, 37, 2, '2025-09-15', 'PROMOTED'),
+(575, 37, 2, '2025-09-15', 'PROMOTED'),
+(576, 37, 2, '2025-09-15', 'PROMOTED'),
+(577, 37, 2, '2025-09-15', 'PROMOTED'),
+(578, 37, 2, '2025-09-15', 'PROMOTED'),
+(739, 37, 2, '2025-09-15', 'REPEATED'),
+(740, 37, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 38: GL L2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(581, 38, 2, '2025-09-15', 'PROMOTED'),
+(582, 38, 2, '2025-09-15', 'PROMOTED'),
+(583, 38, 2, '2025-09-15', 'PROMOTED'),
+(584, 38, 2, '2025-09-15', 'PROMOTED'),
+(585, 38, 2, '2025-09-15', 'PROMOTED'),
+(586, 38, 2, '2025-09-15', 'PROMOTED'),
+(587, 38, 2, '2025-09-15', 'PROMOTED'),
+(588, 38, 2, '2025-09-15', 'PROMOTED'),
+(589, 38, 2, '2025-09-15', 'PROMOTED'),
+(590, 38, 2, '2025-09-15', 'PROMOTED'),
+(591, 38, 2, '2025-09-15', 'PROMOTED'),
+(592, 38, 2, '2025-09-15', 'PROMOTED'),
+(593, 38, 2, '2025-09-15', 'PROMOTED'),
+(594, 38, 2, '2025-09-15', 'PROMOTED'),
+(595, 38, 2, '2025-09-15', 'PROMOTED'),
+(596, 38, 2, '2025-09-15', 'PROMOTED'),
+(597, 38, 2, '2025-09-15', 'PROMOTED'),
+(598, 38, 2, '2025-09-15', 'PROMOTED'),
+(759, 38, 2, '2025-09-15', 'REPEATED'),
+(760, 38, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 39: GL L2D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(601, 39, 2, '2025-09-15', 'PROMOTED'),
+(602, 39, 2, '2025-09-15', 'PROMOTED'),
+(603, 39, 2, '2025-09-15', 'PROMOTED'),
+(604, 39, 2, '2025-09-15', 'PROMOTED'),
+(605, 39, 2, '2025-09-15', 'PROMOTED'),
+(606, 39, 2, '2025-09-15', 'PROMOTED'),
+(607, 39, 2, '2025-09-15', 'PROMOTED'),
+(608, 39, 2, '2025-09-15', 'PROMOTED'),
+(609, 39, 2, '2025-09-15', 'PROMOTED'),
+(610, 39, 2, '2025-09-15', 'PROMOTED'),
+(611, 39, 2, '2025-09-15', 'PROMOTED'),
+(612, 39, 2, '2025-09-15', 'PROMOTED'),
+(613, 39, 2, '2025-09-15', 'PROMOTED'),
+(614, 39, 2, '2025-09-15', 'PROMOTED'),
+(615, 39, 2, '2025-09-15', 'PROMOTED'),
+(616, 39, 2, '2025-09-15', 'PROMOTED'),
+(617, 39, 2, '2025-09-15', 'PROMOTED'),
+(618, 39, 2, '2025-09-15', 'PROMOTED'),
+(779, 39, 2, '2025-09-15', 'REPEATED'),
+(780, 39, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 40: GL L2E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(621, 40, 2, '2025-09-15', 'PROMOTED'),
+(622, 40, 2, '2025-09-15', 'PROMOTED'),
+(623, 40, 2, '2025-09-15', 'PROMOTED'),
+(624, 40, 2, '2025-09-15', 'PROMOTED'),
+(625, 40, 2, '2025-09-15', 'PROMOTED'),
+(626, 40, 2, '2025-09-15', 'PROMOTED'),
+(627, 40, 2, '2025-09-15', 'PROMOTED'),
+(628, 40, 2, '2025-09-15', 'PROMOTED'),
+(629, 40, 2, '2025-09-15', 'PROMOTED'),
+(630, 40, 2, '2025-09-15', 'PROMOTED'),
+(631, 40, 2, '2025-09-15', 'PROMOTED'),
+(632, 40, 2, '2025-09-15', 'PROMOTED'),
+(633, 40, 2, '2025-09-15', 'PROMOTED'),
+(634, 40, 2, '2025-09-15', 'PROMOTED'),
+(635, 40, 2, '2025-09-15', 'PROMOTED'),
+(636, 40, 2, '2025-09-15', 'PROMOTED'),
+(637, 40, 2, '2025-09-15', 'PROMOTED'),
+(638, 40, 2, '2025-09-15', 'PROMOTED'),
+(799, 40, 2, '2025-09-15', 'REPEATED'),
+(800, 40, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 41: GL L2F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(641, 41, 2, '2025-09-15', 'PROMOTED'),
+(642, 41, 2, '2025-09-15', 'PROMOTED'),
+(643, 41, 2, '2025-09-15', 'PROMOTED'),
+(644, 41, 2, '2025-09-15', 'PROMOTED'),
+(645, 41, 2, '2025-09-15', 'PROMOTED'),
+(646, 41, 2, '2025-09-15', 'PROMOTED'),
+(647, 41, 2, '2025-09-15', 'PROMOTED'),
+(648, 41, 2, '2025-09-15', 'PROMOTED'),
+(649, 41, 2, '2025-09-15', 'PROMOTED'),
+(650, 41, 2, '2025-09-15', 'PROMOTED'),
+(651, 41, 2, '2025-09-15', 'PROMOTED'),
+(652, 41, 2, '2025-09-15', 'PROMOTED'),
+(653, 41, 2, '2025-09-15', 'PROMOTED'),
+(654, 41, 2, '2025-09-15', 'PROMOTED'),
+(655, 41, 2, '2025-09-15', 'PROMOTED'),
+(656, 41, 2, '2025-09-15', 'PROMOTED'),
+(657, 41, 2, '2025-09-15', 'PROMOTED'),
+(658, 41, 2, '2025-09-15', 'PROMOTED'),
+(819, 41, 2, '2025-09-15', 'REPEATED'),
+(820, 41, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 42: GL L2G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(661, 42, 2, '2025-09-15', 'PROMOTED'),
+(662, 42, 2, '2025-09-15', 'PROMOTED'),
+(663, 42, 2, '2025-09-15', 'PROMOTED'),
+(664, 42, 2, '2025-09-15', 'PROMOTED'),
+(665, 42, 2, '2025-09-15', 'PROMOTED'),
+(666, 42, 2, '2025-09-15', 'PROMOTED'),
+(667, 42, 2, '2025-09-15', 'PROMOTED'),
+(668, 42, 2, '2025-09-15', 'PROMOTED'),
+(669, 42, 2, '2025-09-15', 'PROMOTED'),
+(670, 42, 2, '2025-09-15', 'PROMOTED'),
+(671, 42, 2, '2025-09-15', 'PROMOTED'),
+(672, 42, 2, '2025-09-15', 'PROMOTED'),
+(673, 42, 2, '2025-09-15', 'PROMOTED'),
+(674, 42, 2, '2025-09-15', 'PROMOTED'),
+(675, 42, 2, '2025-09-15', 'PROMOTED'),
+(676, 42, 2, '2025-09-15', 'PROMOTED'),
+(677, 42, 2, '2025-09-15', 'PROMOTED'),
+(678, 42, 2, '2025-09-15', 'PROMOTED'),
+(839, 42, 2, '2025-09-15', 'REPEATED'),
+(840, 42, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 43: GL L2H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(681, 43, 2, '2025-09-15', 'PROMOTED'),
+(682, 43, 2, '2025-09-15', 'PROMOTED'),
+(683, 43, 2, '2025-09-15', 'PROMOTED'),
+(684, 43, 2, '2025-09-15', 'PROMOTED'),
+(685, 43, 2, '2025-09-15', 'PROMOTED'),
+(686, 43, 2, '2025-09-15', 'PROMOTED'),
+(687, 43, 2, '2025-09-15', 'PROMOTED'),
+(688, 43, 2, '2025-09-15', 'PROMOTED'),
+(689, 43, 2, '2025-09-15', 'PROMOTED'),
+(690, 43, 2, '2025-09-15', 'PROMOTED'),
+(691, 43, 2, '2025-09-15', 'PROMOTED'),
+(692, 43, 2, '2025-09-15', 'PROMOTED'),
+(693, 43, 2, '2025-09-15', 'PROMOTED'),
+(694, 43, 2, '2025-09-15', 'PROMOTED'),
+(695, 43, 2, '2025-09-15', 'PROMOTED'),
+(696, 43, 2, '2025-09-15', 'PROMOTED'),
+(697, 43, 2, '2025-09-15', 'PROMOTED'),
+(698, 43, 2, '2025-09-15', 'PROMOTED'),
+(859, 43, 2, '2025-09-15', 'REPEATED'),
+(860, 43, 2, '2025-09-15', 'REPEATED');
+
+-- Class ID 44: GL3A (51 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(701, 44, 2, '2025-09-15', 'GRADUATED'),
+(702, 44, 2, '2025-09-15', 'GRADUATED'),
+(703, 44, 2, '2025-09-15', 'REPEATED'),
+(704, 44, 2, '2025-09-15', 'GRADUATED'),
+(705, 44, 2, '2025-09-15', 'GRADUATED'),
+(706, 44, 2, '2025-09-15', 'GRADUATED'),
+(707, 44, 2, '2025-09-15', 'REPEATED'),
+(708, 44, 2, '2025-09-15', 'GRADUATED'),
+(709, 44, 2, '2025-09-15', 'GRADUATED'),
+(710, 44, 2, '2025-09-15', 'GRADUATED'),
+(711, 44, 2, '2025-09-15', 'REPEATED'),
+(712, 44, 2, '2025-09-15', 'GRADUATED'),
+(713, 44, 2, '2025-09-15', 'GRADUATED'),
+(714, 44, 2, '2025-09-15', 'GRADUATED'),
+(715, 44, 2, '2025-09-15', 'REPEATED'),
+(716, 44, 2, '2025-09-15', 'GRADUATED'),
+(717, 44, 2, '2025-09-15', 'GRADUATED'),
+(718, 44, 2, '2025-09-15', 'GRADUATED'),
+(721, 44, 2, '2025-09-15', 'REPEATED'),
+(722, 44, 2, '2025-09-15', 'GRADUATED'),
+(723, 44, 2, '2025-09-15', 'GRADUATED'),
+(724, 44, 2, '2025-09-15', 'GRADUATED'),
+(725, 44, 2, '2025-09-15', 'REPEATED'),
+(726, 44, 2, '2025-09-15', 'GRADUATED'),
+(727, 44, 2, '2025-09-15', 'GRADUATED'),
+(728, 44, 2, '2025-09-15', 'GRADUATED'),
+(729, 44, 2, '2025-09-15', 'REPEATED'),
+(730, 44, 2, '2025-09-15', 'GRADUATED'),
+(731, 44, 2, '2025-09-15', 'GRADUATED'),
+(732, 44, 2, '2025-09-15', 'GRADUATED'),
+(733, 44, 2, '2025-09-15', 'REPEATED'),
+(734, 44, 2, '2025-09-15', 'GRADUATED'),
+(735, 44, 2, '2025-09-15', 'GRADUATED'),
+(736, 44, 2, '2025-09-15', 'GRADUATED'),
+(737, 44, 2, '2025-09-15', 'REPEATED'),
+(738, 44, 2, '2025-09-15', 'GRADUATED'),
+(741, 44, 2, '2025-09-15', 'GRADUATED'),
+(742, 44, 2, '2025-09-15', 'GRADUATED'),
+(743, 44, 2, '2025-09-15', 'REPEATED'),
+(744, 44, 2, '2025-09-15', 'GRADUATED'),
+(745, 44, 2, '2025-09-15', 'GRADUATED'),
+(746, 44, 2, '2025-09-15', 'GRADUATED'),
+(747, 44, 2, '2025-09-15', 'REPEATED'),
+(748, 44, 2, '2025-09-15', 'GRADUATED'),
+(749, 44, 2, '2025-09-15', 'GRADUATED'),
+(750, 44, 2, '2025-09-15', 'GRADUATED'),
+(751, 44, 2, '2025-09-15', 'WITHDRAWN'),
+(752, 44, 2, '2025-09-15', 'WITHDRAWN'),
+(876, 44, 2, '2025-09-15', 'REPEATED'),
+(877, 44, 2, '2025-09-15', 'GRADUATED'),
+(878, 44, 2, '2025-09-15', 'GRADUATED');
+
+-- Class ID 45: GL3B (51 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(753, 45, 2, '2025-09-15', 'GRADUATED'),
+(754, 45, 2, '2025-09-15', 'GRADUATED'),
+(755, 45, 2, '2025-09-15', 'REPEATED'),
+(756, 45, 2, '2025-09-15', 'GRADUATED'),
+(757, 45, 2, '2025-09-15', 'GRADUATED'),
+(758, 45, 2, '2025-09-15', 'GRADUATED'),
+(761, 45, 2, '2025-09-15', 'REPEATED'),
+(762, 45, 2, '2025-09-15', 'GRADUATED'),
+(763, 45, 2, '2025-09-15', 'GRADUATED'),
+(764, 45, 2, '2025-09-15', 'GRADUATED'),
+(765, 45, 2, '2025-09-15', 'REPEATED'),
+(766, 45, 2, '2025-09-15', 'GRADUATED'),
+(767, 45, 2, '2025-09-15', 'GRADUATED'),
+(768, 45, 2, '2025-09-15', 'GRADUATED'),
+(769, 45, 2, '2025-09-15', 'REPEATED'),
+(770, 45, 2, '2025-09-15', 'GRADUATED'),
+(771, 45, 2, '2025-09-15', 'GRADUATED'),
+(772, 45, 2, '2025-09-15', 'GRADUATED'),
+(773, 45, 2, '2025-09-15', 'REPEATED'),
+(774, 45, 2, '2025-09-15', 'GRADUATED'),
+(775, 45, 2, '2025-09-15', 'GRADUATED'),
+(776, 45, 2, '2025-09-15', 'GRADUATED'),
+(777, 45, 2, '2025-09-15', 'REPEATED'),
+(778, 45, 2, '2025-09-15', 'GRADUATED'),
+(781, 45, 2, '2025-09-15', 'GRADUATED'),
+(782, 45, 2, '2025-09-15', 'GRADUATED'),
+(783, 45, 2, '2025-09-15', 'REPEATED'),
+(784, 45, 2, '2025-09-15', 'GRADUATED'),
+(785, 45, 2, '2025-09-15', 'GRADUATED'),
+(786, 45, 2, '2025-09-15', 'GRADUATED'),
+(787, 45, 2, '2025-09-15', 'REPEATED'),
+(788, 45, 2, '2025-09-15', 'GRADUATED'),
+(789, 45, 2, '2025-09-15', 'GRADUATED'),
+(790, 45, 2, '2025-09-15', 'GRADUATED'),
+(791, 45, 2, '2025-09-15', 'REPEATED'),
+(792, 45, 2, '2025-09-15', 'GRADUATED'),
+(793, 45, 2, '2025-09-15', 'GRADUATED'),
+(794, 45, 2, '2025-09-15', 'GRADUATED'),
+(795, 45, 2, '2025-09-15', 'REPEATED'),
+(796, 45, 2, '2025-09-15', 'GRADUATED'),
+(797, 45, 2, '2025-09-15', 'GRADUATED'),
+(798, 45, 2, '2025-09-15', 'GRADUATED'),
+(801, 45, 2, '2025-09-15', 'REPEATED'),
+(802, 45, 2, '2025-09-15', 'GRADUATED'),
+(803, 45, 2, '2025-09-15', 'GRADUATED'),
+(804, 45, 2, '2025-09-15', 'GRADUATED'),
+(805, 45, 2, '2025-09-15', 'WITHDRAWN'),
+(806, 45, 2, '2025-09-15', 'WITHDRAWN'),
+(896, 45, 2, '2025-09-15', 'REPEATED'),
+(897, 45, 2, '2025-09-15', 'GRADUATED'),
+(898, 45, 2, '2025-09-15', 'GRADUATED');
+
+-- Class ID 46: GL3C (51 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(807, 46, 2, '2025-09-15', 'GRADUATED'),
+(808, 46, 2, '2025-09-15', 'GRADUATED'),
+(809, 46, 2, '2025-09-15', 'REPEATED'),
+(810, 46, 2, '2025-09-15', 'GRADUATED'),
+(811, 46, 2, '2025-09-15', 'GRADUATED'),
+(812, 46, 2, '2025-09-15', 'GRADUATED'),
+(813, 46, 2, '2025-09-15', 'REPEATED'),
+(814, 46, 2, '2025-09-15', 'GRADUATED'),
+(815, 46, 2, '2025-09-15', 'GRADUATED'),
+(816, 46, 2, '2025-09-15', 'GRADUATED'),
+(817, 46, 2, '2025-09-15', 'REPEATED'),
+(818, 46, 2, '2025-09-15', 'GRADUATED'),
+(821, 46, 2, '2025-09-15', 'GRADUATED'),
+(822, 46, 2, '2025-09-15', 'GRADUATED'),
+(823, 46, 2, '2025-09-15', 'REPEATED'),
+(824, 46, 2, '2025-09-15', 'GRADUATED'),
+(825, 46, 2, '2025-09-15', 'GRADUATED'),
+(826, 46, 2, '2025-09-15', 'GRADUATED'),
+(827, 46, 2, '2025-09-15', 'REPEATED'),
+(828, 46, 2, '2025-09-15', 'GRADUATED'),
+(829, 46, 2, '2025-09-15', 'GRADUATED'),
+(830, 46, 2, '2025-09-15', 'GRADUATED'),
+(831, 46, 2, '2025-09-15', 'REPEATED'),
+(832, 46, 2, '2025-09-15', 'GRADUATED'),
+(833, 46, 2, '2025-09-15', 'GRADUATED'),
+(834, 46, 2, '2025-09-15', 'GRADUATED'),
+(835, 46, 2, '2025-09-15', 'REPEATED'),
+(836, 46, 2, '2025-09-15', 'GRADUATED'),
+(837, 46, 2, '2025-09-15', 'GRADUATED'),
+(838, 46, 2, '2025-09-15', 'GRADUATED'),
+(841, 46, 2, '2025-09-15', 'REPEATED'),
+(842, 46, 2, '2025-09-15', 'GRADUATED'),
+(843, 46, 2, '2025-09-15', 'GRADUATED'),
+(844, 46, 2, '2025-09-15', 'GRADUATED'),
+(845, 46, 2, '2025-09-15', 'REPEATED'),
+(846, 46, 2, '2025-09-15', 'GRADUATED'),
+(847, 46, 2, '2025-09-15', 'GRADUATED'),
+(848, 46, 2, '2025-09-15', 'GRADUATED'),
+(849, 46, 2, '2025-09-15', 'REPEATED'),
+(850, 46, 2, '2025-09-15', 'GRADUATED'),
+(851, 46, 2, '2025-09-15', 'GRADUATED'),
+(852, 46, 2, '2025-09-15', 'GRADUATED'),
+(853, 46, 2, '2025-09-15', 'REPEATED'),
+(854, 46, 2, '2025-09-15', 'GRADUATED'),
+(855, 46, 2, '2025-09-15', 'GRADUATED'),
+(856, 46, 2, '2025-09-15', 'GRADUATED'),
+(857, 46, 2, '2025-09-15', 'WITHDRAWN'),
+(858, 46, 2, '2025-09-15', 'WITHDRAWN'),
+(916, 46, 2, '2025-09-15', 'REPEATED'),
+(917, 46, 2, '2025-09-15', 'GRADUATED'),
+(918, 46, 2, '2025-09-15', 'GRADUATED');
+
+-- ====================================================================
+-- ACADEMIC YEAR 2026/2027 (academic_year_id = 3)
+-- ====================================================================
+
+-- Class ID 1: BA1A (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(19, 1, 3, '2026-09-15', 'ACTIVE'),
+(20, 1, 3, '2026-09-15', 'ACTIVE'),
+(939, 1, 3, '2026-09-15', 'ACTIVE'),
+(940, 1, 3, '2026-09-15', 'ACTIVE'),
+(1301, 1, 3, '2026-09-15', 'ACTIVE'),
+(1302, 1, 3, '2026-09-15', 'ACTIVE'),
+(1303, 1, 3, '2026-09-15', 'ACTIVE'),
+(1304, 1, 3, '2026-09-15', 'ACTIVE'),
+(1305, 1, 3, '2026-09-15', 'ACTIVE'),
+(1306, 1, 3, '2026-09-15', 'ACTIVE'),
+(1307, 1, 3, '2026-09-15', 'ACTIVE'),
+(1308, 1, 3, '2026-09-15', 'ACTIVE'),
+(1309, 1, 3, '2026-09-15', 'ACTIVE'),
+(1310, 1, 3, '2026-09-15', 'ACTIVE'),
+(1311, 1, 3, '2026-09-15', 'ACTIVE'),
+(1312, 1, 3, '2026-09-15', 'ACTIVE'),
+(1313, 1, 3, '2026-09-15', 'ACTIVE'),
+(1314, 1, 3, '2026-09-15', 'ACTIVE'),
+(1315, 1, 3, '2026-09-15', 'ACTIVE'),
+(1316, 1, 3, '2026-09-15', 'ACTIVE'),
+(1317, 1, 3, '2026-09-15', 'ACTIVE'),
+(1318, 1, 3, '2026-09-15', 'ACTIVE'),
+(1319, 1, 3, '2026-09-15', 'ACTIVE'),
+(1320, 1, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 2: BA1B (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(39, 2, 3, '2026-09-15', 'ACTIVE'),
+(40, 2, 3, '2026-09-15', 'ACTIVE'),
+(959, 2, 3, '2026-09-15', 'ACTIVE'),
+(960, 2, 3, '2026-09-15', 'ACTIVE'),
+(1321, 2, 3, '2026-09-15', 'ACTIVE'),
+(1322, 2, 3, '2026-09-15', 'ACTIVE'),
+(1323, 2, 3, '2026-09-15', 'ACTIVE'),
+(1324, 2, 3, '2026-09-15', 'ACTIVE'),
+(1325, 2, 3, '2026-09-15', 'ACTIVE'),
+(1326, 2, 3, '2026-09-15', 'ACTIVE'),
+(1327, 2, 3, '2026-09-15', 'ACTIVE'),
+(1328, 2, 3, '2026-09-15', 'ACTIVE'),
+(1329, 2, 3, '2026-09-15', 'ACTIVE'),
+(1330, 2, 3, '2026-09-15', 'ACTIVE'),
+(1331, 2, 3, '2026-09-15', 'ACTIVE'),
+(1332, 2, 3, '2026-09-15', 'ACTIVE'),
+(1333, 2, 3, '2026-09-15', 'ACTIVE'),
+(1334, 2, 3, '2026-09-15', 'ACTIVE'),
+(1335, 2, 3, '2026-09-15', 'ACTIVE'),
+(1336, 2, 3, '2026-09-15', 'ACTIVE'),
+(1337, 2, 3, '2026-09-15', 'ACTIVE'),
+(1338, 2, 3, '2026-09-15', 'ACTIVE'),
+(1339, 2, 3, '2026-09-15', 'ACTIVE'),
+(1340, 2, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 3: BA1C (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(59, 3, 3, '2026-09-15', 'ACTIVE'),
+(60, 3, 3, '2026-09-15', 'ACTIVE'),
+(979, 3, 3, '2026-09-15', 'ACTIVE'),
+(980, 3, 3, '2026-09-15', 'ACTIVE'),
+(1341, 3, 3, '2026-09-15', 'ACTIVE'),
+(1342, 3, 3, '2026-09-15', 'ACTIVE'),
+(1343, 3, 3, '2026-09-15', 'ACTIVE'),
+(1344, 3, 3, '2026-09-15', 'ACTIVE'),
+(1345, 3, 3, '2026-09-15', 'ACTIVE'),
+(1346, 3, 3, '2026-09-15', 'ACTIVE'),
+(1347, 3, 3, '2026-09-15', 'ACTIVE'),
+(1348, 3, 3, '2026-09-15', 'ACTIVE'),
+(1349, 3, 3, '2026-09-15', 'ACTIVE'),
+(1350, 3, 3, '2026-09-15', 'ACTIVE'),
+(1351, 3, 3, '2026-09-15', 'ACTIVE'),
+(1352, 3, 3, '2026-09-15', 'ACTIVE'),
+(1353, 3, 3, '2026-09-15', 'ACTIVE'),
+(1354, 3, 3, '2026-09-15', 'ACTIVE'),
+(1355, 3, 3, '2026-09-15', 'ACTIVE'),
+(1356, 3, 3, '2026-09-15', 'ACTIVE'),
+(1357, 3, 3, '2026-09-15', 'ACTIVE'),
+(1358, 3, 3, '2026-09-15', 'ACTIVE'),
+(1359, 3, 3, '2026-09-15', 'ACTIVE'),
+(1360, 3, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 4: BA2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(79, 4, 3, '2026-09-15', 'ACTIVE'),
+(80, 4, 3, '2026-09-15', 'ACTIVE'),
+(921, 4, 3, '2026-09-15', 'ACTIVE'),
+(922, 4, 3, '2026-09-15', 'ACTIVE'),
+(923, 4, 3, '2026-09-15', 'ACTIVE'),
+(924, 4, 3, '2026-09-15', 'ACTIVE'),
+(925, 4, 3, '2026-09-15', 'ACTIVE'),
+(926, 4, 3, '2026-09-15', 'ACTIVE'),
+(927, 4, 3, '2026-09-15', 'ACTIVE'),
+(928, 4, 3, '2026-09-15', 'ACTIVE'),
+(929, 4, 3, '2026-09-15', 'ACTIVE'),
+(930, 4, 3, '2026-09-15', 'ACTIVE'),
+(931, 4, 3, '2026-09-15', 'ACTIVE'),
+(932, 4, 3, '2026-09-15', 'ACTIVE'),
+(933, 4, 3, '2026-09-15', 'ACTIVE'),
+(934, 4, 3, '2026-09-15', 'ACTIVE'),
+(935, 4, 3, '2026-09-15', 'ACTIVE'),
+(936, 4, 3, '2026-09-15', 'ACTIVE'),
+(937, 4, 3, '2026-09-15', 'ACTIVE'),
+(938, 4, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 5: BA2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(99, 5, 3, '2026-09-15', 'ACTIVE'),
+(100, 5, 3, '2026-09-15', 'ACTIVE'),
+(941, 5, 3, '2026-09-15', 'ACTIVE'),
+(942, 5, 3, '2026-09-15', 'ACTIVE'),
+(943, 5, 3, '2026-09-15', 'ACTIVE'),
+(944, 5, 3, '2026-09-15', 'ACTIVE'),
+(945, 5, 3, '2026-09-15', 'ACTIVE'),
+(946, 5, 3, '2026-09-15', 'ACTIVE'),
+(947, 5, 3, '2026-09-15', 'ACTIVE'),
+(948, 5, 3, '2026-09-15', 'ACTIVE'),
+(949, 5, 3, '2026-09-15', 'ACTIVE'),
+(950, 5, 3, '2026-09-15', 'ACTIVE'),
+(951, 5, 3, '2026-09-15', 'ACTIVE'),
+(952, 5, 3, '2026-09-15', 'ACTIVE'),
+(953, 5, 3, '2026-09-15', 'ACTIVE'),
+(954, 5, 3, '2026-09-15', 'ACTIVE'),
+(955, 5, 3, '2026-09-15', 'ACTIVE'),
+(956, 5, 3, '2026-09-15', 'ACTIVE'),
+(957, 5, 3, '2026-09-15', 'ACTIVE'),
+(958, 5, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 6: BA2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(119, 6, 3, '2026-09-15', 'ACTIVE'),
+(120, 6, 3, '2026-09-15', 'ACTIVE'),
+(961, 6, 3, '2026-09-15', 'ACTIVE'),
+(962, 6, 3, '2026-09-15', 'ACTIVE'),
+(963, 6, 3, '2026-09-15', 'ACTIVE'),
+(964, 6, 3, '2026-09-15', 'ACTIVE'),
+(965, 6, 3, '2026-09-15', 'ACTIVE'),
+(966, 6, 3, '2026-09-15', 'ACTIVE'),
+(967, 6, 3, '2026-09-15', 'ACTIVE'),
+(968, 6, 3, '2026-09-15', 'ACTIVE'),
+(969, 6, 3, '2026-09-15', 'ACTIVE'),
+(970, 6, 3, '2026-09-15', 'ACTIVE'),
+(971, 6, 3, '2026-09-15', 'ACTIVE'),
+(972, 6, 3, '2026-09-15', 'ACTIVE'),
+(973, 6, 3, '2026-09-15', 'ACTIVE'),
+(974, 6, 3, '2026-09-15', 'ACTIVE'),
+(975, 6, 3, '2026-09-15', 'ACTIVE'),
+(976, 6, 3, '2026-09-15', 'ACTIVE'),
+(977, 6, 3, '2026-09-15', 'ACTIVE'),
+(978, 6, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 7: SE3A (34 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(1, 7, 3, '2026-09-15', 'ACTIVE'),
+(2, 7, 3, '2026-09-15', 'ACTIVE'),
+(3, 7, 3, '2026-09-15', 'ACTIVE'),
+(4, 7, 3, '2026-09-15', 'ACTIVE'),
+(5, 7, 3, '2026-09-15', 'ACTIVE'),
+(6, 7, 3, '2026-09-15', 'ACTIVE'),
+(7, 7, 3, '2026-09-15', 'ACTIVE'),
+(8, 7, 3, '2026-09-15', 'ACTIVE'),
+(9, 7, 3, '2026-09-15', 'ACTIVE'),
+(10, 7, 3, '2026-09-15', 'ACTIVE'),
+(11, 7, 3, '2026-09-15', 'ACTIVE'),
+(12, 7, 3, '2026-09-15', 'ACTIVE'),
+(13, 7, 3, '2026-09-15', 'ACTIVE'),
+(14, 7, 3, '2026-09-15', 'ACTIVE'),
+(15, 7, 3, '2026-09-15', 'ACTIVE'),
+(16, 7, 3, '2026-09-15', 'ACTIVE'),
+(17, 7, 3, '2026-09-15', 'ACTIVE'),
+(18, 7, 3, '2026-09-15', 'ACTIVE'),
+(21, 7, 3, '2026-09-15', 'ACTIVE'),
+(22, 7, 3, '2026-09-15', 'ACTIVE'),
+(23, 7, 3, '2026-09-15', 'ACTIVE'),
+(24, 7, 3, '2026-09-15', 'ACTIVE'),
+(25, 7, 3, '2026-09-15', 'ACTIVE'),
+(26, 7, 3, '2026-09-15', 'ACTIVE'),
+(27, 7, 3, '2026-09-15', 'ACTIVE'),
+(28, 7, 3, '2026-09-15', 'ACTIVE'),
+(29, 7, 3, '2026-09-15', 'ACTIVE'),
+(63, 7, 3, '2026-09-15', 'ACTIVE'),
+(67, 7, 3, '2026-09-15', 'ACTIVE'),
+(71, 7, 3, '2026-09-15', 'ACTIVE'),
+(75, 7, 3, '2026-09-15', 'ACTIVE'),
+(81, 7, 3, '2026-09-15', 'ACTIVE'),
+(85, 7, 3, '2026-09-15', 'ACTIVE'),
+(136, 7, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 8: SE3B (34 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(30, 8, 3, '2026-09-15', 'ACTIVE'),
+(31, 8, 3, '2026-09-15', 'ACTIVE'),
+(32, 8, 3, '2026-09-15', 'ACTIVE'),
+(33, 8, 3, '2026-09-15', 'ACTIVE'),
+(34, 8, 3, '2026-09-15', 'ACTIVE'),
+(35, 8, 3, '2026-09-15', 'ACTIVE'),
+(36, 8, 3, '2026-09-15', 'ACTIVE'),
+(37, 8, 3, '2026-09-15', 'ACTIVE'),
+(38, 8, 3, '2026-09-15', 'ACTIVE'),
+(41, 8, 3, '2026-09-15', 'ACTIVE'),
+(42, 8, 3, '2026-09-15', 'ACTIVE'),
+(43, 8, 3, '2026-09-15', 'ACTIVE'),
+(44, 8, 3, '2026-09-15', 'ACTIVE'),
+(45, 8, 3, '2026-09-15', 'ACTIVE'),
+(46, 8, 3, '2026-09-15', 'ACTIVE'),
+(47, 8, 3, '2026-09-15', 'ACTIVE'),
+(48, 8, 3, '2026-09-15', 'ACTIVE'),
+(49, 8, 3, '2026-09-15', 'ACTIVE'),
+(50, 8, 3, '2026-09-15', 'ACTIVE'),
+(51, 8, 3, '2026-09-15', 'ACTIVE'),
+(52, 8, 3, '2026-09-15', 'ACTIVE'),
+(53, 8, 3, '2026-09-15', 'ACTIVE'),
+(54, 8, 3, '2026-09-15', 'ACTIVE'),
+(55, 8, 3, '2026-09-15', 'ACTIVE'),
+(56, 8, 3, '2026-09-15', 'ACTIVE'),
+(57, 8, 3, '2026-09-15', 'ACTIVE'),
+(58, 8, 3, '2026-09-15', 'ACTIVE'),
+(92, 8, 3, '2026-09-15', 'ACTIVE'),
+(96, 8, 3, '2026-09-15', 'ACTIVE'),
+(102, 8, 3, '2026-09-15', 'ACTIVE'),
+(106, 8, 3, '2026-09-15', 'ACTIVE'),
+(110, 8, 3, '2026-09-15', 'ACTIVE'),
+(114, 8, 3, '2026-09-15', 'ACTIVE'),
+(156, 8, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 9: SR L1A (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(179, 9, 3, '2026-09-15', 'ACTIVE'),
+(180, 9, 3, '2026-09-15', 'ACTIVE'),
+(999, 9, 3, '2026-09-15', 'ACTIVE'),
+(1000, 9, 3, '2026-09-15', 'ACTIVE'),
+(1361, 9, 3, '2026-09-15', 'ACTIVE'),
+(1362, 9, 3, '2026-09-15', 'ACTIVE'),
+(1363, 9, 3, '2026-09-15', 'ACTIVE'),
+(1364, 9, 3, '2026-09-15', 'ACTIVE'),
+(1365, 9, 3, '2026-09-15', 'ACTIVE'),
+(1366, 9, 3, '2026-09-15', 'ACTIVE'),
+(1367, 9, 3, '2026-09-15', 'ACTIVE'),
+(1368, 9, 3, '2026-09-15', 'ACTIVE'),
+(1369, 9, 3, '2026-09-15', 'ACTIVE'),
+(1370, 9, 3, '2026-09-15', 'ACTIVE'),
+(1371, 9, 3, '2026-09-15', 'ACTIVE'),
+(1372, 9, 3, '2026-09-15', 'ACTIVE'),
+(1373, 9, 3, '2026-09-15', 'ACTIVE'),
+(1374, 9, 3, '2026-09-15', 'ACTIVE'),
+(1375, 9, 3, '2026-09-15', 'ACTIVE'),
+(1376, 9, 3, '2026-09-15', 'ACTIVE'),
+(1377, 9, 3, '2026-09-15', 'ACTIVE'),
+(1378, 9, 3, '2026-09-15', 'ACTIVE'),
+(1379, 9, 3, '2026-09-15', 'ACTIVE'),
+(1380, 9, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 10: SR L1B (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(199, 10, 3, '2026-09-15', 'ACTIVE'),
+(200, 10, 3, '2026-09-15', 'ACTIVE'),
+(1019, 10, 3, '2026-09-15', 'ACTIVE'),
+(1020, 10, 3, '2026-09-15', 'ACTIVE'),
+(1381, 10, 3, '2026-09-15', 'ACTIVE'),
+(1382, 10, 3, '2026-09-15', 'ACTIVE'),
+(1383, 10, 3, '2026-09-15', 'ACTIVE'),
+(1384, 10, 3, '2026-09-15', 'ACTIVE'),
+(1385, 10, 3, '2026-09-15', 'ACTIVE'),
+(1386, 10, 3, '2026-09-15', 'ACTIVE'),
+(1387, 10, 3, '2026-09-15', 'ACTIVE'),
+(1388, 10, 3, '2026-09-15', 'ACTIVE'),
+(1389, 10, 3, '2026-09-15', 'ACTIVE'),
+(1390, 10, 3, '2026-09-15', 'ACTIVE'),
+(1391, 10, 3, '2026-09-15', 'ACTIVE'),
+(1392, 10, 3, '2026-09-15', 'ACTIVE'),
+(1393, 10, 3, '2026-09-15', 'ACTIVE'),
+(1394, 10, 3, '2026-09-15', 'ACTIVE'),
+(1395, 10, 3, '2026-09-15', 'ACTIVE'),
+(1396, 10, 3, '2026-09-15', 'ACTIVE'),
+(1397, 10, 3, '2026-09-15', 'ACTIVE'),
+(1398, 10, 3, '2026-09-15', 'ACTIVE'),
+(1399, 10, 3, '2026-09-15', 'ACTIVE'),
+(1400, 10, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 11: SR L1C (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(219, 11, 3, '2026-09-15', 'ACTIVE'),
+(220, 11, 3, '2026-09-15', 'ACTIVE'),
+(1039, 11, 3, '2026-09-15', 'ACTIVE'),
+(1040, 11, 3, '2026-09-15', 'ACTIVE'),
+(1401, 11, 3, '2026-09-15', 'ACTIVE'),
+(1402, 11, 3, '2026-09-15', 'ACTIVE'),
+(1403, 11, 3, '2026-09-15', 'ACTIVE'),
+(1404, 11, 3, '2026-09-15', 'ACTIVE'),
+(1405, 11, 3, '2026-09-15', 'ACTIVE'),
+(1406, 11, 3, '2026-09-15', 'ACTIVE'),
+(1407, 11, 3, '2026-09-15', 'ACTIVE'),
+(1408, 11, 3, '2026-09-15', 'ACTIVE'),
+(1409, 11, 3, '2026-09-15', 'ACTIVE'),
+(1410, 11, 3, '2026-09-15', 'ACTIVE'),
+(1411, 11, 3, '2026-09-15', 'ACTIVE'),
+(1412, 11, 3, '2026-09-15', 'ACTIVE'),
+(1413, 11, 3, '2026-09-15', 'ACTIVE'),
+(1414, 11, 3, '2026-09-15', 'ACTIVE'),
+(1415, 11, 3, '2026-09-15', 'ACTIVE'),
+(1416, 11, 3, '2026-09-15', 'ACTIVE'),
+(1417, 11, 3, '2026-09-15', 'ACTIVE'),
+(1418, 11, 3, '2026-09-15', 'ACTIVE'),
+(1419, 11, 3, '2026-09-15', 'ACTIVE'),
+(1420, 11, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 12: SR L1D (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(239, 12, 3, '2026-09-15', 'ACTIVE'),
+(240, 12, 3, '2026-09-15', 'ACTIVE'),
+(1059, 12, 3, '2026-09-15', 'ACTIVE'),
+(1060, 12, 3, '2026-09-15', 'ACTIVE'),
+(1421, 12, 3, '2026-09-15', 'ACTIVE'),
+(1422, 12, 3, '2026-09-15', 'ACTIVE'),
+(1423, 12, 3, '2026-09-15', 'ACTIVE'),
+(1424, 12, 3, '2026-09-15', 'ACTIVE'),
+(1425, 12, 3, '2026-09-15', 'ACTIVE'),
+(1426, 12, 3, '2026-09-15', 'ACTIVE'),
+(1427, 12, 3, '2026-09-15', 'ACTIVE'),
+(1428, 12, 3, '2026-09-15', 'ACTIVE'),
+(1429, 12, 3, '2026-09-15', 'ACTIVE'),
+(1430, 12, 3, '2026-09-15', 'ACTIVE'),
+(1431, 12, 3, '2026-09-15', 'ACTIVE'),
+(1432, 12, 3, '2026-09-15', 'ACTIVE'),
+(1433, 12, 3, '2026-09-15', 'ACTIVE'),
+(1434, 12, 3, '2026-09-15', 'ACTIVE'),
+(1435, 12, 3, '2026-09-15', 'ACTIVE'),
+(1436, 12, 3, '2026-09-15', 'ACTIVE'),
+(1437, 12, 3, '2026-09-15', 'ACTIVE'),
+(1438, 12, 3, '2026-09-15', 'ACTIVE'),
+(1439, 12, 3, '2026-09-15', 'ACTIVE'),
+(1440, 12, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 13: SR L1E (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(259, 13, 3, '2026-09-15', 'ACTIVE'),
+(260, 13, 3, '2026-09-15', 'ACTIVE'),
+(1079, 13, 3, '2026-09-15', 'ACTIVE'),
+(1080, 13, 3, '2026-09-15', 'ACTIVE'),
+(1441, 13, 3, '2026-09-15', 'ACTIVE'),
+(1442, 13, 3, '2026-09-15', 'ACTIVE'),
+(1443, 13, 3, '2026-09-15', 'ACTIVE'),
+(1444, 13, 3, '2026-09-15', 'ACTIVE'),
+(1445, 13, 3, '2026-09-15', 'ACTIVE'),
+(1446, 13, 3, '2026-09-15', 'ACTIVE'),
+(1447, 13, 3, '2026-09-15', 'ACTIVE'),
+(1448, 13, 3, '2026-09-15', 'ACTIVE'),
+(1449, 13, 3, '2026-09-15', 'ACTIVE'),
+(1450, 13, 3, '2026-09-15', 'ACTIVE'),
+(1451, 13, 3, '2026-09-15', 'ACTIVE'),
+(1452, 13, 3, '2026-09-15', 'ACTIVE'),
+(1453, 13, 3, '2026-09-15', 'ACTIVE'),
+(1454, 13, 3, '2026-09-15', 'ACTIVE'),
+(1455, 13, 3, '2026-09-15', 'ACTIVE'),
+(1456, 13, 3, '2026-09-15', 'ACTIVE'),
+(1457, 13, 3, '2026-09-15', 'ACTIVE'),
+(1458, 13, 3, '2026-09-15', 'ACTIVE'),
+(1459, 13, 3, '2026-09-15', 'ACTIVE'),
+(1460, 13, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 14: SR L1F (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(279, 14, 3, '2026-09-15', 'ACTIVE'),
+(280, 14, 3, '2026-09-15', 'ACTIVE'),
+(1099, 14, 3, '2026-09-15', 'ACTIVE'),
+(1100, 14, 3, '2026-09-15', 'ACTIVE'),
+(1461, 14, 3, '2026-09-15', 'ACTIVE'),
+(1462, 14, 3, '2026-09-15', 'ACTIVE'),
+(1463, 14, 3, '2026-09-15', 'ACTIVE'),
+(1464, 14, 3, '2026-09-15', 'ACTIVE'),
+(1465, 14, 3, '2026-09-15', 'ACTIVE'),
+(1466, 14, 3, '2026-09-15', 'ACTIVE'),
+(1467, 14, 3, '2026-09-15', 'ACTIVE'),
+(1468, 14, 3, '2026-09-15', 'ACTIVE'),
+(1469, 14, 3, '2026-09-15', 'ACTIVE'),
+(1470, 14, 3, '2026-09-15', 'ACTIVE'),
+(1471, 14, 3, '2026-09-15', 'ACTIVE'),
+(1472, 14, 3, '2026-09-15', 'ACTIVE'),
+(1473, 14, 3, '2026-09-15', 'ACTIVE'),
+(1474, 14, 3, '2026-09-15', 'ACTIVE'),
+(1475, 14, 3, '2026-09-15', 'ACTIVE'),
+(1476, 14, 3, '2026-09-15', 'ACTIVE'),
+(1477, 14, 3, '2026-09-15', 'ACTIVE'),
+(1478, 14, 3, '2026-09-15', 'ACTIVE'),
+(1479, 14, 3, '2026-09-15', 'ACTIVE'),
+(1480, 14, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 15: SR L1G (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(299, 15, 3, '2026-09-15', 'ACTIVE'),
+(300, 15, 3, '2026-09-15', 'ACTIVE'),
+(1119, 15, 3, '2026-09-15', 'ACTIVE'),
+(1120, 15, 3, '2026-09-15', 'ACTIVE'),
+(1481, 15, 3, '2026-09-15', 'ACTIVE'),
+(1482, 15, 3, '2026-09-15', 'ACTIVE'),
+(1483, 15, 3, '2026-09-15', 'ACTIVE'),
+(1484, 15, 3, '2026-09-15', 'ACTIVE'),
+(1485, 15, 3, '2026-09-15', 'ACTIVE'),
+(1486, 15, 3, '2026-09-15', 'ACTIVE'),
+(1487, 15, 3, '2026-09-15', 'ACTIVE'),
+(1488, 15, 3, '2026-09-15', 'ACTIVE'),
+(1489, 15, 3, '2026-09-15', 'ACTIVE'),
+(1490, 15, 3, '2026-09-15', 'ACTIVE'),
+(1491, 15, 3, '2026-09-15', 'ACTIVE'),
+(1492, 15, 3, '2026-09-15', 'ACTIVE'),
+(1493, 15, 3, '2026-09-15', 'ACTIVE'),
+(1494, 15, 3, '2026-09-15', 'ACTIVE'),
+(1495, 15, 3, '2026-09-15', 'ACTIVE'),
+(1496, 15, 3, '2026-09-15', 'ACTIVE'),
+(1497, 15, 3, '2026-09-15', 'ACTIVE'),
+(1498, 15, 3, '2026-09-15', 'ACTIVE'),
+(1499, 15, 3, '2026-09-15', 'ACTIVE'),
+(1500, 15, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 16: SR L1H (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(319, 16, 3, '2026-09-15', 'ACTIVE'),
+(320, 16, 3, '2026-09-15', 'ACTIVE'),
+(1139, 16, 3, '2026-09-15', 'ACTIVE'),
+(1140, 16, 3, '2026-09-15', 'ACTIVE'),
+(1501, 16, 3, '2026-09-15', 'ACTIVE'),
+(1502, 16, 3, '2026-09-15', 'ACTIVE'),
+(1503, 16, 3, '2026-09-15', 'ACTIVE'),
+(1504, 16, 3, '2026-09-15', 'ACTIVE'),
+(1505, 16, 3, '2026-09-15', 'ACTIVE'),
+(1506, 16, 3, '2026-09-15', 'ACTIVE'),
+(1507, 16, 3, '2026-09-15', 'ACTIVE'),
+(1508, 16, 3, '2026-09-15', 'ACTIVE'),
+(1509, 16, 3, '2026-09-15', 'ACTIVE'),
+(1510, 16, 3, '2026-09-15', 'ACTIVE'),
+(1511, 16, 3, '2026-09-15', 'ACTIVE'),
+(1512, 16, 3, '2026-09-15', 'ACTIVE'),
+(1513, 16, 3, '2026-09-15', 'ACTIVE'),
+(1514, 16, 3, '2026-09-15', 'ACTIVE'),
+(1515, 16, 3, '2026-09-15', 'ACTIVE'),
+(1516, 16, 3, '2026-09-15', 'ACTIVE'),
+(1517, 16, 3, '2026-09-15', 'ACTIVE'),
+(1518, 16, 3, '2026-09-15', 'ACTIVE'),
+(1519, 16, 3, '2026-09-15', 'ACTIVE'),
+(1520, 16, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 17: SR L2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(339, 17, 3, '2026-09-15', 'ACTIVE'),
+(340, 17, 3, '2026-09-15', 'ACTIVE'),
+(981, 17, 3, '2026-09-15', 'ACTIVE'),
+(982, 17, 3, '2026-09-15', 'ACTIVE'),
+(983, 17, 3, '2026-09-15', 'ACTIVE'),
+(984, 17, 3, '2026-09-15', 'ACTIVE'),
+(985, 17, 3, '2026-09-15', 'ACTIVE'),
+(986, 17, 3, '2026-09-15', 'ACTIVE'),
+(987, 17, 3, '2026-09-15', 'ACTIVE'),
+(988, 17, 3, '2026-09-15', 'ACTIVE'),
+(989, 17, 3, '2026-09-15', 'ACTIVE'),
+(990, 17, 3, '2026-09-15', 'ACTIVE'),
+(991, 17, 3, '2026-09-15', 'ACTIVE'),
+(992, 17, 3, '2026-09-15', 'ACTIVE'),
+(993, 17, 3, '2026-09-15', 'ACTIVE'),
+(994, 17, 3, '2026-09-15', 'ACTIVE'),
+(995, 17, 3, '2026-09-15', 'ACTIVE'),
+(996, 17, 3, '2026-09-15', 'ACTIVE'),
+(997, 17, 3, '2026-09-15', 'ACTIVE'),
+(998, 17, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 18: SR L2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(359, 18, 3, '2026-09-15', 'ACTIVE'),
+(360, 18, 3, '2026-09-15', 'ACTIVE'),
+(1001, 18, 3, '2026-09-15', 'ACTIVE'),
+(1002, 18, 3, '2026-09-15', 'ACTIVE'),
+(1003, 18, 3, '2026-09-15', 'ACTIVE'),
+(1004, 18, 3, '2026-09-15', 'ACTIVE'),
+(1005, 18, 3, '2026-09-15', 'ACTIVE'),
+(1006, 18, 3, '2026-09-15', 'ACTIVE'),
+(1007, 18, 3, '2026-09-15', 'ACTIVE'),
+(1008, 18, 3, '2026-09-15', 'ACTIVE'),
+(1009, 18, 3, '2026-09-15', 'ACTIVE'),
+(1010, 18, 3, '2026-09-15', 'ACTIVE'),
+(1011, 18, 3, '2026-09-15', 'ACTIVE'),
+(1012, 18, 3, '2026-09-15', 'ACTIVE'),
+(1013, 18, 3, '2026-09-15', 'ACTIVE'),
+(1014, 18, 3, '2026-09-15', 'ACTIVE'),
+(1015, 18, 3, '2026-09-15', 'ACTIVE'),
+(1016, 18, 3, '2026-09-15', 'ACTIVE'),
+(1017, 18, 3, '2026-09-15', 'ACTIVE'),
+(1018, 18, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 19: SR L2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(379, 19, 3, '2026-09-15', 'ACTIVE'),
+(380, 19, 3, '2026-09-15', 'ACTIVE'),
+(1021, 19, 3, '2026-09-15', 'ACTIVE'),
+(1022, 19, 3, '2026-09-15', 'ACTIVE'),
+(1023, 19, 3, '2026-09-15', 'ACTIVE'),
+(1024, 19, 3, '2026-09-15', 'ACTIVE'),
+(1025, 19, 3, '2026-09-15', 'ACTIVE'),
+(1026, 19, 3, '2026-09-15', 'ACTIVE'),
+(1027, 19, 3, '2026-09-15', 'ACTIVE'),
+(1028, 19, 3, '2026-09-15', 'ACTIVE'),
+(1029, 19, 3, '2026-09-15', 'ACTIVE'),
+(1030, 19, 3, '2026-09-15', 'ACTIVE'),
+(1031, 19, 3, '2026-09-15', 'ACTIVE'),
+(1032, 19, 3, '2026-09-15', 'ACTIVE'),
+(1033, 19, 3, '2026-09-15', 'ACTIVE'),
+(1034, 19, 3, '2026-09-15', 'ACTIVE'),
+(1035, 19, 3, '2026-09-15', 'ACTIVE'),
+(1036, 19, 3, '2026-09-15', 'ACTIVE'),
+(1037, 19, 3, '2026-09-15', 'ACTIVE'),
+(1038, 19, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 20: SR L2D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(399, 20, 3, '2026-09-15', 'ACTIVE'),
+(400, 20, 3, '2026-09-15', 'ACTIVE'),
+(1041, 20, 3, '2026-09-15', 'ACTIVE'),
+(1042, 20, 3, '2026-09-15', 'ACTIVE'),
+(1043, 20, 3, '2026-09-15', 'ACTIVE'),
+(1044, 20, 3, '2026-09-15', 'ACTIVE'),
+(1045, 20, 3, '2026-09-15', 'ACTIVE'),
+(1046, 20, 3, '2026-09-15', 'ACTIVE'),
+(1047, 20, 3, '2026-09-15', 'ACTIVE'),
+(1048, 20, 3, '2026-09-15', 'ACTIVE'),
+(1049, 20, 3, '2026-09-15', 'ACTIVE'),
+(1050, 20, 3, '2026-09-15', 'ACTIVE'),
+(1051, 20, 3, '2026-09-15', 'ACTIVE'),
+(1052, 20, 3, '2026-09-15', 'ACTIVE'),
+(1053, 20, 3, '2026-09-15', 'ACTIVE'),
+(1054, 20, 3, '2026-09-15', 'ACTIVE'),
+(1055, 20, 3, '2026-09-15', 'ACTIVE'),
+(1056, 20, 3, '2026-09-15', 'ACTIVE'),
+(1057, 20, 3, '2026-09-15', 'ACTIVE'),
+(1058, 20, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 21: SR L2E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(419, 21, 3, '2026-09-15', 'ACTIVE'),
+(420, 21, 3, '2026-09-15', 'ACTIVE'),
+(1061, 21, 3, '2026-09-15', 'ACTIVE'),
+(1062, 21, 3, '2026-09-15', 'ACTIVE'),
+(1063, 21, 3, '2026-09-15', 'ACTIVE'),
+(1064, 21, 3, '2026-09-15', 'ACTIVE'),
+(1065, 21, 3, '2026-09-15', 'ACTIVE'),
+(1066, 21, 3, '2026-09-15', 'ACTIVE'),
+(1067, 21, 3, '2026-09-15', 'ACTIVE'),
+(1068, 21, 3, '2026-09-15', 'ACTIVE'),
+(1069, 21, 3, '2026-09-15', 'ACTIVE'),
+(1070, 21, 3, '2026-09-15', 'ACTIVE'),
+(1071, 21, 3, '2026-09-15', 'ACTIVE'),
+(1072, 21, 3, '2026-09-15', 'ACTIVE'),
+(1073, 21, 3, '2026-09-15', 'ACTIVE'),
+(1074, 21, 3, '2026-09-15', 'ACTIVE'),
+(1075, 21, 3, '2026-09-15', 'ACTIVE'),
+(1076, 21, 3, '2026-09-15', 'ACTIVE'),
+(1077, 21, 3, '2026-09-15', 'ACTIVE'),
+(1078, 21, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 22: SR L2F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(439, 22, 3, '2026-09-15', 'ACTIVE'),
+(440, 22, 3, '2026-09-15', 'ACTIVE'),
+(1081, 22, 3, '2026-09-15', 'ACTIVE'),
+(1082, 22, 3, '2026-09-15', 'ACTIVE'),
+(1083, 22, 3, '2026-09-15', 'ACTIVE'),
+(1084, 22, 3, '2026-09-15', 'ACTIVE'),
+(1085, 22, 3, '2026-09-15', 'ACTIVE'),
+(1086, 22, 3, '2026-09-15', 'ACTIVE'),
+(1087, 22, 3, '2026-09-15', 'ACTIVE'),
+(1088, 22, 3, '2026-09-15', 'ACTIVE'),
+(1089, 22, 3, '2026-09-15', 'ACTIVE'),
+(1090, 22, 3, '2026-09-15', 'ACTIVE'),
+(1091, 22, 3, '2026-09-15', 'ACTIVE'),
+(1092, 22, 3, '2026-09-15', 'ACTIVE'),
+(1093, 22, 3, '2026-09-15', 'ACTIVE'),
+(1094, 22, 3, '2026-09-15', 'ACTIVE'),
+(1095, 22, 3, '2026-09-15', 'ACTIVE'),
+(1096, 22, 3, '2026-09-15', 'ACTIVE'),
+(1097, 22, 3, '2026-09-15', 'ACTIVE'),
+(1098, 22, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 23: SR L2G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(459, 23, 3, '2026-09-15', 'ACTIVE'),
+(460, 23, 3, '2026-09-15', 'ACTIVE'),
+(1101, 23, 3, '2026-09-15', 'ACTIVE'),
+(1102, 23, 3, '2026-09-15', 'ACTIVE'),
+(1103, 23, 3, '2026-09-15', 'ACTIVE'),
+(1104, 23, 3, '2026-09-15', 'ACTIVE'),
+(1105, 23, 3, '2026-09-15', 'ACTIVE'),
+(1106, 23, 3, '2026-09-15', 'ACTIVE'),
+(1107, 23, 3, '2026-09-15', 'ACTIVE'),
+(1108, 23, 3, '2026-09-15', 'ACTIVE'),
+(1109, 23, 3, '2026-09-15', 'ACTIVE'),
+(1110, 23, 3, '2026-09-15', 'ACTIVE'),
+(1111, 23, 3, '2026-09-15', 'ACTIVE'),
+(1112, 23, 3, '2026-09-15', 'ACTIVE'),
+(1113, 23, 3, '2026-09-15', 'ACTIVE'),
+(1114, 23, 3, '2026-09-15', 'ACTIVE'),
+(1115, 23, 3, '2026-09-15', 'ACTIVE'),
+(1116, 23, 3, '2026-09-15', 'ACTIVE'),
+(1117, 23, 3, '2026-09-15', 'ACTIVE'),
+(1118, 23, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 24: SR L2H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(479, 24, 3, '2026-09-15', 'ACTIVE'),
+(480, 24, 3, '2026-09-15', 'ACTIVE'),
+(1121, 24, 3, '2026-09-15', 'ACTIVE'),
+(1122, 24, 3, '2026-09-15', 'ACTIVE'),
+(1123, 24, 3, '2026-09-15', 'ACTIVE'),
+(1124, 24, 3, '2026-09-15', 'ACTIVE'),
+(1125, 24, 3, '2026-09-15', 'ACTIVE'),
+(1126, 24, 3, '2026-09-15', 'ACTIVE'),
+(1127, 24, 3, '2026-09-15', 'ACTIVE'),
+(1128, 24, 3, '2026-09-15', 'ACTIVE'),
+(1129, 24, 3, '2026-09-15', 'ACTIVE'),
+(1130, 24, 3, '2026-09-15', 'ACTIVE'),
+(1131, 24, 3, '2026-09-15', 'ACTIVE'),
+(1132, 24, 3, '2026-09-15', 'ACTIVE'),
+(1133, 24, 3, '2026-09-15', 'ACTIVE'),
+(1134, 24, 3, '2026-09-15', 'ACTIVE'),
+(1135, 24, 3, '2026-09-15', 'ACTIVE'),
+(1136, 24, 3, '2026-09-15', 'ACTIVE'),
+(1137, 24, 3, '2026-09-15', 'ACTIVE'),
+(1138, 24, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 25: SR3A (61 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(161, 25, 3, '2026-09-15', 'ACTIVE'),
+(162, 25, 3, '2026-09-15', 'ACTIVE'),
+(163, 25, 3, '2026-09-15', 'ACTIVE'),
+(164, 25, 3, '2026-09-15', 'ACTIVE'),
+(165, 25, 3, '2026-09-15', 'ACTIVE'),
+(166, 25, 3, '2026-09-15', 'ACTIVE'),
+(167, 25, 3, '2026-09-15', 'ACTIVE'),
+(168, 25, 3, '2026-09-15', 'ACTIVE'),
+(169, 25, 3, '2026-09-15', 'ACTIVE'),
+(170, 25, 3, '2026-09-15', 'ACTIVE'),
+(171, 25, 3, '2026-09-15', 'ACTIVE'),
+(172, 25, 3, '2026-09-15', 'ACTIVE'),
+(173, 25, 3, '2026-09-15', 'ACTIVE'),
+(174, 25, 3, '2026-09-15', 'ACTIVE'),
+(175, 25, 3, '2026-09-15', 'ACTIVE'),
+(176, 25, 3, '2026-09-15', 'ACTIVE'),
+(177, 25, 3, '2026-09-15', 'ACTIVE'),
+(178, 25, 3, '2026-09-15', 'ACTIVE'),
+(181, 25, 3, '2026-09-15', 'ACTIVE'),
+(182, 25, 3, '2026-09-15', 'ACTIVE'),
+(183, 25, 3, '2026-09-15', 'ACTIVE'),
+(184, 25, 3, '2026-09-15', 'ACTIVE'),
+(185, 25, 3, '2026-09-15', 'ACTIVE'),
+(186, 25, 3, '2026-09-15', 'ACTIVE'),
+(187, 25, 3, '2026-09-15', 'ACTIVE'),
+(188, 25, 3, '2026-09-15', 'ACTIVE'),
+(189, 25, 3, '2026-09-15', 'ACTIVE'),
+(190, 25, 3, '2026-09-15', 'ACTIVE'),
+(191, 25, 3, '2026-09-15', 'ACTIVE'),
+(192, 25, 3, '2026-09-15', 'ACTIVE'),
+(193, 25, 3, '2026-09-15', 'ACTIVE'),
+(194, 25, 3, '2026-09-15', 'ACTIVE'),
+(195, 25, 3, '2026-09-15', 'ACTIVE'),
+(196, 25, 3, '2026-09-15', 'ACTIVE'),
+(197, 25, 3, '2026-09-15', 'ACTIVE'),
+(198, 25, 3, '2026-09-15', 'ACTIVE'),
+(201, 25, 3, '2026-09-15', 'ACTIVE'),
+(202, 25, 3, '2026-09-15', 'ACTIVE'),
+(203, 25, 3, '2026-09-15', 'ACTIVE'),
+(204, 25, 3, '2026-09-15', 'ACTIVE'),
+(205, 25, 3, '2026-09-15', 'ACTIVE'),
+(206, 25, 3, '2026-09-15', 'ACTIVE'),
+(207, 25, 3, '2026-09-15', 'ACTIVE'),
+(208, 25, 3, '2026-09-15', 'ACTIVE'),
+(209, 25, 3, '2026-09-15', 'ACTIVE'),
+(210, 25, 3, '2026-09-15', 'ACTIVE'),
+(211, 25, 3, '2026-09-15', 'ACTIVE'),
+(212, 25, 3, '2026-09-15', 'ACTIVE'),
+(322, 25, 3, '2026-09-15', 'ACTIVE'),
+(326, 25, 3, '2026-09-15', 'ACTIVE'),
+(330, 25, 3, '2026-09-15', 'ACTIVE'),
+(334, 25, 3, '2026-09-15', 'ACTIVE'),
+(338, 25, 3, '2026-09-15', 'ACTIVE'),
+(344, 25, 3, '2026-09-15', 'ACTIVE'),
+(348, 25, 3, '2026-09-15', 'ACTIVE'),
+(351, 25, 3, '2026-09-15', 'ACTIVE'),
+(355, 25, 3, '2026-09-15', 'ACTIVE'),
+(361, 25, 3, '2026-09-15', 'ACTIVE'),
+(365, 25, 3, '2026-09-15', 'ACTIVE'),
+(369, 25, 3, '2026-09-15', 'ACTIVE'),
+(497, 25, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 26: SR3B (61 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(213, 26, 3, '2026-09-15', 'ACTIVE'),
+(214, 26, 3, '2026-09-15', 'ACTIVE'),
+(215, 26, 3, '2026-09-15', 'ACTIVE'),
+(216, 26, 3, '2026-09-15', 'ACTIVE'),
+(217, 26, 3, '2026-09-15', 'ACTIVE'),
+(218, 26, 3, '2026-09-15', 'ACTIVE'),
+(221, 26, 3, '2026-09-15', 'ACTIVE'),
+(222, 26, 3, '2026-09-15', 'ACTIVE'),
+(223, 26, 3, '2026-09-15', 'ACTIVE'),
+(224, 26, 3, '2026-09-15', 'ACTIVE'),
+(225, 26, 3, '2026-09-15', 'ACTIVE'),
+(226, 26, 3, '2026-09-15', 'ACTIVE'),
+(227, 26, 3, '2026-09-15', 'ACTIVE'),
+(228, 26, 3, '2026-09-15', 'ACTIVE'),
+(229, 26, 3, '2026-09-15', 'ACTIVE'),
+(230, 26, 3, '2026-09-15', 'ACTIVE'),
+(231, 26, 3, '2026-09-15', 'ACTIVE'),
+(232, 26, 3, '2026-09-15', 'ACTIVE'),
+(233, 26, 3, '2026-09-15', 'ACTIVE'),
+(234, 26, 3, '2026-09-15', 'ACTIVE'),
+(235, 26, 3, '2026-09-15', 'ACTIVE'),
+(236, 26, 3, '2026-09-15', 'ACTIVE'),
+(237, 26, 3, '2026-09-15', 'ACTIVE'),
+(238, 26, 3, '2026-09-15', 'ACTIVE'),
+(241, 26, 3, '2026-09-15', 'ACTIVE'),
+(242, 26, 3, '2026-09-15', 'ACTIVE'),
+(243, 26, 3, '2026-09-15', 'ACTIVE'),
+(244, 26, 3, '2026-09-15', 'ACTIVE'),
+(245, 26, 3, '2026-09-15', 'ACTIVE'),
+(246, 26, 3, '2026-09-15', 'ACTIVE'),
+(247, 26, 3, '2026-09-15', 'ACTIVE'),
+(248, 26, 3, '2026-09-15', 'ACTIVE'),
+(249, 26, 3, '2026-09-15', 'ACTIVE'),
+(250, 26, 3, '2026-09-15', 'ACTIVE'),
+(251, 26, 3, '2026-09-15', 'ACTIVE'),
+(252, 26, 3, '2026-09-15', 'ACTIVE'),
+(253, 26, 3, '2026-09-15', 'ACTIVE'),
+(254, 26, 3, '2026-09-15', 'ACTIVE'),
+(255, 26, 3, '2026-09-15', 'ACTIVE'),
+(256, 26, 3, '2026-09-15', 'ACTIVE'),
+(257, 26, 3, '2026-09-15', 'ACTIVE'),
+(258, 26, 3, '2026-09-15', 'ACTIVE'),
+(261, 26, 3, '2026-09-15', 'ACTIVE'),
+(262, 26, 3, '2026-09-15', 'ACTIVE'),
+(263, 26, 3, '2026-09-15', 'ACTIVE'),
+(264, 26, 3, '2026-09-15', 'ACTIVE'),
+(265, 26, 3, '2026-09-15', 'ACTIVE'),
+(266, 26, 3, '2026-09-15', 'ACTIVE'),
+(374, 26, 3, '2026-09-15', 'ACTIVE'),
+(378, 26, 3, '2026-09-15', 'ACTIVE'),
+(384, 26, 3, '2026-09-15', 'ACTIVE'),
+(388, 26, 3, '2026-09-15', 'ACTIVE'),
+(392, 26, 3, '2026-09-15', 'ACTIVE'),
+(396, 26, 3, '2026-09-15', 'ACTIVE'),
+(402, 26, 3, '2026-09-15', 'ACTIVE'),
+(405, 26, 3, '2026-09-15', 'ACTIVE'),
+(409, 26, 3, '2026-09-15', 'ACTIVE'),
+(413, 26, 3, '2026-09-15', 'ACTIVE'),
+(417, 26, 3, '2026-09-15', 'ACTIVE'),
+(423, 26, 3, '2026-09-15', 'ACTIVE'),
+(517, 26, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 27: SR3C (61 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(267, 27, 3, '2026-09-15', 'ACTIVE'),
+(268, 27, 3, '2026-09-15', 'ACTIVE'),
+(269, 27, 3, '2026-09-15', 'ACTIVE'),
+(270, 27, 3, '2026-09-15', 'ACTIVE'),
+(271, 27, 3, '2026-09-15', 'ACTIVE'),
+(272, 27, 3, '2026-09-15', 'ACTIVE'),
+(273, 27, 3, '2026-09-15', 'ACTIVE'),
+(274, 27, 3, '2026-09-15', 'ACTIVE'),
+(275, 27, 3, '2026-09-15', 'ACTIVE'),
+(276, 27, 3, '2026-09-15', 'ACTIVE'),
+(277, 27, 3, '2026-09-15', 'ACTIVE'),
+(278, 27, 3, '2026-09-15', 'ACTIVE'),
+(281, 27, 3, '2026-09-15', 'ACTIVE'),
+(282, 27, 3, '2026-09-15', 'ACTIVE'),
+(283, 27, 3, '2026-09-15', 'ACTIVE'),
+(284, 27, 3, '2026-09-15', 'ACTIVE'),
+(285, 27, 3, '2026-09-15', 'ACTIVE'),
+(286, 27, 3, '2026-09-15', 'ACTIVE'),
+(287, 27, 3, '2026-09-15', 'ACTIVE'),
+(288, 27, 3, '2026-09-15', 'ACTIVE'),
+(289, 27, 3, '2026-09-15', 'ACTIVE'),
+(290, 27, 3, '2026-09-15', 'ACTIVE'),
+(291, 27, 3, '2026-09-15', 'ACTIVE'),
+(292, 27, 3, '2026-09-15', 'ACTIVE'),
+(293, 27, 3, '2026-09-15', 'ACTIVE'),
+(294, 27, 3, '2026-09-15', 'ACTIVE'),
+(295, 27, 3, '2026-09-15', 'ACTIVE'),
+(296, 27, 3, '2026-09-15', 'ACTIVE'),
+(297, 27, 3, '2026-09-15', 'ACTIVE'),
+(298, 27, 3, '2026-09-15', 'ACTIVE'),
+(301, 27, 3, '2026-09-15', 'ACTIVE'),
+(302, 27, 3, '2026-09-15', 'ACTIVE'),
+(303, 27, 3, '2026-09-15', 'ACTIVE'),
+(304, 27, 3, '2026-09-15', 'ACTIVE'),
+(305, 27, 3, '2026-09-15', 'ACTIVE'),
+(306, 27, 3, '2026-09-15', 'ACTIVE'),
+(307, 27, 3, '2026-09-15', 'ACTIVE'),
+(308, 27, 3, '2026-09-15', 'ACTIVE'),
+(309, 27, 3, '2026-09-15', 'ACTIVE'),
+(310, 27, 3, '2026-09-15', 'ACTIVE'),
+(311, 27, 3, '2026-09-15', 'ACTIVE'),
+(312, 27, 3, '2026-09-15', 'ACTIVE'),
+(313, 27, 3, '2026-09-15', 'ACTIVE'),
+(314, 27, 3, '2026-09-15', 'ACTIVE'),
+(315, 27, 3, '2026-09-15', 'ACTIVE'),
+(316, 27, 3, '2026-09-15', 'ACTIVE'),
+(317, 27, 3, '2026-09-15', 'ACTIVE'),
+(318, 27, 3, '2026-09-15', 'ACTIVE'),
+(428, 27, 3, '2026-09-15', 'ACTIVE'),
+(432, 27, 3, '2026-09-15', 'ACTIVE'),
+(436, 27, 3, '2026-09-15', 'ACTIVE'),
+(442, 27, 3, '2026-09-15', 'ACTIVE'),
+(446, 27, 3, '2026-09-15', 'ACTIVE'),
+(450, 27, 3, '2026-09-15', 'ACTIVE'),
+(454, 27, 3, '2026-09-15', 'ACTIVE'),
+(457, 27, 3, '2026-09-15', 'ACTIVE'),
+(463, 27, 3, '2026-09-15', 'ACTIVE'),
+(467, 27, 3, '2026-09-15', 'ACTIVE'),
+(471, 27, 3, '2026-09-15', 'ACTIVE'),
+(475, 27, 3, '2026-09-15', 'ACTIVE'),
+(537, 27, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 28: GL L1A (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(559, 28, 3, '2026-09-15', 'ACTIVE'),
+(560, 28, 3, '2026-09-15', 'ACTIVE'),
+(1159, 28, 3, '2026-09-15', 'ACTIVE'),
+(1160, 28, 3, '2026-09-15', 'ACTIVE'),
+(1521, 28, 3, '2026-09-15', 'ACTIVE'),
+(1522, 28, 3, '2026-09-15', 'ACTIVE'),
+(1523, 28, 3, '2026-09-15', 'ACTIVE'),
+(1524, 28, 3, '2026-09-15', 'ACTIVE'),
+(1525, 28, 3, '2026-09-15', 'ACTIVE'),
+(1526, 28, 3, '2026-09-15', 'ACTIVE'),
+(1527, 28, 3, '2026-09-15', 'ACTIVE'),
+(1528, 28, 3, '2026-09-15', 'ACTIVE'),
+(1529, 28, 3, '2026-09-15', 'ACTIVE'),
+(1530, 28, 3, '2026-09-15', 'ACTIVE'),
+(1531, 28, 3, '2026-09-15', 'ACTIVE'),
+(1532, 28, 3, '2026-09-15', 'ACTIVE'),
+(1533, 28, 3, '2026-09-15', 'ACTIVE'),
+(1534, 28, 3, '2026-09-15', 'ACTIVE'),
+(1535, 28, 3, '2026-09-15', 'ACTIVE'),
+(1536, 28, 3, '2026-09-15', 'ACTIVE'),
+(1537, 28, 3, '2026-09-15', 'ACTIVE'),
+(1538, 28, 3, '2026-09-15', 'ACTIVE'),
+(1539, 28, 3, '2026-09-15', 'ACTIVE'),
+(1540, 28, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 29: GL L1B (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(579, 29, 3, '2026-09-15', 'ACTIVE'),
+(580, 29, 3, '2026-09-15', 'ACTIVE'),
+(1179, 29, 3, '2026-09-15', 'ACTIVE'),
+(1180, 29, 3, '2026-09-15', 'ACTIVE'),
+(1541, 29, 3, '2026-09-15', 'ACTIVE'),
+(1542, 29, 3, '2026-09-15', 'ACTIVE'),
+(1543, 29, 3, '2026-09-15', 'ACTIVE'),
+(1544, 29, 3, '2026-09-15', 'ACTIVE'),
+(1545, 29, 3, '2026-09-15', 'ACTIVE'),
+(1546, 29, 3, '2026-09-15', 'ACTIVE'),
+(1547, 29, 3, '2026-09-15', 'ACTIVE'),
+(1548, 29, 3, '2026-09-15', 'ACTIVE'),
+(1549, 29, 3, '2026-09-15', 'ACTIVE'),
+(1550, 29, 3, '2026-09-15', 'ACTIVE'),
+(1551, 29, 3, '2026-09-15', 'ACTIVE'),
+(1552, 29, 3, '2026-09-15', 'ACTIVE'),
+(1553, 29, 3, '2026-09-15', 'ACTIVE'),
+(1554, 29, 3, '2026-09-15', 'ACTIVE'),
+(1555, 29, 3, '2026-09-15', 'ACTIVE'),
+(1556, 29, 3, '2026-09-15', 'ACTIVE'),
+(1557, 29, 3, '2026-09-15', 'ACTIVE'),
+(1558, 29, 3, '2026-09-15', 'ACTIVE'),
+(1559, 29, 3, '2026-09-15', 'ACTIVE'),
+(1560, 29, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 30: GL L1C (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(599, 30, 3, '2026-09-15', 'ACTIVE'),
+(600, 30, 3, '2026-09-15', 'ACTIVE'),
+(1199, 30, 3, '2026-09-15', 'ACTIVE'),
+(1200, 30, 3, '2026-09-15', 'ACTIVE'),
+(1561, 30, 3, '2026-09-15', 'ACTIVE'),
+(1562, 30, 3, '2026-09-15', 'ACTIVE'),
+(1563, 30, 3, '2026-09-15', 'ACTIVE'),
+(1564, 30, 3, '2026-09-15', 'ACTIVE'),
+(1565, 30, 3, '2026-09-15', 'ACTIVE'),
+(1566, 30, 3, '2026-09-15', 'ACTIVE'),
+(1567, 30, 3, '2026-09-15', 'ACTIVE'),
+(1568, 30, 3, '2026-09-15', 'ACTIVE'),
+(1569, 30, 3, '2026-09-15', 'ACTIVE'),
+(1570, 30, 3, '2026-09-15', 'ACTIVE'),
+(1571, 30, 3, '2026-09-15', 'ACTIVE'),
+(1572, 30, 3, '2026-09-15', 'ACTIVE'),
+(1573, 30, 3, '2026-09-15', 'ACTIVE'),
+(1574, 30, 3, '2026-09-15', 'ACTIVE'),
+(1575, 30, 3, '2026-09-15', 'ACTIVE'),
+(1576, 30, 3, '2026-09-15', 'ACTIVE'),
+(1577, 30, 3, '2026-09-15', 'ACTIVE'),
+(1578, 30, 3, '2026-09-15', 'ACTIVE'),
+(1579, 30, 3, '2026-09-15', 'ACTIVE'),
+(1580, 30, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 31: GL L1D (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(619, 31, 3, '2026-09-15', 'ACTIVE'),
+(620, 31, 3, '2026-09-15', 'ACTIVE'),
+(1219, 31, 3, '2026-09-15', 'ACTIVE'),
+(1220, 31, 3, '2026-09-15', 'ACTIVE'),
+(1581, 31, 3, '2026-09-15', 'ACTIVE'),
+(1582, 31, 3, '2026-09-15', 'ACTIVE'),
+(1583, 31, 3, '2026-09-15', 'ACTIVE'),
+(1584, 31, 3, '2026-09-15', 'ACTIVE'),
+(1585, 31, 3, '2026-09-15', 'ACTIVE'),
+(1586, 31, 3, '2026-09-15', 'ACTIVE'),
+(1587, 31, 3, '2026-09-15', 'ACTIVE'),
+(1588, 31, 3, '2026-09-15', 'ACTIVE'),
+(1589, 31, 3, '2026-09-15', 'ACTIVE'),
+(1590, 31, 3, '2026-09-15', 'ACTIVE'),
+(1591, 31, 3, '2026-09-15', 'ACTIVE'),
+(1592, 31, 3, '2026-09-15', 'ACTIVE'),
+(1593, 31, 3, '2026-09-15', 'ACTIVE'),
+(1594, 31, 3, '2026-09-15', 'ACTIVE'),
+(1595, 31, 3, '2026-09-15', 'ACTIVE'),
+(1596, 31, 3, '2026-09-15', 'ACTIVE'),
+(1597, 31, 3, '2026-09-15', 'ACTIVE'),
+(1598, 31, 3, '2026-09-15', 'ACTIVE'),
+(1599, 31, 3, '2026-09-15', 'ACTIVE'),
+(1600, 31, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 32: GL L1E (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(639, 32, 3, '2026-09-15', 'ACTIVE'),
+(640, 32, 3, '2026-09-15', 'ACTIVE'),
+(1239, 32, 3, '2026-09-15', 'ACTIVE'),
+(1240, 32, 3, '2026-09-15', 'ACTIVE'),
+(1601, 32, 3, '2026-09-15', 'ACTIVE'),
+(1602, 32, 3, '2026-09-15', 'ACTIVE'),
+(1603, 32, 3, '2026-09-15', 'ACTIVE'),
+(1604, 32, 3, '2026-09-15', 'ACTIVE'),
+(1605, 32, 3, '2026-09-15', 'ACTIVE'),
+(1606, 32, 3, '2026-09-15', 'ACTIVE'),
+(1607, 32, 3, '2026-09-15', 'ACTIVE'),
+(1608, 32, 3, '2026-09-15', 'ACTIVE'),
+(1609, 32, 3, '2026-09-15', 'ACTIVE'),
+(1610, 32, 3, '2026-09-15', 'ACTIVE'),
+(1611, 32, 3, '2026-09-15', 'ACTIVE'),
+(1612, 32, 3, '2026-09-15', 'ACTIVE'),
+(1613, 32, 3, '2026-09-15', 'ACTIVE'),
+(1614, 32, 3, '2026-09-15', 'ACTIVE'),
+(1615, 32, 3, '2026-09-15', 'ACTIVE'),
+(1616, 32, 3, '2026-09-15', 'ACTIVE'),
+(1617, 32, 3, '2026-09-15', 'ACTIVE'),
+(1618, 32, 3, '2026-09-15', 'ACTIVE'),
+(1619, 32, 3, '2026-09-15', 'ACTIVE'),
+(1620, 32, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 33: GL L1F (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(659, 33, 3, '2026-09-15', 'ACTIVE'),
+(660, 33, 3, '2026-09-15', 'ACTIVE'),
+(1259, 33, 3, '2026-09-15', 'ACTIVE'),
+(1260, 33, 3, '2026-09-15', 'ACTIVE'),
+(1621, 33, 3, '2026-09-15', 'ACTIVE'),
+(1622, 33, 3, '2026-09-15', 'ACTIVE'),
+(1623, 33, 3, '2026-09-15', 'ACTIVE'),
+(1624, 33, 3, '2026-09-15', 'ACTIVE'),
+(1625, 33, 3, '2026-09-15', 'ACTIVE'),
+(1626, 33, 3, '2026-09-15', 'ACTIVE'),
+(1627, 33, 3, '2026-09-15', 'ACTIVE'),
+(1628, 33, 3, '2026-09-15', 'ACTIVE'),
+(1629, 33, 3, '2026-09-15', 'ACTIVE'),
+(1630, 33, 3, '2026-09-15', 'ACTIVE'),
+(1631, 33, 3, '2026-09-15', 'ACTIVE'),
+(1632, 33, 3, '2026-09-15', 'ACTIVE'),
+(1633, 33, 3, '2026-09-15', 'ACTIVE'),
+(1634, 33, 3, '2026-09-15', 'ACTIVE'),
+(1635, 33, 3, '2026-09-15', 'ACTIVE'),
+(1636, 33, 3, '2026-09-15', 'ACTIVE'),
+(1637, 33, 3, '2026-09-15', 'ACTIVE'),
+(1638, 33, 3, '2026-09-15', 'ACTIVE'),
+(1639, 33, 3, '2026-09-15', 'ACTIVE'),
+(1640, 33, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 34: GL L1G (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(679, 34, 3, '2026-09-15', 'ACTIVE'),
+(680, 34, 3, '2026-09-15', 'ACTIVE'),
+(1279, 34, 3, '2026-09-15', 'ACTIVE'),
+(1280, 34, 3, '2026-09-15', 'ACTIVE'),
+(1641, 34, 3, '2026-09-15', 'ACTIVE'),
+(1642, 34, 3, '2026-09-15', 'ACTIVE'),
+(1643, 34, 3, '2026-09-15', 'ACTIVE'),
+(1644, 34, 3, '2026-09-15', 'ACTIVE'),
+(1645, 34, 3, '2026-09-15', 'ACTIVE'),
+(1646, 34, 3, '2026-09-15', 'ACTIVE'),
+(1647, 34, 3, '2026-09-15', 'ACTIVE'),
+(1648, 34, 3, '2026-09-15', 'ACTIVE'),
+(1649, 34, 3, '2026-09-15', 'ACTIVE'),
+(1650, 34, 3, '2026-09-15', 'ACTIVE'),
+(1651, 34, 3, '2026-09-15', 'ACTIVE'),
+(1652, 34, 3, '2026-09-15', 'ACTIVE'),
+(1653, 34, 3, '2026-09-15', 'ACTIVE'),
+(1654, 34, 3, '2026-09-15', 'ACTIVE'),
+(1655, 34, 3, '2026-09-15', 'ACTIVE'),
+(1656, 34, 3, '2026-09-15', 'ACTIVE'),
+(1657, 34, 3, '2026-09-15', 'ACTIVE'),
+(1658, 34, 3, '2026-09-15', 'ACTIVE'),
+(1659, 34, 3, '2026-09-15', 'ACTIVE'),
+(1660, 34, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 35: GL L1H (24 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(699, 35, 3, '2026-09-15', 'ACTIVE'),
+(700, 35, 3, '2026-09-15', 'ACTIVE'),
+(1299, 35, 3, '2026-09-15', 'ACTIVE'),
+(1300, 35, 3, '2026-09-15', 'ACTIVE'),
+(1661, 35, 3, '2026-09-15', 'ACTIVE'),
+(1662, 35, 3, '2026-09-15', 'ACTIVE'),
+(1663, 35, 3, '2026-09-15', 'ACTIVE'),
+(1664, 35, 3, '2026-09-15', 'ACTIVE'),
+(1665, 35, 3, '2026-09-15', 'ACTIVE'),
+(1666, 35, 3, '2026-09-15', 'ACTIVE'),
+(1667, 35, 3, '2026-09-15', 'ACTIVE'),
+(1668, 35, 3, '2026-09-15', 'ACTIVE'),
+(1669, 35, 3, '2026-09-15', 'ACTIVE'),
+(1670, 35, 3, '2026-09-15', 'ACTIVE'),
+(1671, 35, 3, '2026-09-15', 'ACTIVE'),
+(1672, 35, 3, '2026-09-15', 'ACTIVE'),
+(1673, 35, 3, '2026-09-15', 'ACTIVE'),
+(1674, 35, 3, '2026-09-15', 'ACTIVE'),
+(1675, 35, 3, '2026-09-15', 'ACTIVE'),
+(1676, 35, 3, '2026-09-15', 'ACTIVE'),
+(1677, 35, 3, '2026-09-15', 'ACTIVE'),
+(1678, 35, 3, '2026-09-15', 'ACTIVE'),
+(1679, 35, 3, '2026-09-15', 'ACTIVE'),
+(1680, 35, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 36: GL L2A (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(719, 36, 3, '2026-09-15', 'ACTIVE'),
+(720, 36, 3, '2026-09-15', 'ACTIVE'),
+(1141, 36, 3, '2026-09-15', 'ACTIVE'),
+(1142, 36, 3, '2026-09-15', 'ACTIVE'),
+(1143, 36, 3, '2026-09-15', 'ACTIVE'),
+(1144, 36, 3, '2026-09-15', 'ACTIVE'),
+(1145, 36, 3, '2026-09-15', 'ACTIVE'),
+(1146, 36, 3, '2026-09-15', 'ACTIVE'),
+(1147, 36, 3, '2026-09-15', 'ACTIVE'),
+(1148, 36, 3, '2026-09-15', 'ACTIVE'),
+(1149, 36, 3, '2026-09-15', 'ACTIVE'),
+(1150, 36, 3, '2026-09-15', 'ACTIVE'),
+(1151, 36, 3, '2026-09-15', 'ACTIVE'),
+(1152, 36, 3, '2026-09-15', 'ACTIVE'),
+(1153, 36, 3, '2026-09-15', 'ACTIVE'),
+(1154, 36, 3, '2026-09-15', 'ACTIVE'),
+(1155, 36, 3, '2026-09-15', 'ACTIVE'),
+(1156, 36, 3, '2026-09-15', 'ACTIVE'),
+(1157, 36, 3, '2026-09-15', 'ACTIVE'),
+(1158, 36, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 37: GL L2B (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(739, 37, 3, '2026-09-15', 'ACTIVE'),
+(740, 37, 3, '2026-09-15', 'ACTIVE'),
+(1161, 37, 3, '2026-09-15', 'ACTIVE'),
+(1162, 37, 3, '2026-09-15', 'ACTIVE'),
+(1163, 37, 3, '2026-09-15', 'ACTIVE'),
+(1164, 37, 3, '2026-09-15', 'ACTIVE'),
+(1165, 37, 3, '2026-09-15', 'ACTIVE'),
+(1166, 37, 3, '2026-09-15', 'ACTIVE'),
+(1167, 37, 3, '2026-09-15', 'ACTIVE'),
+(1168, 37, 3, '2026-09-15', 'ACTIVE'),
+(1169, 37, 3, '2026-09-15', 'ACTIVE'),
+(1170, 37, 3, '2026-09-15', 'ACTIVE'),
+(1171, 37, 3, '2026-09-15', 'ACTIVE'),
+(1172, 37, 3, '2026-09-15', 'ACTIVE'),
+(1173, 37, 3, '2026-09-15', 'ACTIVE'),
+(1174, 37, 3, '2026-09-15', 'ACTIVE'),
+(1175, 37, 3, '2026-09-15', 'ACTIVE'),
+(1176, 37, 3, '2026-09-15', 'ACTIVE'),
+(1177, 37, 3, '2026-09-15', 'ACTIVE'),
+(1178, 37, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 38: GL L2C (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(759, 38, 3, '2026-09-15', 'ACTIVE'),
+(760, 38, 3, '2026-09-15', 'ACTIVE'),
+(1181, 38, 3, '2026-09-15', 'ACTIVE'),
+(1182, 38, 3, '2026-09-15', 'ACTIVE'),
+(1183, 38, 3, '2026-09-15', 'ACTIVE'),
+(1184, 38, 3, '2026-09-15', 'ACTIVE'),
+(1185, 38, 3, '2026-09-15', 'ACTIVE'),
+(1186, 38, 3, '2026-09-15', 'ACTIVE'),
+(1187, 38, 3, '2026-09-15', 'ACTIVE'),
+(1188, 38, 3, '2026-09-15', 'ACTIVE'),
+(1189, 38, 3, '2026-09-15', 'ACTIVE'),
+(1190, 38, 3, '2026-09-15', 'ACTIVE'),
+(1191, 38, 3, '2026-09-15', 'ACTIVE'),
+(1192, 38, 3, '2026-09-15', 'ACTIVE'),
+(1193, 38, 3, '2026-09-15', 'ACTIVE'),
+(1194, 38, 3, '2026-09-15', 'ACTIVE'),
+(1195, 38, 3, '2026-09-15', 'ACTIVE'),
+(1196, 38, 3, '2026-09-15', 'ACTIVE'),
+(1197, 38, 3, '2026-09-15', 'ACTIVE'),
+(1198, 38, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 39: GL L2D (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(779, 39, 3, '2026-09-15', 'ACTIVE'),
+(780, 39, 3, '2026-09-15', 'ACTIVE'),
+(1201, 39, 3, '2026-09-15', 'ACTIVE'),
+(1202, 39, 3, '2026-09-15', 'ACTIVE'),
+(1203, 39, 3, '2026-09-15', 'ACTIVE'),
+(1204, 39, 3, '2026-09-15', 'ACTIVE'),
+(1205, 39, 3, '2026-09-15', 'ACTIVE'),
+(1206, 39, 3, '2026-09-15', 'ACTIVE'),
+(1207, 39, 3, '2026-09-15', 'ACTIVE'),
+(1208, 39, 3, '2026-09-15', 'ACTIVE'),
+(1209, 39, 3, '2026-09-15', 'ACTIVE'),
+(1210, 39, 3, '2026-09-15', 'ACTIVE'),
+(1211, 39, 3, '2026-09-15', 'ACTIVE'),
+(1212, 39, 3, '2026-09-15', 'ACTIVE'),
+(1213, 39, 3, '2026-09-15', 'ACTIVE'),
+(1214, 39, 3, '2026-09-15', 'ACTIVE'),
+(1215, 39, 3, '2026-09-15', 'ACTIVE'),
+(1216, 39, 3, '2026-09-15', 'ACTIVE'),
+(1217, 39, 3, '2026-09-15', 'ACTIVE'),
+(1218, 39, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 40: GL L2E (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(799, 40, 3, '2026-09-15', 'ACTIVE'),
+(800, 40, 3, '2026-09-15', 'ACTIVE'),
+(1221, 40, 3, '2026-09-15', 'ACTIVE'),
+(1222, 40, 3, '2026-09-15', 'ACTIVE'),
+(1223, 40, 3, '2026-09-15', 'ACTIVE'),
+(1224, 40, 3, '2026-09-15', 'ACTIVE'),
+(1225, 40, 3, '2026-09-15', 'ACTIVE'),
+(1226, 40, 3, '2026-09-15', 'ACTIVE'),
+(1227, 40, 3, '2026-09-15', 'ACTIVE'),
+(1228, 40, 3, '2026-09-15', 'ACTIVE'),
+(1229, 40, 3, '2026-09-15', 'ACTIVE'),
+(1230, 40, 3, '2026-09-15', 'ACTIVE'),
+(1231, 40, 3, '2026-09-15', 'ACTIVE'),
+(1232, 40, 3, '2026-09-15', 'ACTIVE'),
+(1233, 40, 3, '2026-09-15', 'ACTIVE'),
+(1234, 40, 3, '2026-09-15', 'ACTIVE'),
+(1235, 40, 3, '2026-09-15', 'ACTIVE'),
+(1236, 40, 3, '2026-09-15', 'ACTIVE'),
+(1237, 40, 3, '2026-09-15', 'ACTIVE'),
+(1238, 40, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 41: GL L2F (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(819, 41, 3, '2026-09-15', 'ACTIVE'),
+(820, 41, 3, '2026-09-15', 'ACTIVE'),
+(1241, 41, 3, '2026-09-15', 'ACTIVE'),
+(1242, 41, 3, '2026-09-15', 'ACTIVE'),
+(1243, 41, 3, '2026-09-15', 'ACTIVE'),
+(1244, 41, 3, '2026-09-15', 'ACTIVE'),
+(1245, 41, 3, '2026-09-15', 'ACTIVE'),
+(1246, 41, 3, '2026-09-15', 'ACTIVE'),
+(1247, 41, 3, '2026-09-15', 'ACTIVE'),
+(1248, 41, 3, '2026-09-15', 'ACTIVE'),
+(1249, 41, 3, '2026-09-15', 'ACTIVE'),
+(1250, 41, 3, '2026-09-15', 'ACTIVE'),
+(1251, 41, 3, '2026-09-15', 'ACTIVE'),
+(1252, 41, 3, '2026-09-15', 'ACTIVE'),
+(1253, 41, 3, '2026-09-15', 'ACTIVE'),
+(1254, 41, 3, '2026-09-15', 'ACTIVE'),
+(1255, 41, 3, '2026-09-15', 'ACTIVE'),
+(1256, 41, 3, '2026-09-15', 'ACTIVE'),
+(1257, 41, 3, '2026-09-15', 'ACTIVE'),
+(1258, 41, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 42: GL L2G (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(839, 42, 3, '2026-09-15', 'ACTIVE'),
+(840, 42, 3, '2026-09-15', 'ACTIVE'),
+(1261, 42, 3, '2026-09-15', 'ACTIVE'),
+(1262, 42, 3, '2026-09-15', 'ACTIVE'),
+(1263, 42, 3, '2026-09-15', 'ACTIVE'),
+(1264, 42, 3, '2026-09-15', 'ACTIVE'),
+(1265, 42, 3, '2026-09-15', 'ACTIVE'),
+(1266, 42, 3, '2026-09-15', 'ACTIVE'),
+(1267, 42, 3, '2026-09-15', 'ACTIVE'),
+(1268, 42, 3, '2026-09-15', 'ACTIVE'),
+(1269, 42, 3, '2026-09-15', 'ACTIVE'),
+(1270, 42, 3, '2026-09-15', 'ACTIVE'),
+(1271, 42, 3, '2026-09-15', 'ACTIVE'),
+(1272, 42, 3, '2026-09-15', 'ACTIVE'),
+(1273, 42, 3, '2026-09-15', 'ACTIVE'),
+(1274, 42, 3, '2026-09-15', 'ACTIVE'),
+(1275, 42, 3, '2026-09-15', 'ACTIVE'),
+(1276, 42, 3, '2026-09-15', 'ACTIVE'),
+(1277, 42, 3, '2026-09-15', 'ACTIVE'),
+(1278, 42, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 43: GL L2H (20 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(859, 43, 3, '2026-09-15', 'ACTIVE'),
+(860, 43, 3, '2026-09-15', 'ACTIVE'),
+(1281, 43, 3, '2026-09-15', 'ACTIVE'),
+(1282, 43, 3, '2026-09-15', 'ACTIVE'),
+(1283, 43, 3, '2026-09-15', 'ACTIVE'),
+(1284, 43, 3, '2026-09-15', 'ACTIVE'),
+(1285, 43, 3, '2026-09-15', 'ACTIVE'),
+(1286, 43, 3, '2026-09-15', 'ACTIVE'),
+(1287, 43, 3, '2026-09-15', 'ACTIVE'),
+(1288, 43, 3, '2026-09-15', 'ACTIVE'),
+(1289, 43, 3, '2026-09-15', 'ACTIVE'),
+(1290, 43, 3, '2026-09-15', 'ACTIVE'),
+(1291, 43, 3, '2026-09-15', 'ACTIVE'),
+(1292, 43, 3, '2026-09-15', 'ACTIVE'),
+(1293, 43, 3, '2026-09-15', 'ACTIVE'),
+(1294, 43, 3, '2026-09-15', 'ACTIVE'),
+(1295, 43, 3, '2026-09-15', 'ACTIVE'),
+(1296, 43, 3, '2026-09-15', 'ACTIVE'),
+(1297, 43, 3, '2026-09-15', 'ACTIVE'),
+(1298, 43, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 44: GL3A (60 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(541, 44, 3, '2026-09-15', 'ACTIVE'),
+(542, 44, 3, '2026-09-15', 'ACTIVE'),
+(543, 44, 3, '2026-09-15', 'ACTIVE'),
+(544, 44, 3, '2026-09-15', 'ACTIVE'),
+(545, 44, 3, '2026-09-15', 'ACTIVE'),
+(546, 44, 3, '2026-09-15', 'ACTIVE'),
+(547, 44, 3, '2026-09-15', 'ACTIVE'),
+(548, 44, 3, '2026-09-15', 'ACTIVE'),
+(549, 44, 3, '2026-09-15', 'ACTIVE'),
+(550, 44, 3, '2026-09-15', 'ACTIVE'),
+(551, 44, 3, '2026-09-15', 'ACTIVE'),
+(552, 44, 3, '2026-09-15', 'ACTIVE'),
+(553, 44, 3, '2026-09-15', 'ACTIVE'),
+(554, 44, 3, '2026-09-15', 'ACTIVE'),
+(555, 44, 3, '2026-09-15', 'ACTIVE'),
+(556, 44, 3, '2026-09-15', 'ACTIVE'),
+(557, 44, 3, '2026-09-15', 'ACTIVE'),
+(558, 44, 3, '2026-09-15', 'ACTIVE'),
+(561, 44, 3, '2026-09-15', 'ACTIVE'),
+(562, 44, 3, '2026-09-15', 'ACTIVE'),
+(563, 44, 3, '2026-09-15', 'ACTIVE'),
+(564, 44, 3, '2026-09-15', 'ACTIVE'),
+(565, 44, 3, '2026-09-15', 'ACTIVE'),
+(566, 44, 3, '2026-09-15', 'ACTIVE'),
+(567, 44, 3, '2026-09-15', 'ACTIVE'),
+(568, 44, 3, '2026-09-15', 'ACTIVE'),
+(569, 44, 3, '2026-09-15', 'ACTIVE'),
+(570, 44, 3, '2026-09-15', 'ACTIVE'),
+(571, 44, 3, '2026-09-15', 'ACTIVE'),
+(572, 44, 3, '2026-09-15', 'ACTIVE'),
+(573, 44, 3, '2026-09-15', 'ACTIVE'),
+(574, 44, 3, '2026-09-15', 'ACTIVE'),
+(575, 44, 3, '2026-09-15', 'ACTIVE'),
+(576, 44, 3, '2026-09-15', 'ACTIVE'),
+(577, 44, 3, '2026-09-15', 'ACTIVE'),
+(578, 44, 3, '2026-09-15', 'ACTIVE'),
+(581, 44, 3, '2026-09-15', 'ACTIVE'),
+(582, 44, 3, '2026-09-15', 'ACTIVE'),
+(583, 44, 3, '2026-09-15', 'ACTIVE'),
+(584, 44, 3, '2026-09-15', 'ACTIVE'),
+(585, 44, 3, '2026-09-15', 'ACTIVE'),
+(586, 44, 3, '2026-09-15', 'ACTIVE'),
+(587, 44, 3, '2026-09-15', 'ACTIVE'),
+(588, 44, 3, '2026-09-15', 'ACTIVE'),
+(589, 44, 3, '2026-09-15', 'ACTIVE'),
+(590, 44, 3, '2026-09-15', 'ACTIVE'),
+(591, 44, 3, '2026-09-15', 'ACTIVE'),
+(592, 44, 3, '2026-09-15', 'ACTIVE'),
+(703, 44, 3, '2026-09-15', 'ACTIVE'),
+(707, 44, 3, '2026-09-15', 'ACTIVE'),
+(711, 44, 3, '2026-09-15', 'ACTIVE'),
+(715, 44, 3, '2026-09-15', 'ACTIVE'),
+(721, 44, 3, '2026-09-15', 'ACTIVE'),
+(725, 44, 3, '2026-09-15', 'ACTIVE'),
+(729, 44, 3, '2026-09-15', 'ACTIVE'),
+(733, 44, 3, '2026-09-15', 'ACTIVE'),
+(737, 44, 3, '2026-09-15', 'ACTIVE'),
+(743, 44, 3, '2026-09-15', 'ACTIVE'),
+(747, 44, 3, '2026-09-15', 'ACTIVE'),
+(876, 44, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 45: GL3B (60 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(593, 45, 3, '2026-09-15', 'ACTIVE'),
+(594, 45, 3, '2026-09-15', 'ACTIVE'),
+(595, 45, 3, '2026-09-15', 'ACTIVE'),
+(596, 45, 3, '2026-09-15', 'ACTIVE'),
+(597, 45, 3, '2026-09-15', 'ACTIVE'),
+(598, 45, 3, '2026-09-15', 'ACTIVE'),
+(601, 45, 3, '2026-09-15', 'ACTIVE'),
+(602, 45, 3, '2026-09-15', 'ACTIVE'),
+(603, 45, 3, '2026-09-15', 'ACTIVE'),
+(604, 45, 3, '2026-09-15', 'ACTIVE'),
+(605, 45, 3, '2026-09-15', 'ACTIVE'),
+(606, 45, 3, '2026-09-15', 'ACTIVE'),
+(607, 45, 3, '2026-09-15', 'ACTIVE'),
+(608, 45, 3, '2026-09-15', 'ACTIVE'),
+(609, 45, 3, '2026-09-15', 'ACTIVE'),
+(610, 45, 3, '2026-09-15', 'ACTIVE'),
+(611, 45, 3, '2026-09-15', 'ACTIVE'),
+(612, 45, 3, '2026-09-15', 'ACTIVE'),
+(613, 45, 3, '2026-09-15', 'ACTIVE'),
+(614, 45, 3, '2026-09-15', 'ACTIVE'),
+(615, 45, 3, '2026-09-15', 'ACTIVE'),
+(616, 45, 3, '2026-09-15', 'ACTIVE'),
+(617, 45, 3, '2026-09-15', 'ACTIVE'),
+(618, 45, 3, '2026-09-15', 'ACTIVE'),
+(621, 45, 3, '2026-09-15', 'ACTIVE'),
+(622, 45, 3, '2026-09-15', 'ACTIVE'),
+(623, 45, 3, '2026-09-15', 'ACTIVE'),
+(624, 45, 3, '2026-09-15', 'ACTIVE'),
+(625, 45, 3, '2026-09-15', 'ACTIVE'),
+(626, 45, 3, '2026-09-15', 'ACTIVE'),
+(627, 45, 3, '2026-09-15', 'ACTIVE'),
+(628, 45, 3, '2026-09-15', 'ACTIVE'),
+(629, 45, 3, '2026-09-15', 'ACTIVE'),
+(630, 45, 3, '2026-09-15', 'ACTIVE'),
+(631, 45, 3, '2026-09-15', 'ACTIVE'),
+(632, 45, 3, '2026-09-15', 'ACTIVE'),
+(633, 45, 3, '2026-09-15', 'ACTIVE'),
+(634, 45, 3, '2026-09-15', 'ACTIVE'),
+(635, 45, 3, '2026-09-15', 'ACTIVE'),
+(636, 45, 3, '2026-09-15', 'ACTIVE'),
+(637, 45, 3, '2026-09-15', 'ACTIVE'),
+(638, 45, 3, '2026-09-15', 'ACTIVE'),
+(641, 45, 3, '2026-09-15', 'ACTIVE'),
+(642, 45, 3, '2026-09-15', 'ACTIVE'),
+(643, 45, 3, '2026-09-15', 'ACTIVE'),
+(644, 45, 3, '2026-09-15', 'ACTIVE'),
+(645, 45, 3, '2026-09-15', 'ACTIVE'),
+(646, 45, 3, '2026-09-15', 'ACTIVE'),
+(755, 45, 3, '2026-09-15', 'ACTIVE'),
+(761, 45, 3, '2026-09-15', 'ACTIVE'),
+(765, 45, 3, '2026-09-15', 'ACTIVE'),
+(769, 45, 3, '2026-09-15', 'ACTIVE'),
+(773, 45, 3, '2026-09-15', 'ACTIVE'),
+(777, 45, 3, '2026-09-15', 'ACTIVE'),
+(783, 45, 3, '2026-09-15', 'ACTIVE'),
+(787, 45, 3, '2026-09-15', 'ACTIVE'),
+(791, 45, 3, '2026-09-15', 'ACTIVE'),
+(795, 45, 3, '2026-09-15', 'ACTIVE'),
+(801, 45, 3, '2026-09-15', 'ACTIVE'),
+(896, 45, 3, '2026-09-15', 'ACTIVE');
+
+-- Class ID 46: GL3C (60 enrollments)
+INSERT INTO ENROLLMENT
+(student_id, class_id, academic_year_id, enrollment_date, status)
+VALUES
+(647, 46, 3, '2026-09-15', 'ACTIVE'),
+(648, 46, 3, '2026-09-15', 'ACTIVE'),
+(649, 46, 3, '2026-09-15', 'ACTIVE'),
+(650, 46, 3, '2026-09-15', 'ACTIVE'),
+(651, 46, 3, '2026-09-15', 'ACTIVE'),
+(652, 46, 3, '2026-09-15', 'ACTIVE'),
+(653, 46, 3, '2026-09-15', 'ACTIVE'),
+(654, 46, 3, '2026-09-15', 'ACTIVE'),
+(655, 46, 3, '2026-09-15', 'ACTIVE'),
+(656, 46, 3, '2026-09-15', 'ACTIVE'),
+(657, 46, 3, '2026-09-15', 'ACTIVE'),
+(658, 46, 3, '2026-09-15', 'ACTIVE'),
+(661, 46, 3, '2026-09-15', 'ACTIVE'),
+(662, 46, 3, '2026-09-15', 'ACTIVE'),
+(663, 46, 3, '2026-09-15', 'ACTIVE'),
+(664, 46, 3, '2026-09-15', 'ACTIVE'),
+(665, 46, 3, '2026-09-15', 'ACTIVE'),
+(666, 46, 3, '2026-09-15', 'ACTIVE'),
+(667, 46, 3, '2026-09-15', 'ACTIVE'),
+(668, 46, 3, '2026-09-15', 'ACTIVE'),
+(669, 46, 3, '2026-09-15', 'ACTIVE'),
+(670, 46, 3, '2026-09-15', 'ACTIVE'),
+(671, 46, 3, '2026-09-15', 'ACTIVE'),
+(672, 46, 3, '2026-09-15', 'ACTIVE'),
+(673, 46, 3, '2026-09-15', 'ACTIVE'),
+(674, 46, 3, '2026-09-15', 'ACTIVE'),
+(675, 46, 3, '2026-09-15', 'ACTIVE'),
+(676, 46, 3, '2026-09-15', 'ACTIVE'),
+(677, 46, 3, '2026-09-15', 'ACTIVE'),
+(678, 46, 3, '2026-09-15', 'ACTIVE'),
+(681, 46, 3, '2026-09-15', 'ACTIVE'),
+(682, 46, 3, '2026-09-15', 'ACTIVE'),
+(683, 46, 3, '2026-09-15', 'ACTIVE'),
+(684, 46, 3, '2026-09-15', 'ACTIVE'),
+(685, 46, 3, '2026-09-15', 'ACTIVE'),
+(686, 46, 3, '2026-09-15', 'ACTIVE'),
+(687, 46, 3, '2026-09-15', 'ACTIVE'),
+(688, 46, 3, '2026-09-15', 'ACTIVE'),
+(689, 46, 3, '2026-09-15', 'ACTIVE'),
+(690, 46, 3, '2026-09-15', 'ACTIVE'),
+(691, 46, 3, '2026-09-15', 'ACTIVE'),
+(692, 46, 3, '2026-09-15', 'ACTIVE'),
+(693, 46, 3, '2026-09-15', 'ACTIVE'),
+(694, 46, 3, '2026-09-15', 'ACTIVE'),
+(695, 46, 3, '2026-09-15', 'ACTIVE'),
+(696, 46, 3, '2026-09-15', 'ACTIVE'),
+(697, 46, 3, '2026-09-15', 'ACTIVE'),
+(698, 46, 3, '2026-09-15', 'ACTIVE'),
+(809, 46, 3, '2026-09-15', 'ACTIVE'),
+(813, 46, 3, '2026-09-15', 'ACTIVE'),
+(817, 46, 3, '2026-09-15', 'ACTIVE'),
+(823, 46, 3, '2026-09-15', 'ACTIVE'),
+(827, 46, 3, '2026-09-15', 'ACTIVE'),
+(831, 46, 3, '2026-09-15', 'ACTIVE'),
+(835, 46, 3, '2026-09-15', 'ACTIVE'),
+(841, 46, 3, '2026-09-15', 'ACTIVE'),
+(845, 46, 3, '2026-09-15', 'ACTIVE'),
+(849, 46, 3, '2026-09-15', 'ACTIVE'),
+(853, 46, 3, '2026-09-15', 'ACTIVE'),
+(916, 46, 3, '2026-09-15', 'ACTIVE');
+
+-- Update general/current STUDENT status for graduates and withdrawals.
+-- Students not listed here retain their existing ACTIVE status.
+UPDATE STUDENT SET student_status = 'GRADUATED'
+WHERE std_id IN (
+    61, 62, 64, 65, 66, 68, 69, 70, 72, 73, 74, 76,
+    77, 78, 82, 83, 84, 86, 87, 90, 91, 93, 94, 95,
+    97, 98, 101, 103, 104, 105, 107, 108, 109, 111, 112, 113,
+    115, 116, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130,
+    131, 132, 133, 134, 135, 137, 138, 141, 142, 143, 144, 145,
+    146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 157, 158,
+    321, 323, 324, 325, 327, 328, 329, 331, 332, 333, 335, 336,
+    337, 341, 342, 343, 345, 346, 347, 349, 350, 352, 353, 354,
+    356, 357, 358, 362, 363, 364, 366, 367, 368, 370, 373, 375,
+    376, 377, 381, 382, 383, 385, 386, 387, 389, 390, 391, 393,
+    394, 395, 397, 398, 401, 403, 404, 406, 407, 408, 410, 411,
+    412, 414, 415, 416, 418, 421, 422, 424, 427, 429, 430, 431,
+    433, 434, 435, 437, 438, 441, 443, 444, 445, 447, 448, 449,
+    451, 452, 453, 455, 456, 458, 461, 462, 464, 465, 466, 468,
+    469, 470, 472, 473, 474, 476, 481, 482, 483, 484, 485, 486,
+    487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 498, 501,
+    502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513,
+    514, 515, 516, 518, 521, 522, 523, 524, 525, 526, 527, 528,
+    529, 530, 531, 532, 533, 534, 535, 536, 538, 701, 702, 704,
+    705, 706, 708, 709, 710, 712, 713, 714, 716, 717, 718, 722,
+    723, 724, 726, 727, 728, 730, 731, 732, 734, 735, 736, 738,
+    741, 742, 744, 745, 746, 748, 749, 750, 753, 754, 756, 757,
+    758, 762, 763, 764, 766, 767, 768, 770, 771, 772, 774, 775,
+    776, 778, 781, 782, 784, 785, 786, 788, 789, 790, 792, 793,
+    794, 796, 797, 798, 802, 803, 804, 807, 808, 810, 811, 812,
+    814, 815, 816, 818, 821, 822, 824, 825, 826, 828, 829, 830,
+    832, 833, 834, 836, 837, 838, 842, 843, 844, 846, 847, 848,
+    850, 851, 852, 854, 855, 856, 861, 862, 863, 864, 865, 866,
+    867, 868, 869, 870, 871, 872, 873, 874, 875, 877, 878, 881,
+    882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893,
+    894, 895, 897, 898, 901, 902, 903, 904, 905, 906, 907, 908,
+    909, 910, 911, 912, 913, 914, 915, 917, 918
+);
+
+UPDATE STUDENT SET student_status = 'WITHDRAWN'
+WHERE std_id IN (
+    88, 89, 117, 118, 139, 140, 159, 160, 371, 372, 425, 426,
+    477, 478, 499, 500, 519, 520, 539, 540, 751, 752, 805, 806,
+    857, 858, 879, 880, 899, 900, 919, 920
+);
+
+-- Verification queries:
+-- SELECT academic_year_id, COUNT(*) AS total_enrollments FROM ENROLLMENT
+-- GROUP BY academic_year_id ORDER BY academic_year_id;
+-- SELECT academic_year_id, class_id, COUNT(*) AS students_per_class FROM ENROLLMENT
+-- GROUP BY academic_year_id, class_id ORDER BY academic_year_id, class_id;
+-- SELECT academic_year_id, status, COUNT(*) FROM ENROLLMENT GROUP BY academic_year_id, status ORDER BY academic_year_id, status;
+-- SELECT student_status, COUNT(*) FROM STUDENT GROUP BY student_status;

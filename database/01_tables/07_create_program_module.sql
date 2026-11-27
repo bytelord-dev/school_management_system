@@ -24,7 +24,7 @@ CREATE TABLE PROGRAM_MODULE (
         ON DELETE RESTRICT,
 
     CONSTRAINT uq_program_module
-        UNIQUE (program_id, module_id),
+        UNIQUE (program_id, module_id, level_id, semester_number),                        
 
     CONSTRAINT chk_program_module_semester
         CHECK (semester_number IN (1, 2))
